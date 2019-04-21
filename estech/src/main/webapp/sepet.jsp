@@ -25,7 +25,7 @@
 					<tbody>
 						<tr>
 							<td class="sepet_urun">
-								<a href=""><img src="../estech/image/i9.jpg" alt=""></a>
+								<a href=""><img src="../estech/image/i9.jpg" width="110" height="110" alt=""></a>
 							</td>
 							<td class="sepet_aciklama">
 								<h4><a href="">Intel I9 İşlemci</a></h4>
@@ -44,7 +44,7 @@
 
 						<tr>
 							<td class="sepet_urun">
-								<a href=""><img src="../estech/image/i9.jpg" alt=""></a>
+								<a href=""><img src="../estech/image/i9.jpg" width="110" height="110" alt=""></a>
 							</td>
 							<td class="sepet_aciklama">
 								<h4><a href="">Intel I9 İşlemci</a></h4>
@@ -62,7 +62,7 @@
 						</tr>
 						<tr>
 							<td class="sepet_urun">
-								<a href=""><img src="../estech/image/i9.jpg" alt=""></a>
+								<a href=""><img src="../estech/image/i9.jpg" width="110" height="110" alt=""></a>
 							</td>
 							<td class="sepet_aciklama">
 								<h4><a href="">Intel I9 İşlemci</a></h4>
