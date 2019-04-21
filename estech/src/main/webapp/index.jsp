@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="/css/main.css">
 <meta charset="utf-8">
 <title>Başlıksız Belge</title>
 </head>
