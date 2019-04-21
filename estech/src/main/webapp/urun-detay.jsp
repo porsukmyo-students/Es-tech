@@ -12,7 +12,7 @@
 					<div class="urun-detaylar">
 						<div class="col-sm-5 col-md-5">
 							<div class="goruntule-urun">
-								<img src="../estech/image/i9detay.jpg" alt="" />
+								<img src="../estech/image/i9d.jpg" alt="" />
 							</div>
 						</div>
 						<div class="col-sm-7 col-md-4 col-md-offset-0">
