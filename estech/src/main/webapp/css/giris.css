@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+input[type=password]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: verdana;
+}
+input[type=email]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: verdana;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #218DA6;
+  border: none;
+  color: #FFFFFF;
+  font-size:15px;
+  padding: 5px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 21%;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.div1 {
+  margin-top: 0px;
+  border-radius: 5px;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+.divlabel {
+  float:left;
+  width: 10%;
+  margin-top: 6px;
+}
+.form{
+	margin-left: 35%;
+}
+.divbox {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.divsatir:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .divlabel, .divbox{
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+
