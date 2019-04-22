@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>EStech</title>
-    <link href="../estech/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../estech/css/tasarim.css" rel="stylesheet">
 	<link href="../estech/css/detay.css" rel="stylesheet">
     </head>
     <body>
