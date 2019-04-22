@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EStech</title>
-    <link href="../estech/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../estech/css/tasarim.css" rel="stylesheet">
 	<link href="../estech/css/sepet.css" rel="stylesheet">
 </head>
 
