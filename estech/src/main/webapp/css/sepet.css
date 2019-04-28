@@ -5,7 +5,7 @@
 
 #sepet_urun .sepet_detay {
     border: 1px solid #E6E4DF;
-    margin-bottom: 50px
+    margin-bottom: 50px;
 }
 
 #sepet_urun .sepet_detay .sepet_menu {
@@ -15,17 +15,16 @@
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
 }
-
 #sepet_urun .sepet_detay .tablo.tablo-alani thead tr {
     height: 51px;
 }
 
 #sepet_urun .sepet_detay .tablo.tablo-alani tr {
-    border-bottom: 1px solid#F7F7F0
+    border-bottom: 1px solid#F7F7F0;
 }
 
 #sepet_urun .sepet_detay .tablo.tablo-alani tr:last-child {
-    border-bottom: 0
+    border-bottom: 0;
 }
 
 .sepet_detay table tr td {
@@ -39,7 +38,7 @@
 }
 
 #sepet_urun .sepet_detay .sepet_aciklama h4 {
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
 #sepet_urun .sepet_detay .sepet_aciklama h4 a {
@@ -50,12 +49,12 @@
 }
 
 #sepet_urun .sepet_detay .sepet_aciklama p {
-    color: #696763
+    color: #696763;
 }
 
 #sepet_urun .sepet_detay .sepet_fiyat p {
     color: #696763;
-    font-size: 18px
+    font-size: 18px;
 }
 
 #sepet_urun .sepet_detay .sepet_toplam_fiyat {
@@ -65,7 +64,7 @@
 
 .sepet_urun {
     display: block;
-      margin: 15px -70px 10px 25px;
+    margin: 15px -70px 10px 25px;
 }
 
 .sepet_miktar_buton a {
@@ -103,7 +102,7 @@
 }
 
 .sepet_sil a:hover {
-    background: #218DA6
+    background: #218DA6;	 
 }
 
 

@@ -29,7 +29,13 @@ label {
 }
 textarea{
 	max-height: 200px;
-	min-height: 50px;
+	min-height: 200px;
+	max-width: 100%;
+	width: 100%;
+	padding: 12px;
+    	border: 1px solid #ccc;
+    	border-radius: 4px;
+    	resize: vertical;
 	font-family: verdana;
 	font-size: 18;
 }
@@ -44,7 +50,7 @@ textarea{
   width: 150px;
   transition: all 0.5s;
   cursor: pointer;
-  margin-left: 21%;
+  margin-left: 17.6%;
 }
 .button span {
   cursor: pointer;
@@ -88,6 +94,7 @@ textarea{
   float: left;
   width: 25%;
   margin-top: 6px;
+  
 }
 .divtextarea{
   float: left;

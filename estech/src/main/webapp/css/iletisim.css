@@ -1,13 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-input[type=password]{
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-  font-family: verdana;
-}
 input[type=email]{
   width: 100%;
   padding: 12px;
@@ -15,6 +7,18 @@ input[type=email]{
   border-radius: 4px;
   resize: vertical;
   font-family: verdana;
+}
+textarea{
+	max-height: 200px;
+	min-height: 200px;
+	max-width: 100%;
+	width: 100%;
+	padding: 12px;
+    	border: 1px solid #ccc;
+    	border-radius: 4px;
+    	resize: vertical;
+	font-family: verdana;
+	font-size: 18;
 }
 label {
   padding: 12px 12px 12px 0;
@@ -70,7 +74,7 @@ label {
   margin-top: 6px;
 }
 .form{
-	margin-left: 35%;
+	margin-left: 30%;
 }
 .divbox {
   float: left;
@@ -83,7 +87,7 @@ label {
   clear: both;
 }
 @media screen and (max-width: 600px) {
-  .divlabel, .divbox{
+  .divlabel, .divbox,textarea{
     width: 100%;
     margin-top: 0;
   }
