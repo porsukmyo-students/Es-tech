@@ -33,7 +33,7 @@
 	<div class="nav1">	<!-- navbarın başladığı kısım --> 
 		<nav>
 			<ol class="menu2">
-				<li><a href="index.html">Anasayfa</a></li>
+				<li><a href="index.html" class="aktif">Anasayfa</a></li>
 				<li><a href="#">Kategori 1</a>
 					<ol>
 						<li> Alt kategori 1</li>
