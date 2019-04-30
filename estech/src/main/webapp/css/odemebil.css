@@ -61,7 +61,7 @@ textarea{
   transition: 0.5s;
 }
 .button:hover span {
-  padding-right: 25x;
+  padding-right: 25px;
 }
 .button:hover span:after {
   opacity: 1;
@@ -99,8 +99,7 @@ textarea{
   float: left;
   width: 25%;
   max-height: 250px;
-  margin-top: 6px;
-  
+  margin-top: 6px;  
 }
 .divsatir:after {
   content: "";
