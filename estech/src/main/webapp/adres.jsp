@@ -8,11 +8,12 @@
 	<link rel="stylesheet" href="css/footer.css"/>
 </head>
 <body>
+<div  id="id1"></div>
     <div class="header1"> <!-- headerin başladığı kısım --> 
 	<header class="sticky">
-		<div class="logo"> <a href="#id1"> Logo </a> </div>
+		<div class="logo"> <a href="index.html"> <img src="image/logo.png" alt="logo" width="117px" height="40px"> </a> </div>
 			<ul class="menu">
-				<li id="id1"><a href="uyekayit.html">Kayıt Ol</a></li>
+				<li><a href="uyekayit.html">Kayıt Ol</a></li>
 				<li><a href="giris.html">Üye Girişi</a></li>
 				<li><a href="sepet.html">Sepet</a></li>
 			</ul>
@@ -130,12 +131,12 @@
   </div>
   </form>
 </div>
-    	<footer>
+    	<footer>	<!-- footerin başladığı kısım --> 
 	<div class="hakkimizda">
-		<p> Biz Kimiz? <br> Porsuk Meslek Yüksekokulunda öğrenim gören 7 kişilik bir öğrenci ekibinin hazırladığı e-ticaret sitesi.</p>
+		<p> <b>Biz Kimiz? </b><br> Eskişehir Teknik Üniversitesi'nde Web Programlama Dersi proje ödevi için bir araya gelen 7 kişilik öğrenci grubuyuz.</p>
 	</div>
 		<div class="ulasim">
-			<a href="#"> <span> Bize ulaşın</span></a>
+			<a href="iletisim.html"> <span> Bize ulaşın</span></a>
 		</div>
 			<div class="sosyalmedya">
 				<ol>
@@ -146,11 +147,11 @@
 				</ol>
 			</div>
 				<div class="haklar">
-					<p>Es-tech © 2019 - Tüm hakları saklıdır. </p>
-				</div>
+					<p>EStech © 2019 - Tüm hakları saklıdır. </p>
 					<div class="up">
-						<a href="id1"> Yukarı çıkmak için tıklayın</a>
+						<a style="display:scroll;position:fixed; bottom:10px; right:5px;" href="#id1"> <img src="image/yukari-cik.png" alt="yukarı" width="40px" height="40px"/></a>
 					</div>
-	</footer>
+				</div>					
+</footer>	<!-- footerin bittiği kısım --> 
 </body>
 </html>

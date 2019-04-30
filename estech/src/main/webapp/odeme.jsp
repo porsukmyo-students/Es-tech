@@ -22,10 +22,10 @@
 <title>Ödeme Bilgileri</title>
 </head>
 <body>
-<div  id="id1"></div>
+<div id="id1"></div>
     	<div class="header1"> <!-- headerin başladığı kısım --> 
 	<header class="sticky">
-		<div class="logo"> <a href="#id1"> Logo </a> </div>
+		<div class="logo"> <a href="index.html"> <img src="image/logo.png" alt="logo" width="117px" height="40px"> </a> </div>
 			<ul class="menu">
 				<li><a href="uyekayit.html">Kayıt Ol</a></li>
 				<li><a href="giris.html">Üye Girişi</a></li>
@@ -126,7 +126,7 @@
     <br>
 	<footer>	<!-- footerin başladığı kısım --> 
 	<div class="hakkimizda">
-		<p> <b> Biz Kimiz? </b><br> Eskişehir Teknik Üniversitesi'nde Web Programlama Dersi proje ödevi için bir araya gelen 7 kişilik öğrenci grubuyuz.</p>
+		<p> <b>Biz Kimiz? </b><br> Eskişehir Teknik Üniversitesi'nde Web Programlama Dersi proje ödevi için bir araya gelen 7 kişilik öğrenci grubuyuz.</p>
 	</div>
 		<div class="ulasim">
 			<a href="iletisim.html"> <span> Bize ulaşın</span></a>
