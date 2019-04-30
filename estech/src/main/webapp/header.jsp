@@ -21,14 +21,48 @@
 		<nav>
 			<ol class="menu2">
 				<li><a href="index.html">Anasayfa</a></li>
-				<li><a href="#">Kategori 2</a></li>
-				<li><a href="#">Kategori 3</a></li>
-				<li><a href="#">Kategori 4</a></li>
-				<li><a href="#">Kategori 5</a></li>
-				<li><a href="#">Kategori 6</a></li>
-				<li><a href="#">Kategori 7</a></li>
+				<li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Kategori 1</a>
+					<div class="dropdown-content">
+					<a href="#">Alt kategori 1</a>
+					<a href="#">Alt kategori 2</a>
+					<a href="#">Alt kategori 3</a>
+					<a href="#">Alt kategori 4</a>
+					<a href="#">Alt kategori 5</a>
+					</div>
+				</li>
+				<li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Kategori 2</a>
+					<div class="dropdown-content">
+					<a href="#">Alt kategori 1</a>
+					<a href="#">Alt kategori 2</a>
+					<a href="#">Alt kategori 3</a>
+					<a href="#">Alt kategori 4</a>
+					</div>
+				</li>
+				<li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Kategori 3</a>
+					<div class="dropdown-content">
+					<a href="#">Alt kategori 1</a>
+					<a href="#">Alt kategori 2</a>
+					<a href="#">Alt kategori 3</a>
+					</div>
+				</li>
+				<li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Kategori 4</a>
+					<div class="dropdown-content">
+					<a href="#">Alt kategori 1</a>
+					<a href="#">Alt kategori 2</a>
+					</div>
+				</li>
+				<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Kategori 5</a>
+					<div class="dropdown-content">
+					<a href="#">Alt kategori 1</a>
+					</div>
+				</li>
 			</ol>
 		</nav>
-	</div>	<!-- navbarın bittiği kısım --> 
+	</div>	<!-- navbarın bittiği kısım -->  
 </body>
 </html>
