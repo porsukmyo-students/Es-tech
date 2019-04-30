@@ -1,10 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 footer{
-	background-color: grey;
+	background-color: #687B89;
 	width: 100%;
-	padding: 0 auto;
-	
+	padding: 0;
+	clear: both;
 }
 .haklar{
 	color: #fff;
@@ -18,14 +18,15 @@ footer{
 	color: #fff;
 	font-size: 16px;
 	text-align: center;
+	padding-top: 2%;
 	padding-left: 5%;
 }
 .ulasim{
+	padding-top: 2%;
 	text-align: center;
 	color: #333;
 	font-size: 20px;
-	font-weight: bold;
-	cursor: pointer;
+	font-weight: bold;	
 }
 .ulasim a:link{
 	text-decoration: none;
@@ -49,8 +50,8 @@ footer{
 	padding: 0 15px;
 }
 .up {
-	float: right;
-	padding-right: 20px;
+	clear: right;
+	text-align: right;
 }
 .up a:link{
 	text-decoration: none;
