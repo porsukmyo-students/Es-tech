@@ -1,9 +1,11 @@
 package Dao;
 
-
 import Models.Product;
-
-import java.util.PriorityQueue;
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.*;
 
 /**
  * @author Onur
@@ -12,32 +14,117 @@ import java.util.PriorityQueue;
  */
 public class ProductDAO implements DAO<Product> {
 
-	public ProductDAO(){
+	Connection connection;
+	CallableStatement stmt;
+
+	public ProductDAO()  {
+
+		try{
+			connection = ConnectionDb.getConnection();
+
+		}catch(SQLException ex){
+			ex.printStackTrace();
+		}
+
+
 
 	}
 
-	public void finalize() throws Throwable {
-
-	}
 	/**
 	 * 
 	 * @param item
 	 */
 	public void addItem(Product item){
-
+		// add item
 	}
 
 	/**
 	 * 
 	 * @param id
 	 */
-	public Product getItem(String id){
+	public Product getItem(int id)  {
+
+		ResultSet rs;
+		Product product = new Product();
+
+		try {
+
+			stmt = connection.prepareCall("{CALL GetProduct(?)}");
+			stmt.setInt(1,id);
+
+			rs  = stmt.executeQuery();
+
+
+			rs.next();
+
+			product.setCategoryId(rs.getString("CategoryId"));
+			product.setBrand(rs.getString("Brand"));
+			product.setQuantity(rs.getInt("Quantity"));
+			product.setTitle(rs.getString("Title"));
+            product.setProductNumber(rs.getInt("ProductNumber"));
+            product.setPrice(rs.getInt("Price"));
+			System.out.println("print1");
+			byte[] data = rs.getBytes("Picture");
+			System.out.println("print2");
+			System.out.println("Picture :"+Base64.getEncoder().encodeToString(data));
+			product.setPhoto(Base64.getEncoder().encodeToString(data));
+
+
+		}
+
+
+		catch (SQLException e){
+            e.printStackTrace();
+		}
+
+
+		return product;
+	}
+
+	public ArrayList<Product> getItems(){
+
+
 		return null;
 	}
 
-	public PriorityQueue<Product> getItems(){
-		return null;
+	public ArrayList<Product> getItemByCategory(int category){
+		ResultSet rs;
+		Product product = new Product();
+		ArrayList<Product> products = new ArrayList<>(50);
+		try {
+
+			stmt = connection.prepareCall("{CALL GetProducts(?)}");
+
+			stmt.setInt(1,category);
+
+			rs = stmt.executeQuery();
+
+
+			while(rs.next()){
+				product.setCategoryId(String.valueOf(category));
+				product.setBrand(rs.getString("Brand"));
+				product.setQuantity(rs.getInt("Quantity"));
+				product.setTitle(rs.getString("Title"));
+				product.setProductNumber(rs.getInt("ProductNumber"));
+				product.setPrice(rs.getInt("Price"));
+
+				byte data[] = rs.getBytes("Picture");
+
+				String encodedata = Base64.getEncoder().encodeToString(data);
+				product.setPhoto(encodedata);
+
+
+				products.add(product);
+			}
+
+		}
+
+		catch (SQLException e){
+			e.printStackTrace();
+		}
+		return products;
 	}
+
 
 	/**
 	 * 
@@ -46,4 +133,24 @@ public class ProductDAO implements DAO<Product> {
 	public Product updateItem(Product item){
 		return null;
 	}
+
+	public static void main(String[] args) {
+		ProductDAO productDAO = new ProductDAO();
+
+		ArrayList<Product> list = new ArrayList<>(50);
+        list = productDAO.getItemByCategory(1);
+
+//        for (int i = 0 ; i<list.size();i++) {
+//			System.out.println(list.get(i));
+//			System.out.println(list.get(i));
+//		}
+
+
+		System.out.println(list.get(13));
+		System.out.println(list.get(13).getPhoto());
+
+	}
+
+
+
 }//end ProductDAO

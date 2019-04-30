@@ -7,7 +7,7 @@ input[type=text], textarea {
   font-family: verdana;
 }
 input[type=tel]{
-    width: 100%;
+  width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -20,7 +20,13 @@ label {
 }
 textarea{
 	max-height: 200px;
-	min-height: 50px;
+	min-height: 200px;
+	max-width: 100%;
+	width: 100%;
+	padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
 	font-family: verdana;
 	font-size: 18;
 }
@@ -35,7 +41,7 @@ textarea{
   width: 150px;
   transition: all 0.5s;
   cursor: pointer;
-  margin-left: %;
+  margin-left: 27.5%;
 }
 .button span {
   cursor: pointer;

@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="icon" type="image/png" href="image/favicon.ico">
 	<style>
 		#slider {
@@ -17,62 +18,71 @@
 <meta charset="utf-8">
 <title>ES-TECH</title>
 </head>
-	
 <body>
-	<div>
+<div  id="id1"></div>
 <div class="header1"> <!-- headerin başladığı kısım --> 
 	<header class="sticky">
 		<div class="logo"> <a href="index.html"> <img src="image/logo.png" alt="logo" width="117px" height="40px"> </a> </div>
 			<ul class="menu">
-				<li id="id1"><a href="uyekayit.html">Kayıt Ol</a></li>
-				<li><a href="giris.html">Üye Girişi</a></li>
-				<li><a href="sepet.html">Sepet</a></li>
+				<li><a href="uyekayit.html"><i class="material-icons">person_add</i>Kayıt Ol</a></li>
+				<li><a href="giris.html"><i class="material-icons">person</i>Üye Girişi</a></li>
+				<li><a href="sepet.html"><i class="material-icons">shopping_cart</i>Sepet</a></li>
 			</ul>
 	</header>
 </div>  <!-- headerin bittiği kısım --> 
 	<div class="nav1">	<!-- navbarın başladığı kısım --> 
 		<nav>
 			<ol class="menu2">
-				<li><a href="index.html" class="aktif">Anasayfa</a></li>
-				<li><a href="#">Kategori 1</a>
-					<ol>
-						<li> Alt kategori 1</li>
-						<li> Alt kategori 2</li>
-						<li> Alt kategori 3</li>
-						<li> Alt kategori 4</li>
-					</ol>
+				<li><a href="index.html">Anasayfa</a></li>
+				<li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Kategori 1</a>
+					<div class="dropdown-content">
+					<a href="#">Alt kategori 1</a>
+					<a href="#">Alt kategori 2</a>
+					<a href="#">Alt kategori 3</a>
+					<a href="#">Alt kategori 4</a>
+					<a href="#">Alt kategori 5</a>
+					</div>
 				</li>
-				<li><a href="#">Kategori 2</a>
-					<ol>
-						<li> Alt kategori 1</li>
-						<li> Alt kategori 2</li>
-						<li> Alt kategori 3</li>
-					</ol>
+				<li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Kategori 2</a>
+					<div class="dropdown-content">
+					<a href="#">Alt kategori 1</a>
+					<a href="#">Alt kategori 2</a>
+					<a href="#">Alt kategori 3</a>
+					<a href="#">Alt kategori 4</a>
+					</div>
 				</li>
-					<li><a href="#">Kategori 3</a>
-					<ol>
-						<li> Alt kategori 1</li>
-						<li> Alt kategori 2</li>
-					</ol>
-				</li>	
-				<li><a href="#">Kategori 4</a>
-					<ol>
-						<li> Alt kategori 1</li>
-					</ol>
+				<li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Kategori 3</a>
+					<div class="dropdown-content">
+					<a href="#">Alt kategori 1</a>
+					<a href="#">Alt kategori 2</a>
+					<a href="#">Alt kategori 3</a>
+					</div>
 				</li>
-						
-				<li><a href="#">Kategori 5</a></li>
-						
-				<li><a href="#">Kategori 6</a></li>
+				<li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Kategori 4</a>
+					<div class="dropdown-content">
+					<a href="#">Alt kategori 1</a>
+					<a href="#">Alt kategori 2</a>
+					</div>
+				</li>
+				<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Kategori 5</a>
+					<div class="dropdown-content">
+					<a href="#">Alt kategori 1</a>
+					</div>
+				</li>
 			</ol>
 		</nav>
 	</div>	<!-- navbarın bittiği kısım --> 
-	<div id="slider"> <!-- sliderin başladığı kısım -->
-		<a href="#"><img src="image/slider/1.png"/></a>
-		<a href="#"><img src="image/slider/2.png"/></a>
-		<a href="#"><img src="image/slider/3.png"/></a>
-		<a href="#"><img src="image/slider/4.png"/></a>
-</div>
+			<div id="slider">
+			<a href="#"><img src="image/slider/1.png"/></a>
+			<a href="#"><img src="image/slider/2.png"/></a>
+			<a href="#"><img src="image/slider/3.png"/></a>
+			<a href="#"><img src="image/slider/4.png"/></a>
+			</div>
    
 <section>	<!-- ürünlistesinin başladığı kısım -->
 
@@ -151,10 +161,10 @@
 	</div>
 </div>	
 </section>	<!-- ürünlistesinin bittiği kısım -->
-		</div>
+	
 <footer>	<!-- footerin başladığı kısım --> 
 	<div class="hakkimizda">
-		<p> <b>Biz Kimiz? </b><br> Porsuk Meslek Yüksekokulunda öğrenim gören 7 kişilik bir öğrenci ekibinin hazırladığı e-ticaret sitesi.</p>
+		<p> <b>Biz Kimiz? </b><br> Eskişehir Teknik Üniversitesi'nde Web Programlama Dersi proje ödevi için bir araya gelen 7 kişilik öğrenci grubuyuz.</p>
 	</div>
 		<div class="ulasim">
 			<a href="iletisim.html"> <span> Bize ulaşın</span></a>

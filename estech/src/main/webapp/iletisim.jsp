@@ -8,11 +8,12 @@
 	<title>İletişim</title>
 </head>
 <body>
+<div  id="id1"></div>
 	<div class="header1"> <!-- headerin başladığı kısım --> 
 	<header class="sticky">
-		<div class="logo"> <a href="#id1"> Logo </a> </div>
+		<div class="logo"> <a href="index.html"> <img src="image/logo.png" alt="logo" width="117px" height="40px"> </a> </div>
 			<ul class="menu">
-				<li id="id1"><a href="uyekayit.html">Kayıt Ol</a></li>
+				<li><a href="uyekayit.html">Kayıt Ol</a></li>
 				<li><a href="giris.html">Üye Girişi</a></li>
 				<li><a href="sepet.html">Sepet</a></li>
 			</ul>
@@ -22,12 +23,46 @@
 		<nav>
 			<ol class="menu2">
 				<li><a href="index.html">Anasayfa</a></li>
-				<li><a href="#">Kategori 2</a></li>
-				<li><a href="#">Kategori 3</a></li>
-				<li><a href="#">Kategori 4</a></li>
-				<li><a href="#">Kategori 5</a></li>
-				<li><a href="#">Kategori 6</a></li>
-				<li><a href="#">Kategori 7</a></li>
+				<li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Kategori 1</a>
+					<div class="dropdown-content">
+					<a href="#">Alt kategori 1</a>
+					<a href="#">Alt kategori 2</a>
+					<a href="#">Alt kategori 3</a>
+					<a href="#">Alt kategori 4</a>
+					<a href="#">Alt kategori 5</a>
+					</div>
+				</li>
+				<li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Kategori 2</a>
+					<div class="dropdown-content">
+					<a href="#">Alt kategori 1</a>
+					<a href="#">Alt kategori 2</a>
+					<a href="#">Alt kategori 3</a>
+					<a href="#">Alt kategori 4</a>
+					</div>
+				</li>
+				<li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Kategori 3</a>
+					<div class="dropdown-content">
+					<a href="#">Alt kategori 1</a>
+					<a href="#">Alt kategori 2</a>
+					<a href="#">Alt kategori 3</a>
+					</div>
+				</li>
+				<li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Kategori 4</a>
+					<div class="dropdown-content">
+					<a href="#">Alt kategori 1</a>
+					<a href="#">Alt kategori 2</a>
+					</div>
+				</li>
+				<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Kategori 5</a>
+					<div class="dropdown-content">
+					<a href="#">Alt kategori 1</a>
+					</div>
+				</li>
 			</ol>
 		</nav>
 	</div>	<!-- navbarın bittiği kısım --> 
@@ -56,10 +91,10 @@
 </div>
 	<footer>
 	<div class="hakkimizda">
-		<p> Biz Kimiz? <br> Porsuk Meslek Yüksekokulunda öğrenim gören 7 kişilik bir öğrenci ekibinin hazırladığı e-ticaret sitesi.</p>
+		<p> <b> Biz Kimiz? </b> <br> Eskişehir Teknik Üniversitesi'nde Web Programlama Dersi proje ödevi için bir araya gelen 7 kişilik öğrenci grubuyuz.</p>
 	</div>
 		<div class="ulasim">
-			<a href="#"> <span> Bize ulaşın</span></a>
+			<a href="iletisim.html"> <span> Bize ulaşın</span></a>
 		</div>
 			<div class="sosyalmedya">
 				<ol>
@@ -71,10 +106,11 @@
 			</div>
 				<div class="haklar">
 					<p>Es-tech © 2019 - Tüm hakları saklıdır. </p>
-				</div>
 					<div class="up">
-						<a href="id1"> Yukarı çıkmak için tıklayın</a>
+						
+						<a style="display:scroll;position:fixed; bottom:10px; right:5px;" href="#id1"> <img src="image/yukari-cik.png" alt="yukarı" width="40px" height="40px"/></a>
 					</div>
+				</div>	
 </footer>
 </body>
 </html>

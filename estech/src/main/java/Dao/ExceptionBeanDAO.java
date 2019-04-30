@@ -4,7 +4,10 @@ package Dao;
 import Models.ExceptionBean;
 
 
-import java.util.PriorityQueue;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.ArrayList;
 /**
  * @author Onur
  * @version 1.0
@@ -12,18 +15,45 @@ import java.util.PriorityQueue;
  */
 public class ExceptionBeanDAO implements DAO<ExceptionBean> {
 
+
+	Connection connection;
+
 	public ExceptionBeanDAO(){
-
+		try {
+			connection = ConnectionDb.getConnection();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 	}
 
-	public void finalize() throws Throwable {
 
-	}
 	/**
 	 * 
 	 * @param item
 	 */
 	public void addItem(ExceptionBean item){
+		PreparedStatement stmt = null;
+
+		try{
+			stmt = connection.prepareCall("{CALL AddException(?,?,?)}");
+			stmt.setString(1,item.getHeader());
+			stmt.setString(2,item.getStackTrace());
+			stmt.setString(3,"");//ip address
+
+			stmt.execute();
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		finally {
+			try {
+				if(stmt != null && !stmt.isClosed())
+					stmt.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
 
 	}
 
@@ -31,11 +61,11 @@ public class ExceptionBeanDAO implements DAO<ExceptionBean> {
 	 * 
 	 * @param id
 	 */
-	public ExceptionBean getItem(String id){
+	public ExceptionBean getItem(int id){
 		return null;
 	}
 
-	public PriorityQueue<ExceptionBean> getItems(){
+	public ArrayList<ExceptionBean> getItems(){
 		return null;
 	}
 
@@ -43,7 +73,7 @@ public class ExceptionBeanDAO implements DAO<ExceptionBean> {
 	 * 
 	 * @param item
 	 */
-	public ExceptionBean updateItem(ExceptionBean item){
+	public Boolean updateItem(ExceptionBean item){
 		return null;
 	}
 }//end ExceptionBeanDAO

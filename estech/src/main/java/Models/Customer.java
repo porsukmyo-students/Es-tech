@@ -19,30 +19,29 @@ public class Customer {
 
 	}
 
-	public void finalize() throws Throwable {
 
-	}
-	public String getcustomerId(){
+	public String getCustomerId(){
 		return customerId;
 	}
 
-	public String getmail(){
+	public String getMail(){
 		return mail;
 	}
 
-	public String getname(){
+	public String getName(){
 		return name;
 	}
 
-	public String getpassword(){
+	public String getPassword(){
 		return password;
 	}
 
-	public String getphoneNumber(){
+
+	public String getPhoneNumber(){
 		return phoneNumber;
 	}
 
-	public String getsurName(){
+	public String getSurName(){
 		return surName;
 	}
 
@@ -50,7 +49,7 @@ public class Customer {
 	 * 
 	 * @param newVal
 	 */
-	public void setcustomerId(String newVal){
+	public void setCustomerId(String newVal){
 		customerId = newVal;
 	}
 
@@ -58,7 +57,7 @@ public class Customer {
 	 * 
 	 * @param newVal
 	 */
-	public void setmail(String newVal){
+	public void setMail(String newVal){
 		mail = newVal;
 	}
 
@@ -66,7 +65,7 @@ public class Customer {
 	 * 
 	 * @param newVal
 	 */
-	public void setname(String newVal){
+	public void setName(String newVal){
 		name = newVal;
 	}
 
@@ -74,7 +73,7 @@ public class Customer {
 	 * 
 	 * @param newVal
 	 */
-	public void setpassword(String newVal){
+	public void setPassword(String newVal){
 		password = newVal;
 	}
 
@@ -82,7 +81,7 @@ public class Customer {
 	 * 
 	 * @param newVal
 	 */
-	public void setphoneNumber(String newVal){
+	public void setPhoneNumber(String newVal){
 		phoneNumber = newVal;
 	}
 
@@ -90,7 +89,19 @@ public class Customer {
 	 * 
 	 * @param newVal
 	 */
-	public void setsurName(String newVal){
+	public void setSurName(String newVal){
 		surName = newVal;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer{" +
+				"customerId='" + customerId + '\t' +
+				", mail='" + mail + '\t' +
+				", name='" + name + '\t' +
+				", password='" + password + '\t' +
+				", phoneNumber='" + phoneNumber + '\t' +
+				", surName='" + surName + '\t' +
+				'}';
 	}
 }//end Customer

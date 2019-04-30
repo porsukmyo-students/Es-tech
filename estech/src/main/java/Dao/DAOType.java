@@ -1,6 +1,9 @@
 package Dao;
 
 
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.PriorityQueue;
 
 /**
@@ -20,14 +23,14 @@ interface DAO<Type> {
 	 * 
 	 * @param id
 	 */
-	public Type getItem(String id);
+	public Type getItem(int id) ;
 
-	public PriorityQueue<Type> getItems();
+	public ArrayList<Type> getItems();
 
 	/**
 	 * 
 	 * @param item
 	 */
-	public Type updateItem(Type item);
+	public Boolean updateItem(Type item);
 
 }

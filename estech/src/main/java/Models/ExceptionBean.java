@@ -22,19 +22,20 @@ public class ExceptionBean {
 	public void finalize() throws Throwable {
 
 	}
-	public Date getdateTime(){
+	public Date getDateTime(){
 		return dateTime;
 	}
 
-	public String getexceptionId(){
+
+	public String getExceptionId(){
 		return exceptionId;
 	}
 
-	public String getheader(){
+	public String getHeader(){
 		return header;
 	}
 
-	public String getstackTrace(){
+	public String getStackTrace(){
 		return stackTrace;
 	}
 
@@ -42,7 +43,7 @@ public class ExceptionBean {
 	 * 
 	 * @param newVal
 	 */
-	public void setdateTime(Date newVal){
+	public void setDateTime(Date newVal){
 		dateTime = newVal;
 	}
 
@@ -50,7 +51,7 @@ public class ExceptionBean {
 	 * 
 	 * @param newVal
 	 */
-	public void setexceptionId(String newVal){
+	public void setExceptionId(String newVal){
 		exceptionId = newVal;
 	}
 
@@ -58,7 +59,7 @@ public class ExceptionBean {
 	 * 
 	 * @param newVal
 	 */
-	public void setheader(String newVal){
+	public void setHeader(String newVal){
 		header = newVal;
 	}
 
@@ -66,7 +67,7 @@ public class ExceptionBean {
 	 * 
 	 * @param newVal
 	 */
-	public void setstackTrace(String newVal){
+	public void setStackTrace(String newVal){
 		stackTrace = newVal;
 	}
 }//end ExceptionBean

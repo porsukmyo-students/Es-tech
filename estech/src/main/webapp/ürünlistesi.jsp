@@ -7,11 +7,12 @@
 <title>Başlıksız Belge</title>
 </head>
 <body>
+<div  id="id1"></div>
 	<div class="header1"> <!-- headerin başladığı kısım --> 
 	<header class="sticky">
 		<div class="logo"> <a href="#id1"> Logo </a> </div>
 			<ul class="menu">
-				<li id="id1"><a href="uyekayit.html">Kayıt Ol</a></li>
+				<li><a href="uyekayit.html">Kayıt Ol</a></li>
 				<li><a href="giris.html">Üye Girişi</a></li>
 				<li><a href="sepet.html">Sepet</a></li>
 			</ul>

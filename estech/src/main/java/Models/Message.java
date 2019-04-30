@@ -22,15 +22,15 @@ public class Message {
 	public void finalize() throws Throwable {
 
 	}
-	public String getcontext(){
+	public String getContext(){
 		return context;
 	}
 
-	public String getcustomerId(){
+	public String getCustomerId(){
 		return customerId;
 	}
 
-	public String getdateTime(){
+	public String getDateTime(){
 		return dateTime;
 	}
 
@@ -38,7 +38,7 @@ public class Message {
 		return id;
 	}
 
-	public String getsubject(){
+	public String getSubject(){
 		return subject;
 	}
 
@@ -46,7 +46,7 @@ public class Message {
 	 * 
 	 * @param newVal
 	 */
-	public void setcontext(String newVal){
+	public void setContext(String newVal){
 		context = newVal;
 	}
 
@@ -54,7 +54,7 @@ public class Message {
 	 * 
 	 * @param newVal
 	 */
-	public void setcustomerId(String newVal){
+	public void setCustomerId(String newVal){
 		customerId = newVal;
 	}
 
@@ -62,7 +62,7 @@ public class Message {
 	 * 
 	 * @param newVal
 	 */
-	public void setdateTime(String newVal){
+	public void setDateTime(String newVal){
 		dateTime = newVal;
 	}
 
@@ -78,7 +78,7 @@ public class Message {
 	 * 
 	 * @param newVal
 	 */
-	public void setsubject(String newVal){
+	public void setSubject(String newVal){
 		subject = newVal;
 	}
 }//end Message

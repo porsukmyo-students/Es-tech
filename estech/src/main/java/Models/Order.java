@@ -10,47 +10,50 @@ public class Order {
 
 	private String addressId;
 	private String customerId;
-	private String date;
+	private String dateTime;
 	private String orderNumber;
 	private String productNumber;
-	private int quantitiy;
+	private int quantity;
+	private String status;
 
-	public Order(){
-
+	public String getStatus() {
+		return status;
 	}
 
-	public void finalize() throws Throwable {
-
+	public void setStatus(String status) {
+		this.status = status;
 	}
-	public String getaddressId(){
+
+
+	public String getAddressId(){
 		return addressId;
 	}
 
-	public String getcustomerId(){
+	public String getCustomerId(){
 		return customerId;
 	}
 
-	public String getdate(){
-		return date;
+	public String getDateTime(){
+		return dateTime;
 	}
 
-	public String getorderNumber(){
+	public String getOrderNumber(){
 		return orderNumber;
 	}
 
-	public String getproductNumber(){
+	public String getProductNumber(){
 		return productNumber;
 	}
 
-	public int getquantitiy(){
-		return quantitiy;
+	public int getQuantity(){
+		return quantity;
 	}
 
 	/**
 	 * 
 	 * @param newVal
 	 */
-	public void setaddressId(String newVal){
+	public void setAddressId(String newVal){
 		addressId = newVal;
 	}
 
@@ -58,7 +61,7 @@ public class Order {
 	 * 
 	 * @param newVal
 	 */
-	public void setcustomerId(String newVal){
+	public void setCustomerId(String newVal){
 		customerId = newVal;
 	}
 
@@ -66,15 +69,15 @@ public class Order {
 	 * 
 	 * @param newVal
 	 */
-	public void setdate(String newVal){
-		date = newVal;
+	public void setDateTime(String newVal){
+		dateTime = newVal;
 	}
 
 	/**
 	 * 
 	 * @param newVal
 	 */
-	public void setorderNumber(String newVal){
+	public void setOrderNumber(String newVal){
 		orderNumber = newVal;
 	}
 
@@ -82,7 +85,7 @@ public class Order {
 	 * 
 	 * @param newVal
 	 */
-	public void setproductNumber(String newVal){
+	public void setProductNumber(String newVal){
 		productNumber = newVal;
 	}
 
@@ -90,7 +93,7 @@ public class Order {
 	 * 
 	 * @param newVal
 	 */
-	public void setquantitiy(int newVal){
-		quantitiy = newVal;
+	public void setQuantity(int newVal){
+		quantity = newVal;
 	}
 }//end Order
