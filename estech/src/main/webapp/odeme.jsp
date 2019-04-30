@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="css/odemebil.css"/>
     <link rel="icon" type="image/png" href="image/favicon.ico">
     <link rel="stylesheet" href="css/header.css"/>
@@ -27,9 +28,9 @@
 	<header class="sticky">
 		<div class="logo"> <a href="index.html"> <img src="image/logo.png" alt="logo" width="117px" height="40px"> </a> </div>
 			<ul class="menu">
-				<li><a href="uyekayit.html">Kayıt Ol</a></li>
-				<li><a href="giris.html">Üye Girişi</a></li>
-				<li><a href="sepet.html">Sepet</a></li>
+				<li><a href="uyekayit.html"><i class="fas fa-user-plus"></i>Kayıt Ol</a></li>
+				<li><a href="giris.html"><i class="fas fa-user-alt"></i>Üye Girişi</a></li>
+				<li><a href="sepet.html"><i class="fas fa-shopping-cart"></i>Sepet</a></li>
 			</ul>
 	</header>
 </div>  <!-- headerin bittiği kısım --> 
