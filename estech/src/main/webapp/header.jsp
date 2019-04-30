@@ -7,14 +7,14 @@
 </head>
 
 <body>
+    <div id="id1"></div>
 <div class="header1"> <!-- headerin başladığı kısım --> 
 	<header class="sticky">
 		<div class="logo"> <a href="#id1"> Logo </a> </div>
 			<ul class="menu">
-				<li id="id1"><a href="uyekayit.html">Kayıt Ol</a></li>
-				<li><a href="giris.html">Üye Girişi</a></li>
-				<li><a href="sepet.html">Sepet</a></li>
-			</ul>
+				<li><a href="uyekayit.html"><i class="fas fa-user-plus"></i>Kayıt Ol</a></li>
+				<li><a href="giris.html"><i class="fas fa-user-alt"></i>Üye Girişi</a></li>
+				<li><a href="sepet.html"><i class="fas fa-shopping-cart"></i>Sepet</a></li>
 	</header>
 </div>  <!-- headerin bittiği kısım --> 
 	<div class="nav1">	<!-- navbarın başladığı kısım --> 
