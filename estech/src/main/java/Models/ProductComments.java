@@ -21,11 +21,12 @@ public class ProductComments {
 	public void finalize() throws Throwable {
 
 	}
-	public String getcontext(){
+	public String getContext(){
 		return context;
 	}
 
-	public String getpersonId(){
+	public String getPersonId(){
+
 		return personId;
 	}
 
@@ -33,11 +34,11 @@ public class ProductComments {
 		return productNumber;
 	}
 
-	public byte getstar(){
+	public byte getStar(){
 		return star;
 	}
 
-	public String gettitle(){
+	public String getTitle(){
 		return title;
 	}
 
@@ -45,7 +46,7 @@ public class ProductComments {
 	 * 
 	 * @param newVal
 	 */
-	public void setcontext(String newVal){
+	public void setContext(String newVal){
 		context = newVal;
 	}
 
@@ -53,7 +54,7 @@ public class ProductComments {
 	 * 
 	 * @param newVal
 	 */
-	public void setpersonId(String newVal){
+	public void setPersonId(String newVal){
 		personId = newVal;
 	}
 
@@ -69,15 +70,16 @@ public class ProductComments {
 	 * 
 	 * @param newVal
 	 */
-	public void setstar(byte newVal){
+	public void setStar(byte newVal){
 		star = newVal;
 	}
+
 
 	/**
 	 * 
 	 * @param newVal
 	 */
-	public void settitle(String newVal){
+	public void setTitle(String newVal){
 		title = newVal;
 	}
 }//end ProductComments

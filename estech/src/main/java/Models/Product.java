@@ -6,14 +6,15 @@ package Models;
  * @version 1.0
  * @created 23-Nis-2019 14:24:46
  */
-public class Product {
+public class Product  {
 
 	private String brand;
 	private String categoryId;
-	private byte[] picture;
+	private String photo;
+
 	private int price;
-	private String productNumber;
-	private int quantitiy;
+	private int productNumber;
+	private int quantity;
 	private String title;
 
 	public Product(){
@@ -23,87 +24,107 @@ public class Product {
 	public void finalize() throws Throwable {
 
 	}
-	public String getbrand(){
+	public String getBrand(){
 		return brand;
 	}
 
-	public String getcategoryId(){
+
+	public String getCategoryId(){
 		return categoryId;
 	}
 
-	public byte[] getpicture(){
-		return picture;
+
+	public String getPhoto(){
+		return photo;
 	}
 
-	public int getprice(){
+	public int getPrice(){
 		return price;
 	}
 
-	public String getproductNumber(){
+
+	public int getProductNumber(){
 		return productNumber;
 	}
 
-	public int getquantitiy(){
-		return quantitiy;
+
+	public int getQuantity(){
+		return quantity;
 	}
 
-	public String gettitle(){
+
+	public String getTitle(){
 		return title;
 	}
 
+
 	/**
 	 * 
 	 * @param newVal
 	 */
-	public void setbrand(String newVal){
+	public void setBrand(String newVal){
 		brand = newVal;
 	}
 
+
 	/**
 	 * 
 	 * @param newVal
 	 */
-	public void setcategoryId(String newVal){
+	public void setCategoryId(String newVal){
 		categoryId = newVal;
 	}
 
-	/**
-	 * 
-	 * @param newVal
-	 */
-	public void setpicture(byte[] newVal){
-		picture = newVal;
-	}
 
 	/**
 	 * 
 	 * @param newVal
 	 */
-	public void setprice(int newVal){
+	public void setPhoto(String newVal){
+		photo = newVal;
+	}
+
+
+	/**
+	 * 
+	 * @param newVal
+	 */
+	public void setPrice(int newVal){
 		price = newVal;
 	}
 
+
 	/**
 	 * 
 	 * @param newVal
 	 */
-	public void setproductNumber(String newVal){
+	public void setProductNumber(int newVal){
 		productNumber = newVal;
 	}
 
-	/**
-	 * 
-	 * @param newVal
-	 */
-	public void setquantitiy(int newVal){
-		quantitiy = newVal;
-	}
 
 	/**
 	 * 
 	 * @param newVal
 	 */
-	public void settitle(String newVal){
+	public void setQuantity(int newVal){
+		quantity = newVal;
+	}
+
+
+	/**
+	 * 
+	 * @param newVal
+	 */
+	public void setTitle(String newVal){
 		title = newVal;
+	}
+
+
+	@Override
+	public String toString() {
+
+
+		return "Header: "+title+" Brand: "+brand+" Price: "+price+"Product Number: "+productNumber+" Quantity: "+ quantity;
 	}
 }//end Product

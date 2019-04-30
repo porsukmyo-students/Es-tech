@@ -3,6 +3,7 @@ package Dao;
 
 import Models.ProductComments;
 
+import java.util.ArrayList;
 import java.util.PriorityQueue;
 
 /**
@@ -31,11 +32,11 @@ public class ProductsCommetsDAO implements DAO<ProductComments> {
 	 * 
 	 * @param id
 	 */
-	public ProductComments getItem(String id){
+	public ProductComments getItem(int id){
 		return null;
 	}
 
-	public PriorityQueue<ProductComments> getItems(){
+	public ArrayList<ProductComments> getItems(){
 		return null;
 	}
 
