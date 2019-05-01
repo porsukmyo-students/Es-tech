@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="icon" type="image/png" href="image/favicon.ico">
 <link rel="stylesheet" href="css/iletisim.css"/>
 	<link rel="stylesheet" href="css/header.css"/>
@@ -86,7 +86,7 @@
     </div>
   </div>
   <div class="divsatir">
-    <a href="https://www.google.com" target="_blank"> <button class="button" style="vertical-align: middle"> <span>Gönder</span> </button></a>
+    <input type="submit" value="Gönder" class="button" style="vertical-align: middle">
   </div>
   </form>
 </div>

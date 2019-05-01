@@ -26,7 +26,7 @@
 			<ul class="menu">
 				<li><a href="uyekayit.html"><i class="fas fa-user-plus"></i>Kayıt Ol</a></li>
 				<li><a href="giris.html"><i class="fas fa-user-alt"></i>Üye Girişi</a></li>
-                <li><a href="sepet.html"><i class="fas fa-shopping-cart"></i>Sepet</a></li>
+				<li><a href="sepet.html"><i class="fas fa-shopping-cart"></i>Sepet</a></li>
 			</ul>
 	</header>
 </div>  <!-- headerin bittiği kısım --> 
@@ -101,7 +101,7 @@
 							<p class="div7class"><span>MASTER-501-ANM/Ryzen 5 2600/MSI RTX 2060 GAMING Z 6G/8GB RAM/120GB SSD/1TB Disk/Gaming Bilgisayar</span></p>
 						</div>
 							<div class="div8">	<!-- 8.div 283x40 --> 
-								<a href="sepet.html" target="_blank"> <button class="button" style="vertical-align: middle"> <span> Sepete Ekle </span> </button></a> 
+								<a href="sepet.html" target="_blank"> <input type="submit" value="Sepete Ekle" class="button" style="vertical-align: middle"></a> 
 							</div>
 		</div>
 	</div>
@@ -119,7 +119,7 @@
 							<p class="div7class"><span>MASTER-501-ANM/Ryzen 5 2600/MSI RTX 2060 GAMING Z 6G/8GB RAM/120GB SSD/1TB Disk/Gaming Bilgisayar</span></p>
 						</div>
 							<div class="div8">
-								<a href="https://www.google.com" target="_blank"> <button class="button" style="vertical-align: middle"> <span> Sepete Ekle </span> </button></a> 
+								<a href="https://www.google.com" target="_blank"> <input type="submit" value="Sepete Ekle" class="button" style="vertical-align: middle"></a> 
 							</div>
 		</div>
 	</div>
@@ -137,7 +137,7 @@
 							<p class="div7class"><span>MASTER-501-ANM/Ryzen 5 2600/MSI RTX 2060 GAMING Z 6G/8GB RAM/120GB SSD/1TB Disk/Gaming Bilgisayar</span></p>
 						</div>
 							<div class="div8">
-								<a href="https://www.google.com" target="_blank"> <button class="button" style="vertical-align: middle"> <span> Sepete Ekle </span> </button></a> 
+								<a href="https://www.google.com" target="_blank"> <input type="submit" value="Sepete Ekle" class="button" style="vertical-align: middle"> </a> 
 							</div>
 		</div>
 	</div>
@@ -155,7 +155,79 @@
 							<p class="div7class"><span>MASTER-501-ANM/Ryzen 5 2600/MSI RTX 2060 GAMING Z 6G/8GB RAM/120GB SSD/1TB Disk/Gaming Bilgisayar</span></p>
 						</div>
 							<div class="div8">
-								<a href="https://www.google.com" target="_blank"> <button class="button" style="vertical-align: middle"> <span> Sepete Ekle </span> </button></a> 
+								<a href="https://www.google.com" target="_blank"> <input type="submit" value="Sepete Ekle" class="button" style="vertical-align: middle"></a> 
+							</div>
+		</div>
+	</div>
+		<div class="div2">	
+		<div class="div3">
+			<div class="div4"> 
+				<div class="div5"> 
+					<a href="urun-detay.html"><img src="image/kasa1.jpg" alt="kasa1" width="230" height="200"></a>
+				</div>
+			</div>
+					<div class="div6" align="center">
+						<span class="p"> 5.840₺</span> 
+					</div>
+						<div class="div7">
+							<p class="div7class"><span>MASTER-501-ANM/Ryzen 5 2600/MSI RTX 2060 GAMING Z 6G/8GB RAM/120GB SSD/1TB Disk/Gaming Bilgisayar</span></p>
+						</div>
+							<div class="div8">
+								<a href="https://www.google.com" target="_blank"> <input type="submit" value="Sepete Ekle" class="button" style="vertical-align: middle"></a> 
+							</div>
+		</div>
+	</div>
+		<div class="div2">	
+		<div class="div3">
+			<div class="div4"> 
+				<div class="div5"> 
+					<a href="urun-detay.html"><img src="image/kasa1.jpg" alt="kasa1" width="230" height="200"></a>
+				</div>
+			</div>
+					<div class="div6" align="center">
+						<span class="p"> 5.840₺</span> 
+					</div>
+						<div class="div7">
+							<p class="div7class"><span>MASTER-501-ANM/Ryzen 5 2600/MSI RTX 2060 GAMING Z 6G/8GB RAM/120GB SSD/1TB Disk/Gaming Bilgisayar</span></p>
+						</div>
+							<div class="div8">
+								<a href="https://www.google.com" target="_blank"> <input type="submit" value="Sepete Ekle" class="button" style="vertical-align: middle"></a> 
+							</div>
+		</div>
+	</div>
+		<div class="div2">	
+		<div class="div3">
+			<div class="div4"> 
+				<div class="div5"> 
+					<a href="urun-detay.html"><img src="image/kasa1.jpg" alt="kasa1" width="230" height="200"></a>
+				</div>
+			</div>
+					<div class="div6" align="center">
+						<span class="p"> 5.840₺</span> 
+					</div>
+						<div class="div7">
+							<p class="div7class"><span>MASTER-501-ANM/Ryzen 5 2600/MSI RTX 2060 GAMING Z 6G/8GB RAM/120GB SSD/1TB Disk/Gaming Bilgisayar</span></p>
+						</div>
+							<div class="div8">
+								<a href="https://www.google.com" target="_blank"> <input type="submit" value="Sepete Ekle" class="button" style="vertical-align: middle"></a> 
+							</div>
+		</div>
+	</div>
+		<div class="div2">	
+		<div class="div3">
+			<div class="div4"> 
+				<div class="div5"> 
+					<a href="urun-detay.html"><img src="image/kasa1.jpg" alt="kasa1" width="230" height="200"></a>
+				</div>
+			</div>
+					<div class="div6" align="center">
+						<span class="p"> 5.840₺</span> 
+					</div>
+						<div class="div7">
+							<p class="div7class"><span>MASTER-501-ANM/Ryzen 5 2600/MSI RTX 2060 GAMING Z 6G/8GB RAM/120GB SSD/1TB Disk/Gaming Bilgisayar</span></p>
+						</div>
+							<div class="div8">
+								<a href="https://www.google.com" target="_blank"> <input type="submit" value="Sepete Ekle" class="button" style="vertical-align: middle"></a> 
 							</div>
 		</div>
 	</div>
@@ -167,7 +239,7 @@
 		<p> <b>Biz Kimiz? </b><br> Eskişehir Teknik Üniversitesi'nde Web Programlama Dersi proje ödevi için bir araya gelen 7 kişilik öğrenci grubuyuz.</p>
 	</div>
 		<div class="ulasim">
-			<a href="iletisim.html"> <span> Bize ulaşın</span></a>
+			<a href="iletisim.html"> <span> <b> Bize ulaşın </b></span></a>
 		</div>
 			<div class="sosyalmedya">
 				<ol>

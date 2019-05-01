@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head> 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<title>EStech</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +12,9 @@
 	<link href="css/footer.css" rel="stylesheet"/>
 </head>
 
-<body><div id="id1"></div>
-	<div class="header1"> <!-- headerin başladığı kısım --> 
+<body>
+<div id="id1"></div>
+    	<div class="header1"> <!-- headerin başladığı kısım --> 
 	<header class="sticky">
 		<div class="logo"> <a href="index.html"> <img src="image/logo.png" alt="logo" width="117px" height="40px"> </a> </div>
 			<ul class="menu">

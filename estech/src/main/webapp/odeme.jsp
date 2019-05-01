@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="css/odemebil.css"/>
     <link rel="icon" type="image/png" href="image/favicon.ico">
     <link rel="stylesheet" href="css/header.css"/>
@@ -119,7 +119,7 @@
     </div>
     <div class="divsatir">
       <p>&nbsp; </p>
-    <a href="https://www.google.com" target="_blank"> <button class="button" style="vertical-align: middle"> <span>Ödeme Yap</span> </button></a>
+    <a href="https://www.google.com" target="_blank"> <input type="submit" value="Ödeme yap" class="button" style="vertical-align: middle"></a>
 </div>
   </form>
 	</div>

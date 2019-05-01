@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="css/giris.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/footer.css">
@@ -86,7 +86,7 @@
     </div>
   </div>
   <div class="divsatir">
-    <a href="https://www.google.com" target="_blank"> <button class="button" style="vertical-align: middle"> <span>Giriş</span> </button></a>
+    <a href="https://www.google.com" target="_blank"> <input type="submit" value="Giriş yap" class="button" style="vertical-align: middle"></a>
   </div>
   </form>
 </div> 

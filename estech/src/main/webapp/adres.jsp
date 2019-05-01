@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="css/ilbil.css"/>
     <link rel="icon" type="image/png" href="image/favicon.ico">
 	<title>İletişim Bilgileri</title>
@@ -128,7 +128,7 @@
     </div>
   </div> <br>
   <div class="divsatir">
-    <a href="https://www.google.com" target="_blank"> <button class="button" style="vertical-align: middle"> <span>Devam Et</span> </button></a>
+    <a href="https://www.google.com" target="_blank"> <input type="submit" value="Devam et" class="button" style="vertical-align: middle"></a>
   </div>
   </form>
 </div>
@@ -137,7 +137,7 @@
 		<p> <b>Biz Kimiz? </b><br> Eskişehir Teknik Üniversitesi'nde Web Programlama Dersi proje ödevi için bir araya gelen 7 kişilik öğrenci grubuyuz.</p>
 	</div>
 		<div class="ulasim">
-			<a href="iletisim.html"> <span> Bize ulaşın</span></a>
+			<a href="iletisim.html"> <span> <b> Bize ulaşın </b></span></a>
 		</div>
 			<div class="sosyalmedya">
 				<ol>

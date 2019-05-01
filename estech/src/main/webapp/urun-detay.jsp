@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="icon" type="image/png" href="image/favicon.ico">
     <meta charset="utf-8">
     <title>EStech</title>
 	<link rel="stylesheet" href="css/footer.css">
@@ -84,7 +85,7 @@
 								<span>
 									<span>₺3.790,00</span><br>   
 								</span>
-                               <a href="sepet.html" target="_blank"> <button class="button" style="vertical-align: middle"> <span> Sepete Ekle </span> </button></a>
+                               <a href="sepet.html" target="_blank"> <input type="submit" value="Sepete Ekle" class="button" style="vertical-align: middle"></a>
 							</div>
 						</div>
 					</div>

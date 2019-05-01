@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="css/uyekayit.css"/>
 	<link rel="stylesheet" href="css/header.css"/>
 	<link rel="stylesheet" href="css/footer.css"/>
@@ -16,7 +16,7 @@
 			<ul class="menu">
 				<li><a href="uyekayit.html"><i class="fas fa-user-plus"></i>Kayıt Ol</a></li>
 				<li><a href="giris.html"><i class="fas fa-user-alt"></i>Üye Girişi</a></li>
-				<li><a href="sepet.html"><i class="fas fa-shopping-cart"></i>Sepet</a></li>>
+				<li><a href="sepet.html"><i class="fas fa-shopping-cart"></i>Sepet</a></li>
 			</ul>
 	</header>
 </div>  <!-- headerin bittiği kısım --> 
@@ -112,7 +112,7 @@
     </div>
   </div>
   <div class="divsatir">
-    <a href="https://www.google.com" target="_blank"> <button class="button" style="vertical-align: middle"> <span>Kayıt Ol</span> </button></a>
+    <a href="https://www.google.com" target="_blank"> <input type="submit" value="Kayıt ol" class="button" style="vertical-align: middle"></a>
   </div>
   </form>
 </div>
