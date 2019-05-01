@@ -3,15 +3,15 @@
 <head>
 	<link href="css/footer.css" rel="stylesheet">
 <meta charset="utf-8">
-<title>Başlıksız Belge</title>
+<title>footer</title>
 </head>
 <body>
 <footer>
 	<div class="hakkimizda">
-		<p> Biz Kimiz? <br> Porsuk Meslek Yüksekokulunda öğrenim gören 7 kişilik bir öğrenci ekibinin hazırladığı e-ticaret sitesi.</p>
+		<p> Biz Kimiz? <br> Eskişehir Teknik Üniversitesi'nde Web Programlama Dersi proje ödevi için bir araya gelen 7 kişilik öğrenci grubuyuz.</p>
 	</div>
 		<div class="ulasim">
-			<a href="#"> <span> Bize ulaşın</span></a>
+			<a href="#"> <span> <b>  Bize ulaşın  </b></span></a>
 		</div>
 			<div class="sosyalmedya">
 				<ol>

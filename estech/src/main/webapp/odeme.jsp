@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="css/odemebil.css"/>
     <link rel="icon" type="image/png" href="image/favicon.ico">
-    	<link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
 	<link rel="stylesheet" href="css/footer.css"/>
 <style type="text/css">
 .div1 .form .divbox strong {
@@ -22,13 +23,14 @@
 <title>Ödeme Bilgileri</title>
 </head>
 <body>
+<div id="id1"></div>
     	<div class="header1"> <!-- headerin başladığı kısım --> 
 	<header class="sticky">
-		<div class="logo"> <a href="#id1"> Logo </a> </div>
+		<div class="logo"> <a href="index.html"> <img src="image/logo.png" alt="logo" width="117px" height="40px"> </a> </div>
 			<ul class="menu">
-				<li id="id1"><a href="uyekayit.html">Kayıt Ol</a></li>
-				<li><a href="giris.html">Üye Girişi</a></li>
-				<li><a href="sepet.html">Sepet</a></li>
+				<li><a href="uyekayit.html"><i class="fas fa-user-plus"></i>Kayıt Ol</a></li>
+				<li><a href="giris.html"><i class="fas fa-user-alt"></i>Üye Girişi</a></li>
+				<li><a href="sepet.html"><i class="fas fa-shopping-cart"></i>Sepet</a></li>
 			</ul>
 	</header>
 </div>  <!-- headerin bittiği kısım --> 
@@ -36,12 +38,46 @@
 		<nav>
 			<ol class="menu2">
 				<li><a href="index.html">Anasayfa</a></li>
-				<li><a href="#">Kategori 2</a></li>
-				<li><a href="#">Kategori 3</a></li>
-				<li><a href="#">Kategori 4</a></li>
-				<li><a href="#">Kategori 5</a></li>
-				<li><a href="#">Kategori 6</a></li>
-				<li><a href="#">Kategori 7</a></li>
+				<li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Kategori 1</a>
+					<div class="dropdown-content">
+					<a href="#">Alt kategori 1</a>
+					<a href="#">Alt kategori 2</a>
+					<a href="#">Alt kategori 3</a>
+					<a href="#">Alt kategori 4</a>
+					<a href="#">Alt kategori 5</a>
+					</div>
+				</li>
+				<li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Kategori 2</a>
+					<div class="dropdown-content">
+					<a href="#">Alt kategori 1</a>
+					<a href="#">Alt kategori 2</a>
+					<a href="#">Alt kategori 3</a>
+					<a href="#">Alt kategori 4</a>
+					</div>
+				</li>
+				<li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Kategori 3</a>
+					<div class="dropdown-content">
+					<a href="#">Alt kategori 1</a>
+					<a href="#">Alt kategori 2</a>
+					<a href="#">Alt kategori 3</a>
+					</div>
+				</li>
+				<li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Kategori 4</a>
+					<div class="dropdown-content">
+					<a href="#">Alt kategori 1</a>
+					<a href="#">Alt kategori 2</a>
+					</div>
+				</li>
+				<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Kategori 5</a>
+					<div class="dropdown-content">
+					<a href="#">Alt kategori 1</a>
+					</div>
+				</li>
 			</ol>
 		</nav>
 	</div>	<!-- navbarın bittiği kısım --> 
@@ -83,17 +119,18 @@
     </div>
     <div class="divsatir">
       <p>&nbsp; </p>
-    <a href="https://www.google.com" target="_blank"> <button class="button" style="vertical-align: middle"> <span>Ödeme Yap</span> </button></a>
+    <a href="https://www.google.com" target="_blank"> <input type="submit" value="Ödeme yap" class="button" style="vertical-align: middle"></a>
 </div>
   </form>
+	</div>
     <br>
     <br>
-	<footer>
+	<footer>	<!-- footerin başladığı kısım --> 
 	<div class="hakkimizda">
-		<p> Biz Kimiz? <br> Porsuk Meslek Yüksekokulunda öğrenim gören 7 kişilik bir öğrenci ekibinin hazırladığı e-ticaret sitesi.</p>
+		<p> <b>Biz Kimiz? </b><br> Eskişehir Teknik Üniversitesi'nde Web Programlama Dersi proje ödevi için bir araya gelen 7 kişilik öğrenci grubuyuz.</p>
 	</div>
 		<div class="ulasim">
-			<a href="#"> <span> Bize ulaşın</span></a>
+			<a href="iletisim.html"> <span> Bize ulaşın</span></a>
 		</div>
 			<div class="sosyalmedya">
 				<ol>
@@ -104,10 +141,13 @@
 				</ol>
 			</div>
 				<div class="haklar">
-					<p>Es-tech © 2019 - Tüm hakları saklıdır. </p>
-				</div>
+					<p>EStech © 2019 - Tüm hakları saklıdır. </p>
 					<div class="up">
-						<a href="id1"> Yukarı çıkmak için tıklayın</a>
+						<a style="display:scroll;position:fixed; bottom:10px; right:5px;" href="#id1"> <img src="image/yukari-cik.png" alt="yukarı" width="40px" height="40px"/></a>
 					</div>
+				</div>					
+</footer>	<!-- footerin bittiği kısım --> 
+	
+	
 </body>
 </html>
