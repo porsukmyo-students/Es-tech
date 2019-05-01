@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+<%@ page pageEncoding="UTF-8"%>
 <html>
 <head>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -69,17 +70,17 @@
 	</div>	<!-- navbarın bittiği kısım --> 
 <div class="div1">
   <form action="" class="form">
+	  <div class="divsatir">
+		  <div class="divlabel">
+			  <label for="isim">İsim</label>
+		  </div>
+		  <div class="divbox">
+			  <input type="text" id="isim" name="soyad" placeholder="İsminiz" maxlength="25">
+		  </div>
+	  </div>
   <div class="divsatir">
     <div class="divlabel">
-      <label for="ad" class="label">Ad</label>
-    </div>
-    <div class="divbox">
-      <input type="text" id="ad" name="ad " placeholder="Adınız" maxlength="20">
-    </div>
-  </div>
-  <div class="divsatir">
-    <div class="divlabel">
-      <label for="lname">Soyad</label>
+      <label for="soyad">Soyad</label>
     </div>
     <div class="divbox">
       <input type="text" id="soyad" name="soyad" placeholder="Soyadınız" maxlength="25">
@@ -112,7 +113,7 @@
     </div>
   </div>
   <div class="divsatir">
-    <a href="https://www.google.com" target="_blank"> <input type="submit" value="Kayıt ol" class="button" style="vertical-align: middle"></a>
+    <input type="submit" value="Kayıt ol" class="button" style="vertical-align: middle">
   </div>
   </form>
 </div>

@@ -37,7 +37,7 @@ textarea{
     	border-radius: 4px;
     	resize: vertical;
 	font-family: verdana;
-	font-size: 18;
+	font-size: 18px;
 }
 .button {
   display: inline-block;
@@ -100,12 +100,13 @@ textarea{
   float: left;
   width: 25%;
   max-height: 250px;
-  margin-top: 6px;
+  /*margin-top: 6px;*/
 }
 .divsatir:after {
   content: "";
   display: table;
   clear: both;
+  margin-bottom: 6px;
 }
 @media screen and (max-width: 600px) {
   .divlabel, .divbox, .divtextarea{
