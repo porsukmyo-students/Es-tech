@@ -1,4 +1,5 @@
-<!doctype html>
+<%@page pageEncoding="UTF-8"%>
+
 <html>
 <head>
 	<link href="css/footer.css" rel="stylesheet">

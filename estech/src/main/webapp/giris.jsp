@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<%@page pageEncoding="UTF-8"%>
 <html>
 <head>
 <link rel="stylesheet" href="css/giris.css"/>

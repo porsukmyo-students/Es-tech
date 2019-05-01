@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class OrderDAO implements DAO<Order> {
 
 	Connection connection;
-
+	PreparedStatement stmt;
 	public OrderDAO(){
 		try {
 			connection = ConnectionDb.getConnection();
@@ -29,7 +29,6 @@ public class OrderDAO implements DAO<Order> {
 	 * @param item
 	 */
 	public void addItem(Order item){
-		PreparedStatement stmt = null;
 
 		try {
 			stmt = connection.prepareCall("{CALL AddOrder(?,?,?,?,?)}");
@@ -77,7 +76,6 @@ public class OrderDAO implements DAO<Order> {
 	public ArrayList<Order> getItems(int id){
 		ArrayList<Order> list = new ArrayList<>();
 		Order order = new Order();
-		PreparedStatement stmt = null;
 		ResultSet rs = null;
 
 
@@ -124,6 +122,27 @@ public class OrderDAO implements DAO<Order> {
 	 * @param item
 	 */
 	public Boolean updateItem(Order item){
-		return null;
+
+		try {
+			stmt = connection.prepareCall("{CALL UpdateOrder(?,?,?)}");
+
+			stmt.setInt(1,Integer.parseInt(item.getOrderNumber()));
+			stmt.setString(2,item.getStatus());
+			stmt.setInt(3,item.getQuantity());
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return false;
+		}
+		finally {
+			try {
+				if(stmt != null && !stmt.isClosed())
+					stmt.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+				return false;
+			}
+		}
+		return true;
 	}
 }//end OrderDAO

@@ -16,8 +16,8 @@ import java.util.ArrayList;
  */
 public class MessageDAO implements DAO<Message> {
 
-	private Connection connection;
-
+	private Connection connection = null;
+	private PreparedStatement stmt = null;
 
 	public MessageDAO(){
 		try {
@@ -33,7 +33,6 @@ public class MessageDAO implements DAO<Message> {
 	 * @param item
 	 */
 	public void addItem(Message item){
-		PreparedStatement stmt = null;
 
 		try{
 			stmt = connection.prepareCall("{CALL AddMessage(?,?,?,?)}");
@@ -48,6 +47,16 @@ public class MessageDAO implements DAO<Message> {
 
 		} catch (SQLException e) {
 			e.printStackTrace();
+		}
+
+
+		finally{
+			try{
+				if(stmt != null && !stmt.isClosed())
+					stmt.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
 		}
 
 	}
@@ -77,7 +86,6 @@ public class MessageDAO implements DAO<Message> {
 	public ArrayList<Message> getItems(int customer_id){
 		ArrayList<Message> list = new ArrayList<>();
 		Message message = new Message();
-		PreparedStatement stmt = null;
 		ResultSet rs = null;
 
 		try{
@@ -120,6 +128,12 @@ public class MessageDAO implements DAO<Message> {
 	 * @param item
 	 */
 	public Boolean updateItem(Message item){
+
+
+
+
+
+
 		return null;
 	}
 }//end MessageDAO

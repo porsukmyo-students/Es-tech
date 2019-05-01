@@ -75,6 +75,7 @@ public class ProductDAO implements DAO<Product> {
 
 		catch (SQLException e){
             e.printStackTrace();
+            return null;
 		}
 
 
@@ -121,16 +122,18 @@ public class ProductDAO implements DAO<Product> {
 
 		catch (SQLException e){
 			e.printStackTrace();
+			return null;
 		}
 		return products;
 	}
 
 
 	/**
-	 * 
+	 *
 	 * @param item
+	 * @return
 	 */
-	public Product updateItem(Product item){
+	public Boolean updateItem(Product item){
 		return null;
 	}
 

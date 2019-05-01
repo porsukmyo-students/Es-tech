@@ -3,8 +3,10 @@ package Dao;
 
 import Models.ProductComments;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.PriorityQueue;
 
 /**
  * @author Onur
@@ -12,19 +14,45 @@ import java.util.PriorityQueue;
  * @created 23-Nis-2019 14:25:25
  */
 public class ProductsCommetsDAO implements DAO<ProductComments> {
+	Connection connection;
+	PreparedStatement stmt;
 
 	public ProductsCommetsDAO(){
-
+		try {
+			connection = ConnectionDb.getConnection();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 	}
 
-	public void finalize() throws Throwable {
 
-	}
 	/**
 	 * 
 	 * @param item
 	 */
 	public void addItem(ProductComments item){
+		try {
+			stmt = connection.prepareCall("{CALL AddException(?,?,?)}");
+
+			stmt.setString(1,item.getTitle());
+			stmt.setString(2,item.getContext());
+			stmt.setString(3,"ip");
+
+
+
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		finally {
+			try {
+				if(stmt != null && !stmt.isClosed())
+					stmt.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
 
 	}
 
@@ -44,7 +72,7 @@ public class ProductsCommetsDAO implements DAO<ProductComments> {
 	 * 
 	 * @param item
 	 */
-	public ProductComments updateItem(ProductComments item){
+	public Boolean updateItem(ProductComments item){
 		return null;
 	}
 }//end ProductsCommetsDAO
