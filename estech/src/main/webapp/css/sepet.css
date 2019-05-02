@@ -15,24 +15,15 @@
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
 }
-#sepet_urun .sepet_detay .tablo.tablo-alani thead tr {
-    height: 51px;
-}
 
-#sepet_urun .sepet_detay .tablo.tablo-alani tr {
-    border-bottom: 1px solid#F7F7F0;
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
-
-#sepet_urun .sepet_detay .tablo.tablo-alani tr:last-child {
-    border-bottom: 0;
+thead, td {
+  text-align: left;
+  padding: 8px;
 }
-
-.sepet_detay table tr td {
-    border-top: 0 none;
-    vertical-align: inherit;
-    margin-right: 5px;
-}
-
 #sepet_urun .sepet_detay .gorsel {
     padding-left: 30px;
 }
@@ -85,24 +76,24 @@
     float: left;
     font-size: 16px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
 }
 
 .sepet_sil {
-    display: block;
-    margin-right: -12px;
+
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .sepet_sil a {
     background: #F0F0E9;
-    color: #FFFFFF;
+    color: #696763;
     padding: 5px 7px;
     font-size: 16px
 }
 
 .sepet_sil a:hover {
-    background: #218DA6;	 
+    background: #218DA6;
+    color: #fff;
 }
 
 
@@ -135,20 +126,27 @@
 
 .guncelle,
 .odeme{
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #218DA6;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 18px;
-  padding: 10px;
-  width: 150px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
+	color: white;
+	background-color: #218DA6;
+ 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	border: none;
+	padding: 10px;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-radius: 7px 20px;
+    margin-top: 10px;
 }
-
+.guncelle:hover,
+.odeme:hover{
+	border: 2px solid #218DA6;
+	border-radius: 7px 20px;
+	color: #218DA6;
+	background-color: #fff;
+	cursor: pointer;
+    font-size: 16px;
+}
 
 .guncelle {
     margin-left: 40px;
