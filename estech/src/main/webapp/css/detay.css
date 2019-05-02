@@ -1,60 +1,26 @@
-.urun-detaylar {
-    overflow: hidden;
+* {
+  box-sizing: border-box;
+}
+.solkisim {
+    float: left;
+    width: 75%;
+}
+.solkisim img{   
+  float: left;
+  width: 25%;
 }
 
-.urun-detaylar {
-    margin-bottom: 40px;
-    overflow: hidden;
-    margin-top: 10px;
+.sagkisim{
+  float: left;
+  width: 25%;
+  padding-left: 20px;
 }
 
-.goruntule-urun {
-    position: relative;
+.kart {
+  padding: 20px;
+  margin-top: 20px;
 }
-
-.goruntule-urun img {
-    border: 1px solid #F7F7F0;
-    height: 380px;
-    width: 380px;
-}
-
-.goruntule-urun h3 {
-    background: #218DA6;
-    bottom: 0;
-    color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 0;
-    padding: 8px 20px;
-    position: absolute;
-    right: 0;
-}
-
-
-.urun-aciklama {
-    border: 1px solid #F7F7F0;
-    overflow: hidden;
-    padding-bottom: 60px;
-    padding-left: 60px;
-    padding-top: 60px;
-    position: relative;
-}
-
-.urun-aciklama h2 {
-    color: #363432;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    margin-top: 0;
-}
-
-.urun-aciklama span {
-    display: inline-block;
-    margin-bottom: 8px;
-    margin-top: 6px;
-}
-
-.urun-aciklama span span {
+.kart span{
     color: #218DA6;
     float: left;
     font-family: 'Roboto', sans-serif;
@@ -63,47 +29,9 @@
     margin-right: 20px;
     margin-top: 0px;
 }
-
-.urun-aciklama span input {
-    border: 1px solid #DEDEDC;
-    color: #696763;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    height: 33px;
-    outline: medium none;
-    text-align: center;
-    width: 50px;
-}
-
-.urun-aciklama span label {
-    color: #696763;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    margin-right: 5px;
-}
-
-.siparis {
-    background: #218DA6;
-    border: 0 none;
-    border-radius: 0;
-    color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-}
-.button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #218DA6;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 18px;
-  padding: 10px;
-  width: 150px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
+@media screen and (max-width: 800px) {
+  .solkisim, .sagkisim {   
+    width: 100%;
+    padding: 0;
+  }
 }
