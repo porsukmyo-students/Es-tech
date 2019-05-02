@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="image/favicon.ico">
-    <link href="css/tasarim.css" rel="stylesheet"/>
 	<link href="css/sepet.css" rel="stylesheet"/>
 	<link href="css/header.css" rel="stylesheet"/>
 	<link href="css/footer.css" rel="stylesheet"/>
@@ -28,9 +27,9 @@
 		<nav>
 			<ol class="menu2">
 				<li><a href="index.html"><input type="submit" value="Anasayfa" class="navbar" style="vertical-align: middle"></a></li>
-				<li class="acilirmenu">
+				<li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 1" class="navbar" style="vertical-align: middle"></a>
-					<div class="acilirmenu-icerik">
+					<div class="dropdown-content">
 					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
 					<a href="#"><input type="submit" value="Alt Kategori 2" class="navbar" style="vertical-align: middle"></a>
 					<a href="#"><input type="submit" value="Alt Kategori 3" class="navbar" style="vertical-align: middle"></a>
@@ -38,43 +37,43 @@
 					<a href="#"><input type="submit" value="Alt Kategori 5" class="navbar" style="vertical-align: middle"></a>
 					</div>
 				</li>
-				<li class="acilirmenu">
+				<li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 2" class="navbar" style="vertical-align: middle"></a>
-					<div class="acilirmenu-icerik">
+					<div class="dropdown-content">
 					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
 					<a href="#"><input type="submit" value="Alt Kategori 2" class="navbar" style="vertical-align: middle"></a>
 					<a href="#"><input type="submit" value="Alt Kategori 3" class="navbar" style="vertical-align: middle"></a>
 					<a href="#"><input type="submit" value="Alt Kategori 4" class="navbar" style="vertical-align: middle"></a>
 					</div>
 				</li>
-				<li class="acilirmenu">
+				<li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 3" class="navbar" style="vertical-align: middle"></a>
-					<div class="acilirmenu-icerik">
+					<div class="dropdown-content">
 					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
 					<a href="#"><input type="submit" value="Alt Kategori 2" class="navbar" style="vertical-align: middle"></a>
 					<a href="#"><input type="submit" value="Alt Kategori 3" class="navbar" style="vertical-align: middle"></a>
 					</div>
 				</li>
-				<li class="acilirmenu">
+				<li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 4" class="navbar" style="vertical-align: middle"></a>
-					<div class="acilirmenu-icerik">
+					<div class="dropdown-content">
 					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
 					<a href="#"><input type="submit" value="Alt Kategori 2" class="navbar" style="vertical-align: middle"></a>
 					</div>
 				</li>
-				<li class="acilirmenu">
+				<li class="dropdown">
 				<a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 5" class="navbar" style="vertical-align: middle"></a>
-					<div class="acilirmenu-icerik">
+					<div class="dropdown-content">
 					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
 					</div>
 				</li>
 			</ol>
 		</nav>
-	</div>	<!-- navbarın bittiği kısım --> 
+	</div>	<!-- navbarın bittiği kısım -->
 	<section id="sepet_urun">
 		<div class="bolmeler">
 			<div class="sepet_detay">
-				<table class="table table-condensed">
+				<table class="tablo">
 					<thead>
 						<tr class="sepet_menu">
 							<td class="gorsel">Ürün</td>
@@ -100,7 +99,7 @@
 								<p class="sepet_toplam_fiyat">₺3.790,00</p>
 							</td>
 							<td class="sepet_sil">
-								<a class="sepet_miktar_sil" href=""><img src="image/sil.png"/></a>
+								<a class="sepet_miktar_sil" href="">SİL</a>
 							</td>
 						</tr>
 
@@ -119,7 +118,7 @@
 								<p class="sepet_toplam_fiyat">₺3.790,00</p>
 							</td>
 							<td class="sepet_sil">
-								<a class="sepet_miktar_sil" href=""><img src="image/sil.png"/></a>
+								<a class="sepet_miktar_sil" href="">SİL</a>
 							</td>
 						</tr>
 						<tr>
@@ -137,7 +136,7 @@
 								<p class="sepet_toplam_fiyat">₺3.790,00</p>
 							</td>
 							<td class="sepet_sil">
-								<a class="sepet_miktar_sil" href=""><img src="image/sil.png"/></a>
+								<a class="sepet_miktar_sil" href="">SİL</a>
 							</td>
 						</tr>
 					</tbody>
@@ -153,8 +152,8 @@
 		    <li>Gönderim Ücreti <span>Ücretsiz</span></li>
 		    <li>Ödenecek Tutar <span>₺7.579,99</span></li>
 	      </ul>
-		  <a class="guncelle" href=""><input type="submit" value="Güncelle" class="sepetsub" style="vertical-align: middle"></a>
-          <a class="odeme" href="adres.html"><input type="submit" value="Ödemeye Geç" class="sepetsub" style="vertical-align: middle"></a> 
+		  <a href=""><input type="submit" value="Güncelle" class="guncelle" style="vertical-align: middle"></a>
+          <a href="adres.html"><input type="submit" value="Ödemeye Git" class="odeme" style="vertical-align: middle"></a> 
         </div>
 	</section>
 	<footer>	<!-- footerin başladığı kısım --> 
