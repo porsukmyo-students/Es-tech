@@ -31,16 +31,17 @@ header{
 	color: #000;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	display: block;
 	opacity: 1;
 	padding: 0 10px;
 	font-size: 16px;
 	line-height: 30px;
 }
 .menu li a:hover{
-	background: #218DA6;
-    border-radius: 10px 30px;
-    color: white;
+	border: 2px solid #218DA6;
+	border-radius: 7px 20px;
+	padding: 9px;
+	background-color: #fff;
+	cursor: pointer;
 }
 @media screen and (max-width: 600px) {
   .menu li {
@@ -78,7 +79,6 @@ header{
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	display: block;
-	padding: 10px;
 	font-size: 16px;
 	line-height: 30px;
 }
@@ -92,12 +92,10 @@ header{
 .menu2 li:hover ol li{
 	display: block;
 	}
-
-li.dropdown {
+li.acilirmenu {
   display: inline-block;
 }
-
-.dropdown-content {
+.acilirmenu-icerik {
   display: none;
   position: absolute;
   background-color: #218DA6;
@@ -105,18 +103,15 @@ li.dropdown {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
-.dropdown-content a {
+.acilirmenu-icerik a {
   color: black;
-  padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
 }
+.acilirmenu-icerik a:hover {background-color: #f1f1f1;}
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
-
-.dropdown:hover .dropdown-content {
+.acilirmenu:hover .acilirmenu-icerik {
   display: block;
 }
 .logo a:link{
@@ -128,5 +123,52 @@ li.dropdown {
 	color:#000;
 }
 .aktif {
-  background-color: #145665;
+  	background-color: #145665;
+}
+.ustbar{
+	color: #333;
+	background-color: white;
+ 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	border: none;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.navbar{
+	color: white;
+	background-color: #218DA6;
+ 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	border: none;
+	padding: 10px;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.navbar:hover{
+	border: none;	
+	border-radius: 7px 20px;
+	color: #218DA6;
+	background-color: #fff;
+	padding: 10px;
+}
+.sepetsub{
+	color: white;
+	background-color: #218DA6;
+ 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	border: none;
+	padding: 10px;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-radius: 7px 20px;
+	}
+.sepetsub:hover{
+	border: 2px solid #218DA6;
+	border-radius: 7px 20px;
+	color: #218DA6;
+	background-color: #fff;
+	cursor: pointer;
 }
