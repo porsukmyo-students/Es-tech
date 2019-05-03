@@ -4,26 +4,14 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  
+  
   <servlet>
-    <servlet-name>UserServlet</servlet-name>
-    <servlet-class>Controller.UserServlet</servlet-class>
+    <servlet-name>MainpageServlet</servlet-name>
+    <servlet-class>Controller.MainPageServlet</servlet-class>
   </servlet>
-<!--  <servlet>-->
-<!--    <servlet-name>MainServlet</servlet-name>-->
-<!--    <servlet-class>Controller.MainPageServlet</servlet-class>-->
-<!--  </servlet>-->
-
-<!--  <servlet-mapping>-->
-<!--    <servlet-name>MainServlet</servlet-name>-->
-<!--    <url-pattern>/*</url-pattern>-->
-<!--  </servlet-mapping>-->
-
   <servlet-mapping>
-    <servlet-name>UserServlet</servlet-name>
-    <url-pattern>/user/*</url-pattern>
+    <servlet-name>MainpageServlet</servlet-name>
+    <url-pattern>/mainpage/*</url-pattern>
   </servlet-mapping>
-
-
-
-
 </web-app>

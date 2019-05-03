@@ -14,10 +14,14 @@ public class ConnectionDb {
     }
 
 
-    public static Connection getConnection() throws SQLException {
-        if(connection == null)
-            connection = DriverManager.getConnection("jdbc:mariadb://localhost/estech","customer","customer1234");
+    public static Connection getConnection() throws SQLException, ClassNotFoundException {
+        if(connection == null) {
 
+            Class.forName("org.mariadb.jdbc.Driver");
+
+
+            connection = DriverManager.getConnection("jdbc:mariadb://localhost/estech", "customer", "customer1234");
+        }
         return connection;
     }
 

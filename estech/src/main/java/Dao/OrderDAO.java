@@ -18,7 +18,13 @@ public class OrderDAO implements DAO<Order> {
 	public OrderDAO(){
 		try {
 			connection = ConnectionDb.getConnection();
-		} catch (SQLException e) {
+		}
+
+		catch (ClassNotFoundException e){
+			System.err.println("Kütüphane bulunamadı...");
+		}
+
+		catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
@@ -75,7 +81,7 @@ public class OrderDAO implements DAO<Order> {
 
 	public ArrayList<Order> getItems(int id){
 		ArrayList<Order> list = new ArrayList<>();
-		Order order = new Order();
+		Order order;
 		ResultSet rs = null;
 
 
@@ -86,6 +92,7 @@ public class OrderDAO implements DAO<Order> {
 			rs = stmt.executeQuery();
 
 			while(rs.next()){
+				order = new Order();
 				order.setCustomerId(String.valueOf(id));
 				order.setOrderNumber(String.valueOf(rs.getInt("OrderNumber")));
 				order.setProductNumber(String.valueOf(rs.getInt("ProductNumber")));

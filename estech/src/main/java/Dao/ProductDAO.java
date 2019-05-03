@@ -22,7 +22,12 @@ public class ProductDAO implements DAO<Product> {
 		try{
 			connection = ConnectionDb.getConnection();
 
-		}catch(SQLException ex){
+		}
+		catch (ClassNotFoundException e){
+			System.err.println("Kütüphane bulunamadı...");
+		}
+
+		catch(SQLException ex){
 			ex.printStackTrace();
 		}
 
@@ -57,6 +62,9 @@ public class ProductDAO implements DAO<Product> {
 
 			rs.next();
 
+
+
+
 			product.setCategoryId(rs.getString("CategoryId"));
 			product.setBrand(rs.getString("Brand"));
 			product.setQuantity(rs.getInt("Quantity"));
@@ -90,7 +98,7 @@ public class ProductDAO implements DAO<Product> {
 
 	public ArrayList<Product> getItemByCategory(int category){
 		ResultSet rs;
-		Product product = new Product();
+		Product product;
 		ArrayList<Product> products = new ArrayList<>(50);
 		try {
 
@@ -98,10 +106,12 @@ public class ProductDAO implements DAO<Product> {
 
 			stmt.setInt(1,category);
 
+
 			rs = stmt.executeQuery();
 
 
 			while(rs.next()){
+				product = new Product();
 				product.setCategoryId(String.valueOf(category));
 				product.setBrand(rs.getString("Brand"));
 				product.setQuantity(rs.getInt("Quantity"));
@@ -111,10 +121,8 @@ public class ProductDAO implements DAO<Product> {
 
 				byte data[] = rs.getBytes("Picture");
 
-				String encodedata = Base64.getEncoder().encodeToString(data);
-				product.setPhoto(encodedata);
-
-
+				product.setPhoto(Base64.getEncoder().encodeToString(data));
+				System.out.println(product);
 				products.add(product);
 			}
 
@@ -149,8 +157,9 @@ public class ProductDAO implements DAO<Product> {
 //		}
 
 
-		System.out.println(list.get(13));
-		System.out.println(list.get(13).getPhoto());
+		for(int i = 0 ; i < list.size();i++){
+			System.out.println(list.get(i).getTitle());
+		}
 
 	}
 

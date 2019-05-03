@@ -20,7 +20,13 @@ public class ProductsCommetsDAO implements DAO<ProductComments> {
 	public ProductsCommetsDAO(){
 		try {
 			connection = ConnectionDb.getConnection();
-		} catch (SQLException e) {
+		}
+
+		catch (ClassNotFoundException e){
+			System.err.println("Kütüphane bulunamadı...");
+		}
+
+		catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}

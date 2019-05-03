@@ -20,7 +20,11 @@ public class CustomerDAO implements DAO<Customer> {
 	public CustomerDAO(){
 		try {
 			connection = ConnectionDb.getConnection();
-		} catch (SQLException e) {
+		}
+		catch (ClassNotFoundException e){
+			System.err.println("Kütüphane bulunamadı...");
+		}
+		catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
@@ -37,10 +41,11 @@ public class CustomerDAO implements DAO<Customer> {
 	 */
 	public Customer getItem(int id){
 
-		Customer customer = new Customer();
+		Customer customer ;
 		PreparedStatement stmt = null;
 		ResultSet rs=null;
 		try {
+			customer = new Customer();
 			stmt = connection.prepareCall("{CALL GetCustomerById(?)}");
 			stmt.setInt(1,id);
 			rs = stmt.executeQuery();

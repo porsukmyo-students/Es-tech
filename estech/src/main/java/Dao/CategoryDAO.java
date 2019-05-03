@@ -14,7 +14,11 @@ public class CategoryDAO implements DAO<Category> {
     public CategoryDAO(){
         try {
             connection = ConnectionDb.getConnection();
-        } catch (SQLException e) {
+        }
+        catch (ClassNotFoundException e){
+            System.err.println("Kütüphane bulunamadı...");
+        }
+        catch (SQLException e) {
             e.printStackTrace();
         }
     }
@@ -33,12 +37,13 @@ public class CategoryDAO implements DAO<Category> {
     @Override
     public ArrayList<Category> getItems() {
         ArrayList<Category> list = new ArrayList<>();
-        Category category = new Category();
+        Category category ;
         try{
             stmt = connection.prepareCall("{ CALL GetCategories()}");
             rs = stmt.executeQuery();
 
             while (rs.next()){
+                category = new Category();
                 category.setId(String.valueOf(rs.getShort("CategoryId")));
                 category.setName(rs.getString("Name"));
                 list.add(category);

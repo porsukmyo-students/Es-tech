@@ -69,7 +69,7 @@
 		</nav>
 	</div>	<!-- navbarın bittiği kısım --> 
 <div class="div1">
-  <form action="" class="form">
+  <form action="/user/" class="form" method="post">
   <div class="divsatir">
     <div class="divlabel">
       <label for="ad" class="label">Ad</label>
@@ -80,7 +80,7 @@
   </div>
   <div class="divsatir">
     <div class="divlabel">
-      <label for="lname">Soyad</label>
+      <label for="soyad">Soyad</label>
     </div>
     <div class="divbox">
       <input type="text" id="soyad" name="soyad" placeholder="Soyadınız" maxlength="25">
@@ -113,6 +113,7 @@
     </div>
   </div> <br>
   <div class="divsatir">
+	  <input type="hidden" name = "action" value="register">
     <a href="https://www.google.com" target="_blank"> <input type="submit" value="Kayıt ol" class="sepetsub" style="vertical-align: middle"></a>
   </div>
   </form>

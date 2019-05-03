@@ -22,7 +22,13 @@ public class MessageDAO implements DAO<Message> {
 	public MessageDAO(){
 		try {
 			connection = ConnectionDb.getConnection();
-		} catch (SQLException e) {
+		}
+
+		catch (ClassNotFoundException e){
+			System.err.println("Kütüphane bulunamadı...");
+		}
+
+		catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
@@ -85,7 +91,7 @@ public class MessageDAO implements DAO<Message> {
 
 	public ArrayList<Message> getItems(int customer_id){
 		ArrayList<Message> list = new ArrayList<>();
-		Message message = new Message();
+		Message message;
 		ResultSet rs = null;
 
 		try{
@@ -95,6 +101,7 @@ public class MessageDAO implements DAO<Message> {
 			rs = stmt.executeQuery();
 
 			while (rs.next()){
+				message = new Message();
 				message.setId(String.valueOf(rs.getInt("MessageId")));
 				message.setCustomerId(String.valueOf(customer_id));
 				message.setSubject(rs.getString("Subject"));
