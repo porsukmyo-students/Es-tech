@@ -1,9 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
-.div1
+
+.blank_aside{
+	height: 100%;
+	float:left;
+	background-color: #fff;
+}
+#div1
 {	
-	width: 100%;
-	background-color: #fff;	
+	background-color: #fff;
+	float: left;
 }
 .div2
 {

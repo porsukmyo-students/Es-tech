@@ -1,11 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
+
+
+
+
+
 .div1
 {	
-	width: 100%;
+	width: 1328px;
 	height: 100%;
-	background-color: #FFFFF0;	
+	background-color: #FFFFF0;
+	float: left;
 }
+
 .div2
 {
 	padding: 0px;

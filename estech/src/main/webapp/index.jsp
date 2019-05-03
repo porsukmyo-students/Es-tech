@@ -9,14 +9,15 @@
     		height:365px;
     	}
 	</style>
-<link rel="stylesheet" href="css/header.css">
-<link rel="stylesheet" href="css/ürünlistesi.css">
-<link rel="stylesheet" href="css/footer.css">
-<link rel="stylesheet" href="css/slider.css">
-<script src="js/slider.js"></script>
-<script src="js/slider-min.js"></script>
-<meta charset="utf-8">
-<title>ES-TECH</title>
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/ürünlistesi.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<script src="js/slider.js"></script>
+	<script src="js/slider-min.js"></script>
+	<script src="js/size.js"></script>
+	<meta charset="utf-8">
+	<title>ES-TECH</title>
 </head>
 <body>
 <div  id="id1"></div>
@@ -84,9 +85,10 @@
 			<a href="#"><img src="image/slider/4.png"/></a>
 			</div>
    
-<section>	<!-- ürünlistesinin başladığı kısım -->
+<section  id="urun_list" style="width: 100%;">	<!-- ürünlistesinin başladığı kısım -->
+	<div class="blank_aside"> </div>
+	<div  id="div1"  > 	<!-- 1.ana div -->
 
-	<div class="div1"> 	<!-- 1.ana div --> 
   <div class="div2">	<!-- 2.div 329x510 -->
 		<div class="div3">	<!-- 3.div 283x430 -->
 			<div class="div4"> <!-- 4.div 283x430 -->
@@ -231,7 +233,8 @@
 							</div>
 		</div>
 	</div>
-</div>	
+</div>
+	<div class="blank_aside" ></div>
 </section>	<!-- ürünlistesinin bittiği kısım -->
 	
 <footer>	<!-- footerin başladığı kısım --> 
