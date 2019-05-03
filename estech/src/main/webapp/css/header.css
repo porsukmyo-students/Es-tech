@@ -60,9 +60,10 @@ header{
 	z-index:2;
 }
 .nav1{
-	height: 5 0px;
+	height: 50px;
 	padding: 0px;
-	margin: 0px;
+	margin-bottom:10px;
+
 	text-align: center;
 	background-color: #218DA6;
     position: sticky;

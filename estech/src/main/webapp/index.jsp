@@ -22,64 +22,11 @@
 	<title>ES-TECH</title>
 </head>
 <body>
-<div  id="id1"></div>
-<div class="header1"> <!-- headerin başladığı kısım --> 
-	<header class="sticky">
-		<div class="logo"> <a href="index.html"> <img src="image/logo.png" alt="logo" width="117px" height="40px"> </a> </div>
-			<ul class="menu">
-				<li><a ><i class="fas fa-user-plus"></i><input type="submit" value="Kayıt ol" class="ustbar" style="vertical-align: middle"></a></li>
-				<li><a href="giris.html"><i class="fas fa-user-alt"></i><input type="submit" value="Üye girişi" class="ustbar" style="vertical-align: middle"></a></li>
-				<li><a href="sepet.html"><i class="fas fa-shopping-cart"></i><input type="submit" value="Sepet" class="ustbar" style="vertical-align: middle"></a></li>
-			</ul>
-	</header>
-</div>  <!-- headerin bittiği kısım --> 
-	<div class="nav1">	<!-- navbarın başladığı kısım --> 
-		<nav>
-			<ol class="menu2">
-				<li><a href="index.html"><input type="submit" value="Anasayfa" class="navbar" style="vertical-align: middle"></a></li>
-				<li class="acilirmenu">
-                <a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 1" class="navbar" style="vertical-align: middle"></a>
-					<div class="acilirmenu-icerik">
-					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 2" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 3" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 4" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 5" class="navbar" style="vertical-align: middle"></a>
-					</div>
-				</li>
-				<li class="acilirmenu">
-                <a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 2" class="navbar" style="vertical-align: middle"></a>
-					<div class="acilirmenu-icerik">
-					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 2" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 3" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 4" class="navbar" style="vertical-align: middle"></a>
-					</div>
-				</li>
-				<li class="acilirmenu">
-                <a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 3" class="navbar" style="vertical-align: middle"></a>
-					<div class="acilirmenu-icerik">
-					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 2" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 3" class="navbar" style="vertical-align: middle"></a>
-					</div>
-				</li>
-				<li class="acilirmenu">
-                <a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 4" class="navbar" style="vertical-align: middle"></a>
-					<div class="acilirmenu-icerik">
-					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 2" class="navbar" style="vertical-align: middle"></a>
-					</div>
-				</li>
-				<li class="acilirmenu">
-				<a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 5" class="navbar" style="vertical-align: middle"></a>
-					<div class="acilirmenu-icerik">
-					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
-					</div>
-				</li>
-			</ol>
-		</nav>
-	</div>	<!-- navbarın bittiği kısım --> 
+
+
+<jsp:include page="header.jsp"/>
+
+<!-- navbarın bittiği kısım -->
 			<div id="slider">
 			<a href="#"><img src="image/slider/1.png"/></a>
 			<a href="#"><img src="image/slider/2.png"/></a>
@@ -87,53 +34,8 @@
 			<a href="#"><img src="image/slider/4.png"/></a>
 			</div>
    
-<section  id="urun_list" style="width: 100%;">	<!-- ürünlistesinin başladığı kısım -->
-	<div class="blank_aside"> </div>
-	<div  id="div1"  > 	<!-- 1.ana div -->
-
-
-
-
-		<%
-
-			ArrayList<Product> products = (ArrayList<Product>)request.getAttribute("products");
-			if(products == null ){
-				response.sendRedirect("/estech/mainpage");
-			}
-			else{
-				Product product;
-
-				for(int i = 0 ; i<products.size();i++){
-					product = products.get(i);
-					out.println("<div class='div2'>");//2.div 329x510
-					out.println("<div class='div3'>");//3.div 283x430
-					out.println("<div class='div4'>");//
-					out.println("<div class='div5'>");
-					out.println("<a><img src='data:image/jpg;base64,"+product.getPhoto()+"' width='230' height='200'></a>");
-					out.println("</div>");
-					out.println("</div>");
-					out.println("<div class='div6' align='center'>");
-					out.println("<span class='p'>"+product.getPrice()+"₺</span>");
-					out.println("</div>");
-					out.println("<div class=div7>");
-					out.println("<p class='div7class'><span>"+product.getTitle()+"</span></p>");
-					out.println("</div>");
-					out.println("<div class='div8'>");
-					out.println("<a target='_blank'><input type='submit' value='Sepete Ekle' class='sepetsub' style='vertical-align:middle'></a>");
-					out.println("</div>");
-					out.println("</div>");
-					out.println("</div>");
-				}
-			}
-
-		%>
-
-
-
-</div>
-	<div class="blank_aside" ></div>
-</section>	<!-- ürünlistesinin bittiği kısım -->
-	
+	<!-- ürünlistesinin bittiği kısım -->
+	<jsp:include page="ürünlistesi.jsp"/>
 <footer>	<!-- footerin başladığı kısım --> 
 	<div class="hakkimizda">
 		<p> <b>Biz Kimiz? </b><br> Eskişehir Teknik Üniversitesi'nde Web Programlama Dersi proje ödevi için bir araya gelen 7 kişilik öğrenci grubuyuz.</p>

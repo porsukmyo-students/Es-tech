@@ -1,3 +1,5 @@
+<%@ page import="Models.Product" %>
+<%@ page import="java.util.ArrayList" %>
 <%@page pageEncoding="UTF-8" %>
 
 <html>
@@ -9,137 +11,54 @@
 <title>Ürün Sayfası</title>
 </head>
 <body>
-<div  id="id1"></div>
-<div class="header1"> <!-- headerin başladığı kısım --> 
-	<header class="sticky">
-		<div class="logo"> <a href="index.html"> <img src="image/logo.png" alt="logo" width="117px" height="40px"> </a> </div>
-			<ul class="menu">
-				<li><a href="uyekayit.html"><i class="fas fa-user-plus"></i><input type="submit" value="Kayıt ol" class="ustbar" style="vertical-align: middle"></a></li>
-				<li><a href="giris.html"><i class="fas fa-user-alt"></i><input type="submit" value="Üye girişi" class="ustbar" style="vertical-align: middle"></a></li>
-				<li><a href="sepet.html"><i class="fas fa-shopping-cart"></i><input type="submit" value="Sepet" class="ustbar" style="vertical-align: middle"></a></li>
-			</ul>
-	</header>
-</div>  <!-- headerin bittiği kısım --> 
-	<div class="nav1">	<!-- navbarın başladığı kısım --> 
-		<nav>
-			<ol class="menu2">
-				<li><a href="index.html"><input type="submit" value="Anasayfa" class="navbar" style="vertical-align: middle"></a></li>
-				<li class="acilirmenu">
-                <a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 1" class="navbar" style="vertical-align: middle"></a>
-					<div class="acilirmenu-icerik">
-					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 2" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 3" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 4" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 5" class="navbar" style="vertical-align: middle"></a>
-					</div>
-				</li>
-				<li class="acilirmenu">
-                <a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 2" class="navbar" style="vertical-align: middle"></a>
-					<div class="acilirmenu-icerik">
-					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 2" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 3" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 4" class="navbar" style="vertical-align: middle"></a>
-					</div>
-				</li>
-				<li class="acilirmenu">
-                <a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 3" class="navbar" style="vertical-align: middle"></a>
-					<div class="acilirmenu-icerik">
-					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 2" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 3" class="navbar" style="vertical-align: middle"></a>
-					</div>
-				</li>
-				<li class="acilirmenu">
-                <a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 4" class="navbar" style="vertical-align: middle"></a>
-					<div class="acilirmenu-icerik">
-					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 2" class="navbar" style="vertical-align: middle"></a>
-					</div>
-				</li>
-				<li class="acilirmenu">
-				<a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 5" class="navbar" style="vertical-align: middle"></a>
-					<div class="acilirmenu-icerik">
-					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
-					</div>
-				</li>
-			</ol>
-		</nav>
-	</div>	<!-- navbarın bittiği kısım --> 
-<div class="div1"> 	<!-- 1.ana div -->
-  <div class="div2">	<!-- 2.div 329x510 -->
-		<div class="div3">	<!-- 3.div 283x430 -->
-			<div class="div4"> <!-- 4.div 283x430 -->
-				<div class="div5"> <!-- 5.div 230x200 --> 
-					<img src="image/kasa1.jpg" alt="kasa1" width="230" height="200">
-				</div>
-			</div>
-					<div class="div6" align="center"> <!-- 6.div 283x28 --> 
-						<span class="p"> 5.840₺</span> 
-					</div>
-						<div class="div7">	<!-- 7.div 283x60 --> 
-							<p class="div7class"><span>MASTER-501-ANM/Ryzen 5 2600/MSI RTX 2060 GAMING Z 6G/8GB RAM/120GB SSD/1TB Disk/Gaming Bilgisayar</span></p>
-						</div>
-							<div class="div8">	<!-- 8.div 283x40 --> 
-								<a href="https://www.google.com" target="_blank"> <input type="submit" value="Sepete Ekle" class="sepetsub" style="vertical-align: middle"></a> 
-							</div>
+
+
+	<section  id="urun_list" style="width: 100%;">	<!-- ürünlistesinin başladığı kısım -->
+		<div class="blank_aside"> </div>
+		<div  id="div1"  > 	<!-- 1.ana div -->
+
+
+			<%
+
+				ArrayList<Product> products = (ArrayList<Product>)request.getAttribute("products");
+				if(products == null || request.getSession().getAttribute("categories") == null){
+					response.sendRedirect("/estech/mainpage");
+				}
+				else{
+					Product product;
+
+					for(int i = 0 ; i<products.size();i++){
+						product = products.get(i);
+						out.println("<div class='div2'>");//2.div 329x510
+						out.println("<div class='div3'>");//3.div 283x430
+						out.println("<div class='div4'>");//
+						out.println("<div class='div5'>");
+						out.println("<a><img src='data:image/jpg;base64,"+product.getPhoto()+"' width='230' height='200'></a>");
+						out.println("</div>");
+						out.println("</div>");
+						out.println("<div class='div6' align='center'>");
+						out.println("<span class='p'>"+product.getPrice()+"₺</span>");
+						out.println("</div>");
+						out.println("<div class=div7>");
+						out.println("<p class='div7class'><span>"+product.getTitle()+"</span></p>");
+						out.println("</div>");
+						out.println("<div class='div8'>");
+						out.println("<a target='_blank'><input type='submit' value='Sepete Ekle' class='sepetsub' style='vertical-align:middle'></a>");
+						out.println("</div>");
+						out.println("</div>");
+						out.println("</div>");
+					}
+				}
+
+			%>
+
+
+
 		</div>
-	</div>
-  <div class="div2">	<!-- ikinci katalog burada başlıyor --> 
-		<div class="div3">	
-			<div class="div4"> 
-				<div class="div5">
-					<img src="image/kasa1.jpg" alt="kasa1" width="230" height="200">
-				</div>
-			</div>
-					<div class="div6" align="center"> 
-						<span class="p"> 5.840₺</span> 
-					</div>
-						<div class="div7">
-							<p class="div7class"><span>MASTER-501-ANM/Ryzen 5 2600/MSI RTX 2060 GAMING Z 6G/8GB RAM/120GB SSD/1TB Disk/Gaming Bilgisayar</span></p>
-						</div>
-							<div class="div8">
-								<a href="https://www.google.com" target="_blank"> <input type="submit" value="Sepete Ekle" class="sepetsub" style="vertical-align: middle"></a> 
-							</div>
-		</div>
-	</div>
-<div class="div2">	
-		<div class="div3">
-			<div class="div4"> 
-				<div class="div5"> 
-					<img src="image/kasa1.jpg" alt="kasa1" width="230" height="200">
-				</div>
-			</div>
-					<div class="div6" align="center">
-						<span class="p"> 5.840₺</span> 
-					</div>
-						<div class="div7">
-							<p class="div7class"><span>MASTER-501-ANM/Ryzen 5 2600/MSI RTX 2060 GAMING Z 6G/8GB RAM/120GB SSD/1TB Disk/Gaming Bilgisayar</span></p>
-						</div>
-							<div class="div8">
-								<a href="https://www.google.com" target="_blank"> <input type="submit" value="Sepete Ekle" class="sepetsub" style="vertical-align: middle"></a> 
-							</div>
-		</div>
-	</div>
-	<div class="div2">	
-		<div class="div3">
-			<div class="div4"> 
-				<div class="div5"> 
-					<img src="image/kasa1.jpg" alt="kasa1" width="230" height="200">
-				</div>
-			</div>
-					<div class="div6" align="center">
-						<span class="p"> 5.840₺</span> 
-					</div>
-						<div class="div7">
-							<p class="div7class"><span>MASTER-501-ANM/Ryzen 5 2600/MSI RTX 2060 GAMING Z 6G/8GB RAM/120GB SSD/1TB Disk/Gaming Bilgisayar</span></p>
-						</div>
-							<div class="div8">
-								<a href="https://www.google.com" target="_blank"> <input type="submit" value="Sepete Ekle" class="sepetsub" style="vertical-align: middle"></a> 
-							</div>
-		</div>
-	</div>
-</div>
+		<div class="blank_aside" ></div>
+	</section>
+
+
+
 </body>
 </html>
