@@ -59,10 +59,10 @@ public class CustomerDAO implements DAO<Customer> {
 		finally {
 			try {
 
-				if(!rs.isClosed())
+				if(rs != null && !rs.isClosed())
 					rs.close();
 
-				if(!stmt.isClosed())
+				if(stmt != null && !stmt.isClosed())
 					stmt.close();
 
 			} catch (SQLException e) {
@@ -100,10 +100,10 @@ public class CustomerDAO implements DAO<Customer> {
 		finally {
 			try {
 
-				if(!rs.isClosed())
+				if(rs != null && !rs.isClosed())
 					rs.close();
 
-				if(!stmt.isClosed())
+				if(stmt != null &&!stmt.isClosed())
 					stmt.close();
 
 			} catch (SQLException e) {
@@ -146,7 +146,7 @@ public class CustomerDAO implements DAO<Customer> {
 
 		finally {
 			try {
-				if(!stmt.isClosed())
+				if(stmt != null && !stmt.isClosed())
 					stmt.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
