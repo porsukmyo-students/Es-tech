@@ -22,7 +22,8 @@
 
 				ArrayList<Product> products = (ArrayList<Product>)request.getAttribute("products");
 				if(products == null || request.getSession().getAttribute("categories") == null){
-					response.sendRedirect("/estech/mainpage");
+					RequestDispatcher dispatcher = request.getRequestDispatcher("/mainpage");
+					dispatcher.forward(request,response);
 				}
 				else{
 					Product product;

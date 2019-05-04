@@ -1,5 +1,3 @@
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="Models.Product" %>
 <%@page pageEncoding="UTF-8" %>
 <html>
 <head>

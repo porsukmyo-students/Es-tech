@@ -13,29 +13,78 @@
 <div id="id1"></div>
 <div class="header1"> <!-- headerin başladığı kısım -->
 	<header class="sticky">
-		<div class="logo"> <a href="index.html"> <img src="image/logo.png" alt="logo" width="117px" height="40px"> </a> </div>
+		<div class="logo"> <a href="/estech"> <img src="image/logo.png" alt="logo" width="117px" height="40px"> </a> </div>
 			<ul class="menu">
-				<li><a href="uyekayit.html"><i class="fas fa-user-plus"></i><input type="submit" value="Kayıt ol" class="ustbar" style="vertical-align: middle"></a></li>
-				<li><a href="giris.html"><i class="fas fa-user-alt"></i><input type="submit" value="Üye girişi" class="ustbar" style="vertical-align: middle"></a></li>
-				<li><a href="sepet.html"><i class="fas fa-shopping-cart"></i><input type="submit" value="Sepet" class="ustbar" style="vertical-align: middle"></a></li>
+
+				<li>
+					<div class="btn">
+						<i class="fas fa-user-plus"></i>
+						<form action="/estech/user" method="post">
+						<input type="hidden" name="action" value="register"/>
+						<input type="submit" value="Kayıt ol" class="ustbar" style="vertical-align: middle">
+					</form>
+				</div>
+
+
+				</li>
+				<li>
+					<div class="btn">
+						<i class="fas fa-user-alt"></i>
+						<form action="/estech/user" method="post">
+							<input type="hidden" value="login"/>
+							<input type="submit" value="Üye girişi" class="ustbar" style="vertical-align: middle">
+						</form>
+					</div>
+				</li>
+
+				<li>
+
+					<div class="btn">
+						<i class="fas fa-shopping-cart"></i>
+						<form>
+							<input type="hidden" value="basket"/>
+							<input type="submit" value="Sepet" class="ustbar" style="vertical-align: middle">
+						</form>
+					</div>
+
+				</li>
 			</ul>
 	</header>
 </div>  <!-- headerin bittiği kısım -->
 	<div class="nav1">	<!-- navbarın başladığı kısım -->
 		<nav>
 			<ol class="menu2">
-				<li><a href="mainpage/"><input type="submit" value="Anasayfa" class="navbar" style="vertical-align: middle"></a></li>
+				<li>
+					<a>
+						<form method="post" action="mainpage">
+							<input type="submit" value="Anasayfa" class="navbar" style="vertical-align: middle"><input type="hidden" name="action" value=""/>
+						</form>
+					</a>
+				</li>
 
 				<%
 
 					ArrayList<Category> categories = (ArrayList<Category>) request.getSession().getAttribute("categories");
-					Category category;
-					for (int i = 0; i <categories.size() ; i++) {
-						category = categories.get(i);
-						out.println("<li ");
-						out.println("<a> <input type='submit' value='"+category.getName()+"' class='navbar' style='vertical-align: middle'></a>");
-						out.println("</li>");
+
+
+
+					if(categories == null || categories.size()==0){
+
+						response.sendRedirect("/estech/mainpage");
 					}
+					else{
+						for (int i = 0; i <categories.size() ; i++) {
+
+							Category category;
+							category = categories.get(i);
+							out.println("<li ");
+							out.println("<a><form> <input type='submit' value='"+category.getName()+"' class='navbar' style='vertical-align: middle'></form></a>");
+							out.println("</li>");
+						}
+					}
+
+
+
 				%>
 
 
