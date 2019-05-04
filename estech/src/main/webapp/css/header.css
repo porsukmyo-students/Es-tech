@@ -18,15 +18,29 @@ header{
 .sticky{
     padding-top: 20px;
     padding-bottom: 20px;
+
 }
 .header1{
 	padding-top: 0px;
+
 }
+
+.menu  {
+	overflow: hidden;
+
+}
+
+i{
+	padding-top: 3px;
+	float: left;
+}
+
 .menu li{
 	list-style: none; 	
 	display: inline-block;
+	overflow: hidden;
 }
-.menu li a{
+.menu li .btn {
 	text-decoration: none;
 	color: #000;
 	letter-spacing: 1px;
@@ -35,8 +49,18 @@ header{
 	padding: 0 10px;
 	font-size: 16px;
 	line-height: 30px;
+
 }
-.menu li a:hover{
+
+.btn{
+	float: left;
+}
+
+form{
+	display: inline-block;
+}
+
+.menu li  .btn:hover{
 	border: 2px solid #218DA6;
 	border-radius: 7px 20px;
 	padding: 9px;
@@ -63,13 +87,15 @@ header{
 	height: 50px;
 	padding: 0px;
 	margin-bottom:10px;
-
 	text-align: center;
 	background-color: #218DA6;
     position: sticky;
     top: 0;
 	z-index:1;
 }
+
+/*Menu 2 */
+
 .menu2 li {
 	list-style: none;
 	display: inline-block;
