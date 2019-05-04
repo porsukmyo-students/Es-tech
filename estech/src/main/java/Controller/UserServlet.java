@@ -32,7 +32,8 @@ public class UserServlet extends HttpServlet {
             pageForward("/uyekayit.jsp",request,response);
         }
 
-
+        else if(action.equals("basket"))
+            pageForward("/sepet.jsp",request,response);
 
     }
 

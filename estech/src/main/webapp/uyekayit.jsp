@@ -14,52 +14,51 @@
 
 <div class="div1">
   <form action="/user/" class="form" method="post">
-  <div class="divsatir">
-    <div class="divlabel">
-      <label for="ad" class="label">Ad</label>
-    </div>
-    <div class="divbox">
-      <input type="text" id="ad" name="ad " placeholder="Adınız" maxlength="20">
-    </div>
-  </div>
-  <div class="divsatir">
-    <div class="divlabel">
-      <label for="soyad">Soyad</label>
-    </div>
-    <div class="divbox">
-      <input type="text" id="soyad" name="soyad" placeholder="Soyadınız" maxlength="25">
-    </div>
-  </div>
-  <div class="divsatir">
-    <div class="divlabel">
-      <label for="eposta" class="label">E-posta</label>
-    </div>
-    <div class="divbox">
-      <input type="email" id="eposta" name="eposta" placeholder="E-posta adresiniz" maxlength="30">
-    </div>
-  </div> 
-    <div class="divsatir">
-    <div class="divlabel">
-      <label for="sifre" class="label">Şifre</label>
-    </div>
-    <div class="divbox">
-      <input type="password" id="sifre" name="sifre" placeholder="Şifreniz" maxlength="15">
-    </div>
-  </div>
-  <div class="divsatir">
-  </div>
-  <div class="divsatir">
-    <div class="divlabel">
-      <label for="adres">Adres</label>
-    </div>
-    <div class="divtextarea">
-      <textarea id="adres" name="adres" placeholder="Adresiniz" style="height:200px"></textarea>
-    </div>
-  </div> <br>
-  <div class="divsatir">
-	  <input type="hidden" name = "action" value="register">
-    <a href="https://www.google.com" target="_blank"> <input type="submit" value="Kayıt ol" class="sepetsub" style="vertical-align: middle"></a>
-  </div>
+
+      <table cellspacing="8px">
+          <tr>
+              <td><label for="isim" class="label">Ad</label></td>
+              <td><input type="text" id="isim" name="ad " placeholder="Adınız" maxlength="20"></td>
+          </tr>
+
+          <tr>
+              <td><label for="soyad" class="labe1">Soyad</label></td>
+              <td><input type="text" id="soyad" name="soyad" placeholder="Soyadınız" maxlength="25"></td>
+          </tr>
+
+          <tr>
+              <td>
+                  <label for="eposta" class="label">E-posta</label>
+              </td>
+              <td><input type="email" id="eposta" name="eposta" placeholder="E-posta adresiniz" maxlength="30"></td>
+          </tr>
+
+          <tr>
+              <td>
+                  <label for="sifre" class="label">Şifre</label>
+              </td>
+
+              <td>
+                  <input type="password" id="sifre" name="sifre" placeholder="Şifreniz" maxlength="15">
+              </td>
+
+
+          </tr>
+
+          <tr>
+              <td>
+                  <label for="adres">Adres</label>
+              </td>
+              <td><textarea id="adres" name="adres" placeholder="Adresiniz" style="height:200px"></textarea></td>
+          </tr>
+
+          <tr>
+              <td><input type="hidden"  name="action" value="register"></td>
+              <td align="right"><input type="submit" value="Kayıt ol" class="sepetsub" style="vertical-align: middle"></td>
+          </tr>
+
+      </table>
+
   </form>
 </div>
 	<footer>	<!-- footerin başladığı kısım --> 

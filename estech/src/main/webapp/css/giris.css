@@ -43,30 +43,10 @@ label {
   padding: 20px;
 }
 
-.divlabel {
-  float:left;
-  width: 10%;
-  margin-top: 6px;
-}
 .form{
 	margin-left: 35%;
 }
-.divbox {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-.divsatir:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media screen and (max-width: 600px) {
-  .divlabel, .divbox{
-    width: 100%;
-    margin-top: 0;
-  }
-}
+
 
 
 

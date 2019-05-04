@@ -37,7 +37,7 @@ textarea{
     	border-radius: 4px;
     	resize: vertical;
 	font-family: verdana;
-	font-size: 18;
+	font-size: 18px;
 }
 .button {
   display: inline-block;
@@ -60,36 +60,3 @@ textarea{
   width: 100%;
   padding: 20px;
 }
-
-.divlabel {
-  float:left;
-  width: 10%;
-  margin-top: 6px;
-}
-.form{
-	margin-left: 35%;
-}
-.divbox {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-  
-}
-.divtextarea{
-  float: left;
-  width: 25%;
-  max-height: 250px;
-  margin-top: 6px;
-}
-.divsatir:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media screen and (max-width: 600px) {
-  .divlabel, .divbox, .divtextarea{
-    width: 100%;
-    margin-top: 0;
-  }
-}
-

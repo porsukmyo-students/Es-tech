@@ -31,7 +31,7 @@
 					<div class="btn">
 						<i class="fas fa-user-alt"></i>
 						<form action="/estech/user" method="post">
-							<input type="hidden" value="login"/>
+							<input type="hidden" value="login" name="action"/>
 							<input type="submit" value="Üye girişi" class="ustbar" style="vertical-align: middle">
 						</form>
 					</div>
@@ -41,8 +41,8 @@
 
 					<div class="btn">
 						<i class="fas fa-shopping-cart"></i>
-						<form>
-							<input type="hidden" value="basket"/>
+						<form action="/estech/user" method="post">
+							<input type="hidden" name="action" value="basket"/>
 							<input type="submit" value="Sepet" class="ustbar" style="vertical-align: middle">
 						</form>
 					</div>

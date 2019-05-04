@@ -13,25 +13,39 @@
 <jsp:include page="header.jsp"/>
 <div class="div1">
   <form action="" class="form">
-  <div class="divsatir">
-    <div class="divlabel">
-      <label for="eposta" class="label">E-posta</label>
-    </div>
-    <div class="divbox">
-      <input type="email" id="eposta" name="eposta" placeholder="E-posta adresiniz" maxlength="30">
-    </div>
-  </div> 
-    <div class="divsatir">
-    <div class="divlabel">
-      <label for="sifre" class="label">Şifre</label>
-    </div>
-    <div class="divbox">
-      <input type="password" id="sifre" name="sifre" placeholder="Şifreniz" maxlength="15" >
-    </div>
-  </div>	<br>
-  <div class="divsatir">
-    <a href="https://www.google.com" target="_blank"> <input type="submit" value="Giriş yap" class="sepetsub" style="vertical-align: middle"></a>
-  </div>
+
+	  <table cellspacing="10px">
+		  <tr>
+			  <td>
+				  <label for="eposta" class="label">E-posta</label>
+			  </td>
+			  <td>
+				  <input type="email" id="eposta" name="eposta" placeholder="E-posta adresiniz" maxlength="30">
+			  </td>
+		  </tr>
+
+		  <tr>
+			  <td>
+				  <label for="sifre" class="label">Şifre</label>
+			  </td>
+			  <td>
+				  <input type="password" id="sifre" name="sifre" placeholder="Şifreniz" maxlength="15" >
+			  </td>
+		  </tr>
+
+		  <tr>
+			  <td>
+				  <input type="hidden" name="action" value="sing-in" />
+			  </td>
+
+			  <td align="right">
+				  <input type="submit" value="Giriş yap" class="sepetsub" style="vertical-align: middle">
+			  </td>
+
+		  </tr>
+
+	  </table>
+
   </form>
 </div> 
 <footer>	<!-- footerin başladığı kısım --> 
