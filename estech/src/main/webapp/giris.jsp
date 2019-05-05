@@ -12,7 +12,7 @@
 
 <jsp:include page="header.jsp"/>
 <div class="div1">
-  <form action="" class="form">
+  <form action="/estech_war_exploded/user" method="post" class="form">
 
 	  <table cellspacing="10px">
 		  <tr>
@@ -20,7 +20,7 @@
 				  <label for="eposta" class="label">E-posta</label>
 			  </td>
 			  <td>
-				  <input type="email" id="eposta" name="eposta" placeholder="E-posta adresiniz" maxlength="30">
+				  <input type="email" id="eposta" name="mail" placeholder="E-posta adresiniz" maxlength="50">
 			  </td>
 		  </tr>
 
@@ -29,7 +29,7 @@
 				  <label for="sifre" class="label">Şifre</label>
 			  </td>
 			  <td>
-				  <input type="password" id="sifre" name="sifre" placeholder="Şifreniz" maxlength="15" >
+				  <input type="password" id="sifre" name="password" placeholder="Şifreniz" maxlength="15" >
 			  </td>
 		  </tr>
 

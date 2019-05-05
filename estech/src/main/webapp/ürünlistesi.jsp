@@ -1,6 +1,5 @@
 <%@ page import="Models.Product" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="java.util.logging.Logger" %>
 <%@page pageEncoding="UTF-8" %>
 
 <html>
@@ -43,10 +42,10 @@
 						out.println("</div>");
 						out.println("</div>");
 						out.println("<div class='div6' align='center'>");
-						out.println("<span class='p'>"+product.getPrice()+"</span>");
+						out.println("<span class='p'>"+product.getPrice()+"₺</span>");
 						out.println("</div>");
 						out.println("<div class=div7>");
-						out.println("<p class='div7class'><span>"+product.getTitle()+"₺</span></p>");
+						out.println("<p class='div7class'><span>"+product.getTitle()+"</span></p>");
 						out.println("</div>");
 						out.println("<div class='div8'>");
 						out.println("<form action='/mainpage' method='post'");

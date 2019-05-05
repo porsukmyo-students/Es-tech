@@ -1,143 +1,76 @@
 <%@page pageEncoding="UTF-8" %>
+
 <html>
 <head>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="css/ilbil.css"/>
-    <link rel="icon" type="image/png" href="image/favicon.ico">
-	<title>İletişim Bilgileri</title>
-    <link rel="stylesheet" href="css/header.css"/>
+	<link rel="stylesheet" href="css/header.css"/>
 	<link rel="stylesheet" href="css/footer.css"/>
+	<link rel="icon" type="image/png" href="image/favicon.ico">
+	<title>Kayıt Ol</title>
 </head>
 <body>
-<div  id="id1"></div>
-  <div class="header1"> <!-- headerin başladığı kısım --> 
-	<header class="sticky">
-		<div class="logo"> <a href="index.html"> <img src="image/logo.png" alt="logo" width="117px" height="40px"> </a> </div>
-			<ul class="menu">
-				<li><a href="uyekayit.html"><i class="fas fa-user-plus"></i><input type="submit" value="Kayıt ol" class="ustbar" style="vertical-align: middle"></a></li>
-				<li><a href="giris.html"><i class="fas fa-user-alt"></i><input type="submit" value="Üye girişi" class="ustbar" style="vertical-align: middle"></a></li>
-				<li><a href="sepet.html"><i class="fas fa-shopping-cart"></i><input type="submit" value="Sepet" class="ustbar" style="vertical-align: middle"></a></li>
-			</ul>
-	</header>
-</div>  <!-- headerin bittiği kısım --> 
-	<div class="nav1">	<!-- navbarın başladığı kısım --> 
-		<nav>
-			<ol class="menu2">
-				<li><a href="index.html"><input type="submit" value="Anasayfa" class="navbar" style="vertical-align: middle"></a></li>
-				<li class="acilirmenu">
-                <a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 1" class="navbar" style="vertical-align: middle"></a>
-					<div class="acilirmenu-icerik">
-					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 2" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 3" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 4" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 5" class="navbar" style="vertical-align: middle"></a>
-					</div>
-				</li>
-				<li class="acilirmenu">
-                <a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 2" class="navbar" style="vertical-align: middle"></a>
-					<div class="acilirmenu-icerik">
-					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 2" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 3" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 4" class="navbar" style="vertical-align: middle"></a>
-					</div>
-				</li>
-				<li class="acilirmenu">
-                <a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 3" class="navbar" style="vertical-align: middle"></a>
-					<div class="acilirmenu-icerik">
-					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 2" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 3" class="navbar" style="vertical-align: middle"></a>
-					</div>
-				</li>
-				<li class="acilirmenu">
-                <a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 4" class="navbar" style="vertical-align: middle"></a>
-					<div class="acilirmenu-icerik">
-					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
-					<a href="#"><input type="submit" value="Alt Kategori 2" class="navbar" style="vertical-align: middle"></a>
-					</div>
-				</li>
-				<li class="acilirmenu">
-				<a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 5" class="navbar" style="vertical-align: middle"></a>
-					<div class="acilirmenu-icerik">
-					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
-					</div>
-				</li>
-			</ol>
-		</nav>
-	</div>	<!-- navbarın bittiği kısım --> 
+<jsp:include page="header.jsp"/>
+
 <div class="div1">
-  <form action="" class="form">
-  <div class="divsatir">
-    <div class="divlabel">
-      <label for="ad" class="label">Ad</label>
-    </div>
-    <div class="divbox">
-      <input type="text" id="ad" name="ad" placeholder="Adınız" maxlength="20">
-    </div>
-  </div>
-  <div class="divsatir">
-    <div class="divlabel">
-      <label for="soyad" class="label">Soyad</label>
-    </div>
-    <div class="divbox">
-      <input type="text" id="soyad" name="soyad" placeholder="Soyadınız" maxlength="25">
-    </div>
-  </div>
-  <div class="divsatir">
-    <div class="divlabel">
-      <label for="ulke" class="label">Ülkeniz</label>
-    </div>
-    <div class="divbox">
-      <input type="text" id="ulke" name="ulke" placeholder="Ülkenizi belirtin" maxlength="30">
-    </div>
-  </div> 
-    <div class="divsatir">
-    <div class="divlabel">
-      <label for="sehir" class="label">Şehriniz</label>
-    </div>
-    <div class="divbox">
-      <input type="text" id="sehir" name="sehir" placeholder="Şehrinizi belirtin" maxlength="30">
-    </div>
-    </div>
-    <div class="divsatir">
-    <div class="divlabel">
-      <label for="ilce" class="label">İlçeniz</label>
-    </div>
-    <div class="divbox">
-      <input type="text" id="ilce" name="ilce" placeholder="İlçenizi belirtin" maxlength="30" >
-    </div>
-  </div>
-  <div class="divsatir">
-  </div>
-  <div class="divsatir">
-    <div class="divlabel">
-      <label for="adres">Adres</label>
-    </div>
-    <div class="divtextarea">
-      <textarea id="adres" name="adres" placeholder="Adresiniz" style="height: 100px"></textarea>
-    </div>
-    </div>
-  <div class="divsatir">
-    <div class="divlabel">
-      <label for="tel_no" class="label">Telefon Numaranız</label>
-    </div>
-    <div class="divbox">
-      <input name="tel_no" type="tel" id="tel_no" placeholder="Numaranız" autocomplete="off" >
-    </div>
-  </div> <br>
-  <div class="divsatir">
-    <a href="https://www.google.com" target="_blank"> <input type="submit" value="Devam et" class="sepetsub" style="vertical-align: middle"></a>
-  </div>
+  <form action="/user/" class="form1" method="post">
+
+      <table  cellspacing="8px" >
+          <tr>
+              <td><label for="isim" class="label">Ad</label></td>
+              <td><input type="text" id="isim" name="ad " placeholder="Adınız" maxlength="20"></td>
+          </tr>
+
+          <tr>
+              <td><label for="soyad" class="labe1">Soyad</label></td>
+              <td><input type="text" id="soyad" name="soyad" placeholder="Soyadınız" maxlength="25"></td>
+          </tr>
+
+          <tr>
+			  <td><label for="ulke" class="labe1">Ülke</label></td>
+              <td><input type="text" id="ulke" name="ulke" placeholder="Ülkeniz" maxlength="25"></td>
+          </tr>
+
+          <tr>
+              <td><label for="sehir" class="labe1">Şehir</label></td>
+              <td><input type="text" id="sehir" name="sehir" placeholder="Şehriniz" maxlength="25"></td>
+
+
+          </tr>
+
+          <tr>
+              <td><label for="ilce" class="labe1">İlçe</label></td>
+              <td><input type="text" id="ilce" name="ilce" placeholder="İlçeniz" maxlength="25"></td>
+          </tr>
+		
+
+          <tr>
+              <td>
+                  <label for="adres">Adres</label>
+              </td>
+              <td><textarea id="adres" name="adres" placeholder="Adresiniz" style="height:200px"></textarea></td>
+          </tr>
+		  
+		  <tr>
+              <td><label for="telefon" class="labe1">Telefon</label></td>
+              <td><input type="text" id="telefon" name="telefon" placeholder="Telefonunuz" maxlength="25"></td>
+          </tr>
+
+          <tr>
+              <td><input type="hidden"  name="action" value="register"></td>
+              <td align="right"><input type="submit" placeholder="Kayıt ol" class="sepetsub" style="vertical-align: middle"></td>
+          </tr>
+
+      </table>
+
   </form>
 </div>
-    	<footer>	<!-- footerin başladığı kısım --> 
+	<footer>	<!-- footerin başladığı kısım --> 
 	<div class="hakkimizda">
 		<p> <b>Biz Kimiz? </b><br> Eskişehir Teknik Üniversitesi'nde Web Programlama Dersi proje ödevi için bir araya gelen 7 kişilik öğrenci grubuyuz.</p>
 	</div>
 		<div class="ulasim">
-			<a href="iletisim.html"> <span> <b> Bize ulaşın </b></span></a>
+			<a href="iletisim.html"> <span> Bize ulaşın</span></a>
 		</div>
 			<div class="sosyalmedya">
 				<ol>
@@ -148,8 +81,9 @@
 				</ol>
 			</div>
 				<div class="haklar">
-					<p>EStech © 2019 - Tüm hakları saklıdır. </p>
+					<p>Es-tech © 2019 - Tüm hakları saklıdır. </p>
 					<div class="up">
+						<a ></a>
 						<a style="display:scroll;position:fixed; bottom:10px; right:5px;" href="#id1"> <img src="image/yukari-cik.png" alt="yukarı" width="40px" height="40px"/></a>
 					</div>
 				</div>					

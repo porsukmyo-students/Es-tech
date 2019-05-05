@@ -40,7 +40,6 @@ public class MainPageServlet extends HttpServlet {
 
 
         else if(action.startsWith("getProducts")){
-            log("Action-> getProducts");
             ProductDAO productDAO = new ProductDAO();
 
             String category_id = action.split("=")[1];
