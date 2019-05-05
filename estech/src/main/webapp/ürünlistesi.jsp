@@ -33,10 +33,9 @@
 						product = products.get(i);
 
 
-
 						out.println("<div class='div2'>");//2.div 329x510
 						out.println("<div class='div3'>");//3.div 283x430
-						out.println("<div class='div4'>");//
+						out.println("<div class='div4'>");
 						out.println("<div class='div5'>");
 						out.println("<a><img src='data:image/jpg;base64,"+product.getPhoto()+"' width='230' height='200'></a>");
 						out.println("</div>");
@@ -57,7 +56,6 @@
 						out.println("</div>");
 					}
 				}
-
 			%>
 
 		</div>

@@ -51,8 +51,8 @@ public class UserServlet extends HttpServlet {
             else if(customer.getPassword().equals(request.getParameter("password"))){
                 log("pass: ");
                 request.getSession().setAttribute("user",customer);
-                request.setAttribute("action",null);
-                pageForward("/index.jsp",request,response);
+                request.setAttribute("action","mainpage");
+                response.sendRedirect("/estech_war_exploded/mainpage");
             }
 
 

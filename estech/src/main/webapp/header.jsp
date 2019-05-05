@@ -17,7 +17,7 @@
 			<ul class="menu">
 
 				<%
-					if(request.getParameter("user")==null){
+					if(request.getSession().getAttribute("user")==null){
 						out.println("<li>");
 						out.println("<div class='btn'>");
 						out.println("<i class = 'fas fa-user-plus'></i>");
