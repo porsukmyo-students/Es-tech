@@ -3,11 +3,11 @@
 <html>
 <head>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" href="css/ilbil.css"/>
+<link rel="stylesheet" href="css/hesabim.css"/>
 	<link rel="stylesheet" href="css/header.css"/>
 	<link rel="stylesheet" href="css/footer.css"/>
 	<link rel="icon" type="image/png" href="image/favicon.ico">
-	<title>Adres</title>
+	<title>Hesabım</title>
 </head>
 <body>
 <jsp:include page="header.jsp"/>
@@ -18,47 +18,43 @@
       <table  cellspacing="8px" >
           <tr>
               <td><label for="isim" class="label">Ad</label></td>
-              <td><input type="text" id="isim" name="ad " placeholder="Adınız" maxlength="20"></td>
+              <td><input type="text" id="isim" name="ad " value="Serkan" maxlength="20"></td>
           </tr>
 
           <tr>
               <td><label for="soyad" class="labe1">Soyad</label></td>
-              <td><input type="text" id="soyad" name="soyad" placeholder="Soyadınız" maxlength="25"></td>
+              <td><input type="text" id="soyad" name="soyad" value="Güneş" maxlength="25"></td>
           </tr>
 
           <tr>
-			  <td><label for="ulke" class="labe1">Ülke</label></td>
-              <td><input type="text" id="ulke" name="ulke" placeholder="Ülkeniz" maxlength="25"></td>
+              <td>
+                  <label for="eposta" class="label">E-posta</label>
+              </td>
+              <td><input type="email" id="eposta" name="eposta" value="serkan_gunes@eskisehir.edu.tr" maxlength="30"></td>
           </tr>
 
           <tr>
-              <td><label for="sehir" class="labe1">Şehir</label></td>
-              <td><input type="text" id="sehir" name="sehir" placeholder="Şehriniz" maxlength="25"></td>
+              <td>
+                  <label for="sifre" class="label">Şifre</label>
+              </td>
+
+              <td>
+                  <input type="password" id="sifre" name="sifre" value="12345" maxlength="15">
+              </td>
 
 
           </tr>
-
-          <tr>
-              <td><label for="ilce" class="labe1">İlçe</label></td>
-              <td><input type="text" id="ilce" name="ilce" placeholder="İlçeniz" maxlength="25"></td>
-          </tr>
-		
 
           <tr>
               <td>
                   <label for="adres">Adres</label>
               </td>
-              <td><textarea id="adres" name="adres" placeholder="Adresiniz" style="height:200px"></textarea></td>
-          </tr>
-		  
-		  <tr>
-              <td><label for="telefon" class="labe1">Telefon</label></td>
-              <td><input type="text" id="telefon" name="telefon" placeholder="Telefonunuz" maxlength="25"></td>
+              <td><textarea id="adres" name="adres" style="height:200px">KYK YURT</textarea></td>
           </tr>
 
           <tr>
               <td><input type="hidden"  name="action" value="register"></td>
-              <td align="right"><input type="submit" placeholder="Kayıt ol" class="sepetsub" style="vertical-align: middle"></td>
+              <td align="right"><input type="submit" value="Güncelle" class="sepetsub" style="vertical-align: middle"></td>
           </tr>
 
       </table>
