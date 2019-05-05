@@ -1,5 +1,6 @@
 <%@ page import="Models.Product" %>
 <%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.logging.Logger" %>
 <%@page pageEncoding="UTF-8" %>
 
 <html>
@@ -18,6 +19,7 @@
 		<div  id="div1"  > 	<!-- 1.ana div -->
 
 
+
 			<%
 
 				ArrayList<Product> products = (ArrayList<Product>)request.getAttribute("products");
@@ -30,6 +32,9 @@
 
 					for(int i = 0 ; i<products.size();i++){
 						product = products.get(i);
+
+
+
 						out.println("<div class='div2'>");//2.div 329x510
 						out.println("<div class='div3'>");//3.div 283x430
 						out.println("<div class='div4'>");//
@@ -38,13 +43,16 @@
 						out.println("</div>");
 						out.println("</div>");
 						out.println("<div class='div6' align='center'>");
-						out.println("<span class='p'>"+product.getPrice()+"₺</span>");
+						out.println("<span class='p'>"+product.getPrice()+"</span>");
 						out.println("</div>");
 						out.println("<div class=div7>");
-						out.println("<p class='div7class'><span>"+product.getTitle()+"</span></p>");
+						out.println("<p class='div7class'><span>"+product.getTitle()+"₺</span></p>");
 						out.println("</div>");
 						out.println("<div class='div8'>");
-						out.println("<a target='_blank'><input type='submit' value='Sepete Ekle' class='sepetsub' style='vertical-align:middle'></a>");
+						out.println("<form action='/mainpage' method='post'");
+						out.println("<input type='hidden' name='action' value='add-basket="+product.getProductNumber()+"'/>");
+						out.println("<input type='submit' value='Sepete Ekle' class='sepetsub' style='vertical-align:middle'>");
+						out.println("</form>");
 						out.println("</div>");
 						out.println("</div>");
 						out.println("</div>");
@@ -53,12 +61,9 @@
 
 			%>
 
-
-
 		</div>
 		<div class="blank_aside" ></div>
 	</section>
-
 
 
 </body>

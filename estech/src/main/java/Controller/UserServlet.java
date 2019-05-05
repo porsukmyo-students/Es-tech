@@ -21,32 +21,22 @@ public class UserServlet extends HttpServlet {
     private void process(HttpServletRequest request , HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
 
-        if(action.equals("login") ||  action == null || action.equals("")){
-
+        if(action.equals("login") ||  action == null || action.equals(""))
             pageForward("/giris.jsp",request,response);
 
-        }
-
-
-        else if(action.equals("register")){
+        else if(action.equals("register"))
             pageForward("/uyekayit.jsp",request,response);
-        }
+
 
         else if(action.equals("basket"))
             pageForward("/sepet.jsp",request,response);
 
     }
 
-
-
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
     process(req,resp);
-
-
-
 
     }
 
@@ -54,10 +44,6 @@ public class UserServlet extends HttpServlet {
 
         process(request,response);
 
-
-
-
     }
-
 
 }

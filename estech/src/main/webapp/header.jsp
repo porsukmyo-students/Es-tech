@@ -13,13 +13,13 @@
 <div id="id1"></div>
 <div class="header1"> <!-- headerin başladığı kısım -->
 	<header class="sticky">
-		<div class="logo"> <a href="/estech"> <img src="image/logo.png" alt="logo" width="117px" height="40px"> </a> </div>
+		<div class="logo"> <a href="/estech_war_exploded/estech"> <img src="image/logo.png" alt="logo" width="117px" height="40px"> </a> </div>
 			<ul class="menu">
 
 				<li>
 					<div class="btn">
 						<i class="fas fa-user-plus"></i>
-						<form action="/estech/user" method="post">
+						<form action="/estech_war_exploded/user" method="post">
 						<input type="hidden" name="action" value="register"/>
 						<input type="submit" value="Kayıt ol" class="ustbar" style="vertical-align: middle">
 					</form>
@@ -30,7 +30,7 @@
 				<li>
 					<div class="btn">
 						<i class="fas fa-user-alt"></i>
-						<form action="/estech/user" method="post">
+						<form action="/estech_war_exploded/user" method="post">
 							<input type="hidden" value="login" name="action"/>
 							<input type="submit" value="Üye girişi" class="ustbar" style="vertical-align: middle">
 						</form>
@@ -41,7 +41,7 @@
 
 					<div class="btn">
 						<i class="fas fa-shopping-cart"></i>
-						<form action="/estech/user" method="post">
+						<form action="/estech_war_exploded/user" method="post">
 							<input type="hidden" name="action" value="basket"/>
 							<input type="submit" value="Sepet" class="ustbar" style="vertical-align: middle">
 						</form>
@@ -70,15 +70,18 @@
 
 					if(categories == null || categories.size()==0){
 
-						response.sendRedirect("/estech/mainpage");
+						response.sendRedirect("/estech_war_exploded/mainpage");
 					}
 					else{
 						for (int i = 0; i <categories.size() ; i++) {
 
 							Category category;
 							category = categories.get(i);
-							out.println("<li ");
-							out.println("<a><form> <input type='submit' value='"+category.getName()+"' class='navbar' style='vertical-align: middle'></form></a>");
+							out.println("<li>");
+							out.println("<form method='post' action='/estech_war_exploded/mainpage'>");
+							out.println("<input type='hidden' name='action' value='getProducts="+category.getId()+"'/>");
+                            out.println("<input type='submit'  value='"+category.getName()+"' class='navbar' style='vertical-align: middle'>");
+                            out.println("</form>");
 							out.println("</li>");
 						}
 					}

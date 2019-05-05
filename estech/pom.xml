@@ -105,6 +105,7 @@
                         <url>http://localhost:8080/manager/text</url>
                         <server>TomcatServer</server>
                         <path>/estech</path>
+                        <tomcatLoggingFile>tomcat_server.log</tomcatLoggingFile>
                     </configuration>
                 </plugin>
             </plugins>

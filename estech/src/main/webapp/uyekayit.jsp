@@ -13,9 +13,9 @@
 <jsp:include page="header.jsp"/>
 
 <div class="div1">
-  <form action="/user/" class="form" method="post">
+  <form action="/user/" class="form1" method="post">
 
-      <table cellspacing="8px">
+      <table  cellspacing="8px" >
           <tr>
               <td><label for="isim" class="label">Ad</label></td>
               <td><input type="text" id="isim" name="ad " placeholder="Adınız" maxlength="20"></td>

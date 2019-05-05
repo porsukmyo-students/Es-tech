@@ -30,9 +30,6 @@ public class ProductDAO implements DAO<Product> {
 		catch(SQLException ex){
 			ex.printStackTrace();
 		}
-
-
-
 	}
 
 	/**
@@ -122,7 +119,6 @@ public class ProductDAO implements DAO<Product> {
 				byte data[] = rs.getBytes("Picture");
 
 				product.setPhoto(Base64.getEncoder().encodeToString(data));
-				System.out.println(product);
 				products.add(product);
 			}
 
@@ -157,9 +153,7 @@ public class ProductDAO implements DAO<Product> {
 //		}
 
 
-		for(int i = 0 ; i < list.size();i++){
-			System.out.println(list.get(i).getTitle());
-		}
+
 
 	}
 

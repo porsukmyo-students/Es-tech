@@ -23,9 +23,7 @@ public class MainPageServlet extends HttpServlet {
 
     private void process(HttpServletRequest request , HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
-
         if(action == null || action.equals("")){
-            log("Work");
             ProductDAO productDAO = new ProductDAO();
             ArrayList<Product> products = productDAO.getItemByCategory(1);
             request.setAttribute("products",products);
@@ -37,8 +35,22 @@ public class MainPageServlet extends HttpServlet {
         }
 
 
-        else if(action.equals("mainpage")){
+        else if(action.equals("mainpage"))
             pageForward("/index.jsp",request,response);
+
+
+        else if(action.startsWith("getProducts")){
+            log("Action-> getProducts");
+            ProductDAO productDAO = new ProductDAO();
+
+            String category_id = action.split("=")[1];
+
+            ArrayList<Product> products = productDAO.getItemByCategory(Integer.parseInt(category_id));
+
+            request.setAttribute("products",products);
+
+           pageForward("/index.jsp",request,response);
+
         }
 
     }
