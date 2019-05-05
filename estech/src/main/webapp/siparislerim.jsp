@@ -30,8 +30,8 @@
         </thead>
         <tbody class="urun_bilgileri">
             <tr class="urun_aciklamalari">
-                <td rowspan="2" class="resim"><a href="urun-detay.html"><img src="image/i9.jpg" width="110" height="110" alt=""></a></td>
-                <td class="urun_isim"><a href="urun-detay.html"><h4>Intel I9 İşlemci</h4></a></td>
+                <td rowspan="2" class="resim"><a href="urun-detay.html"><input type="submit" value="" class="urun_isim2" style="vertical-align: middle"><img src="image/i9.jpg" width="110" height="110" alt=""></a></td>
+                <td class="urun_isim"><a href="urun-detay.html"><input type="submit" value="Intel I9 İşlemci" class="urun_isim2" style="vertical-align: middle"></a></td>
                 <td class="adres"><b>Adres:</b>Çamlıca Mh. KYK Gündüzalp Öğrenci Yurdu Tepebaşı/Eskişehir</td>
             </tr>
             <tr>
@@ -47,8 +47,8 @@
         </tbody>
         <tbody class="urun_bilgileri">
             <tr class="urun_aciklamalari">
-                <td rowspan="2" class="resim"><a href="urun-detay.html"><img src="image/i9.jpg" width="110" height="110" alt=""></a></td>
-                <td class="urun_isim"><a href="urun-detay.html"><h4>Intel I9 İşlemci</h4></a></td>
+                <td rowspan="2" class="resim"><a href="urun-detay.html"><input type="submit" value="" class="urun_isim2" style="vertical-align: middle"><img src="image/i9.jpg" width="110" height="110" alt=""></a></td>
+                <td class="urun_isim"><a href="urun-detay.html"><input type="submit" value="Intel I9 İşlemci" class="urun_isim2" style="vertical-align: middle"></a></td>
                 <td class="adres"><b>Adres:</b>Çamlıca Mh. KYK Gündüzalp Öğrenci Yurdu Tepebaşı/Eskişehir</td>
             </tr>
             <tr>
@@ -64,8 +64,8 @@
         </tbody>
         <tbody class="urun_bilgileri">
             <tr class="urun_aciklamalari">
-                <td rowspan="2" class="resim"><a href="urun-detay.html"><img src="image/i9.jpg" width="110" height="110" alt=""></a></td>
-                <td class="urun_isim"><a href="urun-detay.html"><h4>Intel I9 İşlemci</h4></a></td>
+                <td rowspan="2" class="resim"><a href="urun-detay.html"><input type="submit" value="" class="urun_isim2" style="vertical-align: middle"><img src="image/i9.jpg" width="110" height="110" alt=""></a></td>
+                <td class="urun_isim"><a href="urun-detay.html"><input type="submit" value="Intel I9 İşlemci" class="urun_isim2" style="vertical-align: middle"></a></td>
                 <td class="adres"><b>Adres:</b>Çamlıca Mh. KYK Gündüzalp Öğrenci Yurdu Tepebaşı/Eskişehir</td>
             </tr>
             <tr>

@@ -24,12 +24,6 @@ thead{
 .resim{
     padding-left: 10px;
 }
-.urun_aciklamalari h4{
-    color: #363432;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-}
 .urun_isim a:visited {
 text-decoration:none;
 }
@@ -62,4 +56,13 @@ text-decoration:none;
 }
 .adres b, .kargo b{
     color: #363432;
+}
+.urun_isim2{
+    color: #363432;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+	text-decoration: none;
+	background-color: #fff;
+	border: none;
+	cursor: pointer;
 }
