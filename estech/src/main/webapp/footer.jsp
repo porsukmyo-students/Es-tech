@@ -25,7 +25,7 @@
 					<p>Es-tech © 2019 - Tüm hakları saklıdır. </p>
 				</div>
 					<div class="up">
-						<a href="id1"> Yukarı çıkmak için tıklayın</a>
+						<a style="display:scroll;position:fixed; bottom:10px; right:5px;" href="#id1"> <img src="image/yukari-cik.png" alt="yukarÄ±" width="40px" height="40px"/></a>
 					</div>
 </footer>
 </body>
