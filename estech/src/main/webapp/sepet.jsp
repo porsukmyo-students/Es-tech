@@ -19,10 +19,11 @@
 		<div class="bolmeler">
 			<div class="sepet_detay">
 				<table class="tablo">
-					<thead>
+				<thead>
 						<tr class="sepet_menu">
 							<td class="gorsel">Ürün</td>
 							<td class="aciklama">Açıklama</td>
+                                                        <td class="adet">Adet</td>
 							<td class="fiyat">Fiyat</td>
 							<td class="toplam">Toplam Fiyat</td>
 							<td></td>
@@ -37,14 +38,18 @@
 								<h4><a href="">Intel I9 İşlemci</a></h4>
 								<p>ID: 1089772</p>
 							</td>
+                                                        
 							<td class="sepet_fiyat">
 								<p>₺3.790,00</p>
 							</td>
+                                                        <td class="sepet_adet">
+                                                           <input class="adet_box" type="text" value="1"></input>
+                                                        </td>
 							<td class="sepet_toplam">
 								<p class="sepet_toplam_fiyat">₺3.790,00</p>
 							</td>
 							<td class="sepet_sil">
-								<a class="sepet_miktar_sil" href="">SİL</a>
+                                                            <a class="sepet_miktar_sil" href="">SİL</a>
 							</td>
 						</tr>
 
@@ -56,14 +61,18 @@
 								<h4><a href="">Intel I9 İşlemci</a></h4>
 								<p>ID: 1089772</p>
 							</td>
+                                                        
 							<td class="sepet_fiyat">
 								<p>₺3.790,00</p>
 							</td>
+                                                        <td class="sepet_adet">
+                                                           <input class="adet_box" type="text" value="1"></input>
+                                                        </td>
 							<td class="sepet_toplam">
 								<p class="sepet_toplam_fiyat">₺3.790,00</p>
 							</td>
 							<td class="sepet_sil">
-								<a class="sepet_miktar_sil" href="">SİL</a>
+                                                            <a class="sepet_miktar_sil" href="">SİL</a>
 							</td>
 						</tr>
 						<tr>
@@ -74,9 +83,13 @@
 								<h4><a href="">Intel I9 İşlemci</a></h4>
 								<p>ID: 1089772</p>
 							</td>
+                                                        
 							<td class="sepet_fiyat">
 								<p>₺3.790,00</p>
 							</td>
+                                                        <td class="sepet_adet">
+                                                           <input class="adet_box" type="text" value="1"></input>
+                                                        </td>
 							<td class="sepet_toplam">
 								<p class="sepet_toplam_fiyat">₺3.790,00</p>
 							</td>

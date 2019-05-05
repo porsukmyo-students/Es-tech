@@ -15,7 +15,16 @@
 	<header class="sticky">
 		<div class="logo"> <a href="/estech_war_exploded/estech"> <img src="image/logo.png" alt="logo" width="117px" height="40px"> </a> </div>
 			<ul class="menu">
-
+                            <!--Yeni Eklenen Kısım-->
+                            <li class="acilirmenu2">
+					<li><a href="uyekayit.html"><i class="fas fa-shipping-fast"></i><input type="submit" value="Siparişlerim" class="ustbar" style="vertical-align: middle"></a></li>	
+					<li><a href="uyekayit.html"><i class="fas fa-user"></i><input type="submit" value="Hesabım" class="ustbar" style="vertical-align: middle"></a></li>
+					<li><a href="uyekayit.html"><i class="fas fa-sign-out-alt"></i><input type="submit" value="Çıkış Yap" class="ustbar" style="vertical-align: middle"></a></li>
+					<li><a href="uyekayit.html"><i class="fas fa-user-plus"></i><input type="submit" value="Kayıt ol" class="ustbar" style="vertical-align: middle"></a></li>
+					<li><a href="giris.html"><i class="fas fa-sign-in-alt"></i><input type="submit" value="Üye girişi" class="ustbar" style="vertical-align: middle"></a></li>
+					<li><a href="sepet.html"><i class="fas fa-shopping-cart"></i><input type="submit" value="Sepet" class="ustbar" style="vertical-align: middle"></a></li>
+			    </li>
+                            <!--Yeni Eklenen Kısım-->
 				<%
 					if(request.getSession().getAttribute("user")==null){
 						out.println("<li>");

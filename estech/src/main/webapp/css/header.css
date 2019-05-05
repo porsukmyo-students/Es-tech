@@ -12,35 +12,24 @@ header{
 	position: relative;
 	padding: 10px 20px 10px 10px;
 	text-align: right;
-	z-index: 1;
+	z-index: auto;
 	margin: 0 auto;
 }
 .sticky{
     padding-top: 20px;
     padding-bottom: 20px;
-
 }
 .header1{
 	padding-top: 0px;
-
 }
-
-.menu  {
-	overflow: hidden;
-
+menu{
+    z-index:10;
 }
-
-i{
-	padding-top: 3px;
-	float: left;
-}
-
 .menu li{
 	list-style: none; 	
 	display: inline-block;
-	overflow: hidden;
 }
-.menu li .btn {
+.menu li a, .dropbtn2{
 	text-decoration: none;
 	color: #000;
 	letter-spacing: 1px;
@@ -49,18 +38,8 @@ i{
 	padding: 0 10px;
 	font-size: 16px;
 	line-height: 30px;
-
 }
-
-.btn{
-	float: left;
-}
-
-form{
-	display: inline-block;
-}
-
-.menu li  .btn:hover{
+.menu li a:hover{
 	border: 2px solid #218DA6;
 	border-radius: 7px 20px;
 	padding: 9px;
@@ -81,21 +60,18 @@ form{
 	font-size: 25px;
 	text-align: center;
 	padding-left: 2%;
-	z-index:2;
+	z-index:1;
 }
 .nav1{
-	height: 50px;
+	height: 5 0px;
 	padding: 0px;
-	margin-bottom:10px;
+	margin: 0px;
 	text-align: center;
 	background-color: #218DA6;
     position: sticky;
     top: 0;
 	z-index:1;
 }
-
-/*Menu 2 */
-
 .menu2 li {
 	list-style: none;
 	display: inline-block;
@@ -139,6 +115,28 @@ li.acilirmenu {
 .acilirmenu-icerik a:hover {background-color: #f1f1f1;}
 
 .acilirmenu:hover .acilirmenu-icerik {
+  display: block;
+}
+li.acilirmenu2 {
+  display: inline-block;
+}
+.acilirmenu2-icerik {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+.acilirmenu2-icerik a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.acilirmenu2-icerik a:hover {background-color: #f1f1f1;}
+
+.acilirmenu2:hover .acilirmenu2-icerik {
   display: block;
 }
 .logo a:link{
