@@ -16,26 +16,53 @@
 		<div class="logo"> <a href="/estech_war_exploded/estech"> <img src="image/logo.png" alt="logo" width="117px" height="40px"> </a> </div>
 			<ul class="menu">
 
-				<li>
-					<div class="btn">
-						<i class="fas fa-user-plus"></i>
-						<form action="/estech_war_exploded/user" method="post">
-						<input type="hidden" name="action" value="register"/>
-						<input type="submit" value="Kayıt ol" class="ustbar" style="vertical-align: middle">
-					</form>
-				</div>
+				<%
+					if(request.getParameter("user")==null){
+						out.println("<li>");
+						out.println("<div class='btn'>");
+						out.println("<i class = 'fas fa-user-plus'></i>");
+						out.println("<form action='/estech_war_exploded/user' method='post'>");
+						out.println("<input type='hidden' name='action' value='register'>");
+						out.println("<input type='submit'  value='Kayıt ol' class='ustbar' style='vertical-align:middle'>");
+						out.println("</form>");
+						out.println("</div>");
 
 
-				</li>
-				<li>
-					<div class="btn">
-						<i class="fas fa-user-alt"></i>
-						<form action="/estech_war_exploded/user" method="post">
-							<input type="hidden" value="login" name="action"/>
-							<input type="submit" value="Üye girişi" class="ustbar" style="vertical-align: middle">
-						</form>
-					</div>
-				</li>
+						out.println("<li>");
+						out.println("<div class='btn'>");
+						out.println("<i class = 'fas fa-user-alt'></i>");
+						out.println("<form action='/estech_war_exploded/user' method='post'>");
+						out.println("<input type='hidden' name='action' value='login'>");
+						out.println("<input type='submit'  value='Üye girişi' class='ustbar' style='vertical-align:middle'>");
+						out.println("</form>");
+						out.println("</div>");
+
+
+					}
+
+				%>
+
+
+<%--				<li>--%>
+<%--					<div class="btn">--%>
+<%--						<i class="fas fa-user-plus"></i>--%>
+<%--						<form action="/estech_war_exploded/user" method="post">--%>
+<%--						<input type="hidden" name="action" value="register"/>--%>
+<%--						<input type="submit" value="Kayıt ol" class="ustbar" style="vertical-align: middle">--%>
+<%--					</form>--%>
+<%--				</div>--%>
+
+
+<%--				</li>--%>
+<%--				<li>--%>
+<%--					<div class="btn">--%>
+<%--						<i class="fas fa-user-alt"></i>--%>
+<%--						<form action="/estech_war_exploded/user" method="post">--%>
+<%--							<input type="hidden" value="login" name="action"/>--%>
+<%--							<input type="submit" value="Üye girişi" class="ustbar" style="vertical-align: middle">--%>
+<%--						</form>--%>
+<%--					</div>--%>
+<%--				</li>--%>
 
 				<li>
 
