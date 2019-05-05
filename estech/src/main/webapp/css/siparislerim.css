@@ -1,0 +1,65 @@
+*{
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+.urun_bilgileri{
+    border: 1px solid #E6E4DF;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-collapse: collapse;
+    width: 90%;
+}
+.tarih_kod{
+    padding: 3px;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+thead{
+    background: #218DA6;
+}
+.resim{
+    padding-left: 10px;
+}
+.urun_aciklamalari h4{
+    color: #363432;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+.urun_isim a:visited {
+text-decoration:none;
+}
+.urun_isim a:link {
+text-decoration:none;
+}
+.siparis_tutar{
+    text-align: right;
+    padding: 3px;
+}
+.siparis_tutar h4{
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+.siparis_tutar p{
+    color: whitesmoke;
+    font-size: 18px;
+}
+.resim{
+    padding-left: auto;
+    padding-right: auto;
+}
+.adet_fiyat p{
+    color: #696763;
+}
+.adres, .kargo{
+    color: #696763;
+}
+.adres b, .kargo b{
+    color: #363432;
+}
