@@ -18,6 +18,7 @@
 	<section id="sepet_urun">
 		<div class="bolmeler">
 			<div class="sepet_detay">
+				<table class="tablo">
 				<thead>
 						<tr class="sepet_menu">
 							<td class="gorsel">Ürün</td>
