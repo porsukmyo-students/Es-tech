@@ -3,16 +3,17 @@
 }
 .solkisim {
     float: left;
-    width: 75%;
+    width: 60%;
 }
-.solkisim img{   
+.solkisim img{
+  margin-left: 15px;   
   float: left;
-  width: 25%;
+  width: 55%;
 }
 
 .sagkisim{
   float: left;
-  width: 25%;
+  width: 40%;
   padding-left: 20px;
 }
 
