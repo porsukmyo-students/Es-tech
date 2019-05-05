@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/header.css"/>
 	<link rel="stylesheet" href="css/footer.css"/>
 	<link rel="icon" type="image/png" href="image/favicon.ico">
-	<title>Kayıt Ol</title>
+	<title>Adres</title>
 </head>
 <body>
 <jsp:include page="header.jsp"/>
