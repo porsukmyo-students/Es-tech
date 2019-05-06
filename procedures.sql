@@ -12,7 +12,7 @@ END $$
 
 CREATE OR REPLACE PROCEDURE AddCustomer(IN name VARCHAR(15),IN surname VARCHAR(20),IN password VARCHAR(15),mail VARCHAR(50),phone VARCHAR(14))
 BEGIN
-INSERT INTO Customer(NAME,SurName,Password,Mail,PhoneNumber) VALUES(name,surname,password,mail,phone);
+INSERT INTO Customer(Name,SurName,Password,Mail,PhoneNumber) VALUES(name,surname,password,mail,phone);
 END$$
 
 CREATE OR REPLACE PROCEDURE UpdateCustomer(IN id INT UNSIGNED,IN name VARCHAR(15),IN surname VARCHAR(20),IN password VARCHAR(15),mail VARCHAR(50),phone VARCHAR(14))
