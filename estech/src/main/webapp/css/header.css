@@ -6,6 +6,11 @@
 	box-sizing: border-box;
     font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
+
+form{
+	float:left;
+}
+
 header{
 	background:white;
 	width: 100%;
@@ -63,7 +68,7 @@ menu{
 	z-index:1;
 }
 .nav1{
-	height: 5 0px;
+	height: 5px 0px;
 	padding: 0px;
 	margin: 0px;
 	text-align: center;

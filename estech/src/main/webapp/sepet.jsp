@@ -1,4 +1,6 @@
-﻿<%@page pageEncoding="UTF-8" %>
+﻿<%@ page import="java.util.ArrayList" %>
+<%@ page import="Models.Product" %>
+<%@page pageEncoding="UTF-8" %>
 
 <html>
 <head> 
@@ -30,6 +32,29 @@
 						</tr>
 					</thead>
 					<tbody>
+
+
+
+						<%
+
+							ArrayList<Product> products = (ArrayList<Product>) request.getSession().getAttribute("shopping_cart");
+							if(products != null){
+
+								for(Product p : products){
+									out.println("<tr>");
+									out.println("<td class='sepet_urun'>");
+									out.println("<a");
+
+
+								}
+
+
+
+							}
+
+
+						%>
+
 						<tr>
 							<td class="sepet_urun">
 								<a href=""><img src="image/i9.jpg" width="110" height="110" alt=""></a>

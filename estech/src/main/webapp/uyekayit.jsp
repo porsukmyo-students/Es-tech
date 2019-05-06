@@ -10,27 +10,28 @@
 	<title>Kayıt Ol</title>
 </head>
 <body>
+
 <jsp:include page="header.jsp"/>
 
 <div class="div1">
-  <form action="/user/" class="form1" method="post">
+  <form action="/estech_war_exploded/user" class="form1" method="post">
 
       <table  cellspacing="8px" >
           <tr>
               <td><label for="isim" class="label">Ad</label></td>
-              <td><input type="text" id="isim" name="ad " placeholder="Adınız" maxlength="20"></td>
+              <td><input type="text" id="isim" name="name" placeholder="Adınız" maxlength="20"></td>
           </tr>
 
           <tr>
               <td><label for="soyad" class="labe1">Soyad</label></td>
-              <td><input type="text" id="soyad" name="soyad" placeholder="Soyadınız" maxlength="25"></td>
+              <td><input type="text" id="soyad" name="surname" placeholder="Soyadınız" maxlength="25"></td>
           </tr>
 
           <tr>
               <td>
                   <label for="eposta" class="label">E-posta</label>
               </td>
-              <td><input type="email" id="eposta" name="eposta" placeholder="E-posta adresiniz" maxlength="30"></td>
+              <td><input type="email" id="eposta" name="mail" placeholder="E-posta adresiniz" maxlength="30"></td>
           </tr>
 
           <tr>
@@ -39,7 +40,7 @@
               </td>
 
               <td>
-                  <input type="password" id="sifre" name="sifre" placeholder="Şifreniz" maxlength="15">
+                  <input type="password" id="sifre" name="password" placeholder="Şifreniz" maxlength="15">
               </td>
 
 
@@ -47,42 +48,21 @@
 
           <tr>
               <td>
-                  <label for="adres">Adres</label>
+                  <label for="phone" class="label">Telefon Numarası</label>
               </td>
-              <td><textarea id="adres" name="adres" placeholder="Adresiniz" style="height:200px"></textarea></td>
+              <td><input type="text" id="phone" name="phone" placeholder="Telefon Numaranız" maxlength="30"></td>
           </tr>
 
+
           <tr>
-              <td><input type="hidden"  name="action" value="register"></td>
+              <td><input type="hidden"  name="action" value="add-user"></td>
               <td align="right"><input type="submit" value="Kayıt ol" class="sepetsub" style="vertical-align: middle"></td>
           </tr>
 
       </table>
-
   </form>
+
 </div>
-	<footer>	<!-- footerin başladığı kısım --> 
-	<div class="hakkimizda">
-		<p> <b>Biz Kimiz? </b><br> Eskişehir Teknik Üniversitesi'nde Web Programlama Dersi proje ödevi için bir araya gelen 7 kişilik öğrenci grubuyuz.</p>
-	</div>
-		<div class="ulasim">
-			<a href="iletisim.html"> <span> Bize ulaşın</span></a>
-		</div>
-			<div class="sosyalmedya">
-				<ol>
-					<li><a href="https://github.com/porsukmyo-students/Es-tech" target="_blank"><img src="image/sosyalmedya/facebook.png" alt="face"></a></li>
-					<li><a href="https://github.com/porsukmyo-students/Es-tech" target="_blank"><img src="image/sosyalmedya/twitter.png" alt="twit"></a></li>
-					<li><a href="https://github.com/porsukmyo-students/Es-tech" target="_blank"><img src="image/sosyalmedya/instagram.png" alt="insta"></a></li>
-					<li><a href="https://github.com/porsukmyo-students/Es-tech" target="_blank"><img src="image/sosyalmedya/github.png" alt="github"></a></li>
-				</ol>
-			</div>
-				<div class="haklar">
-					<p>Es-tech © 2019 - Tüm hakları saklıdır. </p>
-					<div class="up">
-						<a ></a>
-						<a style="display:scroll;position:fixed; bottom:10px; right:5px;" href="#id1"> <img src="image/yukari-cik.png" alt="yukarı" width="40px" height="40px"/></a>
-					</div>
-				</div>					
-</footer>	<!-- footerin bittiği kısım --> 
+    <jsp:include page="footer.jsp"/>
 </body>
 </html>

@@ -35,7 +35,7 @@
 
 		  <tr>
 			  <td>
-				  <input type="hidden" name="action" value="sing-in" />
+				  <input type="hidden" name="action" value="login-control" />
 			  </td>
 
 			  <td align="right">
@@ -49,27 +49,7 @@
   </form>
 </div> 
 <footer>	<!-- footerin başladığı kısım --> 
-	<div class="hakkimizda">
-		<p> <b>Biz Kimiz? </b><br> Eskişehir Teknik Üniversitesi'nde Web Programlama Dersi proje ödevi için bir araya gelen 7 kişilik öğrenci grubuyuz.</p>
-	</div>
-		<div class="ulasim">
-			<a href="iletisim.html"> <span> Bize ulaşın</span></a>
-		</div>
-			<div class="sosyalmedya">
-				<ol>
-					<li><a href="https://github.com/porsukmyo-students/Es-tech" target="_blank"><img src="image/sosyalmedya/facebook.png" alt="face"></a></li>
-					<li><a href="https://github.com/porsukmyo-students/Es-tech" target="_blank"><img src="image/sosyalmedya/twitter.png" alt="twit"></a></li>
-					<li><a href="https://github.com/porsukmyo-students/Es-tech" target="_blank"><img src="image/sosyalmedya/instagram.png" alt="insta"></a></li>
-					<li><a href="https://github.com/porsukmyo-students/Es-tech" target="_blank"><img src="image/sosyalmedya/github.png" alt="github"></a></li>
-				</ol>
-			</div>
-				<div class="haklar">
-					<p>Es-tech © 2019 - Tüm hakları saklıdır. </p>
-					<div class="up">
-						<a ></a>
-						<a style="display:scroll;position:fixed; bottom:10px; right:5px;" href="#id1"> <img src="image/yukari-cik.png" alt="yukarı" width="40px" height="40px"/></a>
-					</div>
-				</div>					
+	<jsp:include page="footer.jsp"	/>
 </footer>	<!-- footerin bittiği kısım --> 
 </body>
 </html>

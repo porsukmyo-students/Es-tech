@@ -1,3 +1,4 @@
+<%@ page import="Models.Customer" %>
 <%@page pageEncoding="UTF-8" %>
 
 <html>
@@ -11,6 +12,12 @@
 </head>
 <body>
 <jsp:include page="header.jsp"/>
+
+
+<%!Customer user;%>
+<%
+    user = (Customer) request.getSession().getAttribute("user");
+%>
 
 <div class="div1">
   <form action="/user/" class="form1" method="post">
