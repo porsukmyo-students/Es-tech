@@ -27,7 +27,9 @@ thead, td {
 #sepet_urun .sepet_detay .gorsel {
     padding-left: 30px;
 }
-
+#sepet_urun .sepet_detay .sepet_aciklama{
+    width: 350px;
+}
 #sepet_urun .sepet_detay .sepet_aciklama h4 {
     margin-bottom: 0;
 }
@@ -37,6 +39,7 @@ thead, td {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: normal;
+    word-wrap: break-word;
 }
 #sepet_urun .sepet_detay .sepet_adet {
     margin-right: 50px;
@@ -87,18 +90,13 @@ thead, td {
     margin-bottom: 20px;
 }
 
-.sepet_sil a {
-    background: #F0F0E9;
+.sepet_miktar_sil{
+    background: #fff;
     color: #696763;
     padding: 5px 7px;
-    font-size: 16px
+    font-size: 16px;
+    border: none;
 }
-
-.sepet_sil a:hover {
-    background: #218DA6;
-    color: #fff;
-}
-
 
 #tutar_kismi .odeme_alani {
     padding-bottom: 18px !important;
