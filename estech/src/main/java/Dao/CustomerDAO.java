@@ -15,6 +15,7 @@ import java.util.ArrayList;
 public class CustomerDAO implements DAO<Customer> {
 
 	Connection connection ;
+	PreparedStatement stmt;
 
 
 	public CustomerDAO(){
@@ -33,6 +34,28 @@ public class CustomerDAO implements DAO<Customer> {
 	 * @param item
 	 */
 	public void addItem(Customer item){
+		stmt = null;
+
+		try{
+			stmt = connection.prepareCall("{CALL AddCustomer(?,?,?,?,?)}");
+			stmt.setString(1,item.getName());
+			stmt.setString(2,item.getSurName());
+			stmt.setString(3,item.getPassword());
+			stmt.setString(4,item.getMail());
+			stmt.setString(5,item.getPhoneNumber());
+			stmt.execute();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		finally {
+			try {
+				if(stmt != null && !stmt.isClosed())
+					stmt.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
 
 	}
 	/**
@@ -42,7 +65,7 @@ public class CustomerDAO implements DAO<Customer> {
 	public Customer getItem(int id){
 
 		Customer customer ;
-		PreparedStatement stmt = null;
+		stmt = null;
 		ResultSet rs=null;
 		try {
 			customer = new Customer();
