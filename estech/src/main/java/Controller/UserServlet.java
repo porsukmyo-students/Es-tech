@@ -47,28 +47,22 @@ public class UserServlet extends HttpServlet {
 
 
 
-        else if(action.equals("sing-out")){
+        else if(action.equals("sign-out")){
 
             HttpSession session = request.getSession(false);
 
-            if(session!=null)
+            if(session != null)
                 session.invalidate();
-
-            //            request.getSession().setAttribute("user",null);
             request.setAttribute("action","mainpage");
-            pageForward("/index.jsp",request,response);
+            response.sendRedirect("/estech_war_exploded/mainpage");
+
         }
-
-
 
 
         else if(action.equals("login-control")){
             CustomerDAO customerDAO = new CustomerDAO();
             Customer customer = customerDAO.getItemByMail(request.getParameter("mail"));
 
-            log(customer.toString());
-            log("username: "+request.getParameter("mail"));
-            log("password: "+request.getParameter("password"));
 
             if(customer == null){
 
@@ -79,6 +73,7 @@ public class UserServlet extends HttpServlet {
                 log("pass: ");
                 request.getSession().setAttribute("user",customer);
                 request.setAttribute("action","mainpage");
+
                 response.sendRedirect("/estech_war_exploded/mainpage");
             }
 
@@ -104,6 +99,32 @@ public class UserServlet extends HttpServlet {
         }
 
 
+        else if(action.equals("updateAccount")){
+
+            HttpSession session = request.getSession();
+
+            Customer customer = (Customer) session.getAttribute("user");
+            CustomerDAO customerDAO = new CustomerDAO();
+
+            log("var "+request.getParameter("surname"));
+
+
+            customer.setName(request.getParameter("name"));
+            customer.setSurName(request.getParameter("surname"));
+            customer.setMail(request.getParameter("mail"));
+            customer.setPhoneNumber(request.getParameter("phone"));
+            customer.setPassword(request.getParameter("password"));
+
+            customerDAO.updateItem(customer);
+
+            session.setAttribute("user",customer);
+
+            pageForward("/hesabım.jsp",request,response);
+
+        }
+
+
+
 
 
     }
@@ -113,10 +134,13 @@ public class UserServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         process(req,resp);
     }
-
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
         process(request,response);
     }
 
