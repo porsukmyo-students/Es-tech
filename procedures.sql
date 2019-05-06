@@ -15,7 +15,7 @@ BEGIN
 INSERT INTO Customer(Name,SurName,Password,Mail,PhoneNumber) VALUES(name,surname,password,mail,phone);
 END$$
 
-CREATE OR REPLACE PROCEDURE UpdateCustomer(IN id INT UNSIGNED,IN name VARCHAR(15),IN surname VARCHAR(20),IN password VARCHAR(15),mail VARCHAR(50),phone VARCHAR(14))
+CREATE OR REPLACE PROCEDURE UpdateCustomer(IN id INT UNSIGNED  ,IN name VARCHAR(15) CHARACTER SET 'utf8',IN surname VARCHAR(20) CHARACTER SET 'utf8',IN password VARCHAR(15) CHARACTER SET 'utf8',mail VARCHAR(50) CHARACTER SET 'utf8',phone VARCHAR(14) CHARACTER SET 'utf8')
 BEGIN
 UPDATE Customer SET NAME=name,SurName=surname,Password=password,Mail=mail,PhoneNumber=phone WHERE CustomerId=id;
 END$$
