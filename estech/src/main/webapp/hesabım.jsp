@@ -3,6 +3,7 @@
 
 <html>
 <head>
+    <meta charset="UTF-8"/>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="css/hesabim.css"/>
 	<link rel="stylesheet" href="css/header.css"/>
@@ -20,24 +21,24 @@
 %>
 
 <div class="div1">
-  <form action="/user/" class="form1" method="post">
+  <form action="/estech_war_exploded/user" class="form1" method="post">
 
       <table  cellspacing="8px" >
           <tr>
               <td><label for="isim" class="label">Ad</label></td>
-              <td><input type="text" id="isim" name="ad " value="Serkan" maxlength="20"></td>
+              <td><input type="text" id="isim" name="name" value=<%=user.getName()%> maxlength="20" required></td>
           </tr>
 
           <tr>
               <td><label for="soyad" class="labe1">Soyad</label></td>
-              <td><input type="text" id="soyad" name="soyad" value="Güneş" maxlength="25"></td>
+              <td><input type="text" id="soyad" name="surname" value=<%=user.getSurName()%> maxlength="25" required></td>
           </tr>
 
           <tr>
               <td>
                   <label for="eposta" class="label">E-posta</label>
               </td>
-              <td><input type="email" id="eposta" name="eposta" value="serkan_gunes@eskisehir.edu.tr" maxlength="30"></td>
+              <td><input type="email" id="eposta" name="mail" value=<%=user.getMail()%> maxlength="30" required></td>
           </tr>
 
           <tr>
@@ -46,21 +47,21 @@
               </td>
 
               <td>
-                  <input type="password" id="sifre" name="sifre" value="12345" maxlength="15">
+                  <input type="password" id="sifre" name="password"  maxlength="15" required>
               </td>
-
 
           </tr>
 
           <tr>
               <td>
-                  <label for="adres">Adres</label>
+                  <label for="telefon" class="label">E-posta</label>
               </td>
-              <td><textarea id="adres" name="adres" style="height:200px">KYK YURT</textarea></td>
+              <td><input type="text" id="telefon" name="phone" value=<%=user.getPhoneNumber()%> maxlength="14" required></td>
           </tr>
 
+
           <tr>
-              <td><input type="hidden"  name="action" value="register"></td>
+              <td><input type="hidden"  name="action" value="updateAccount" required></td>
               <td align="right"><input type="submit" value="Güncelle" class="sepetsub" style="vertical-align: middle"></td>
           </tr>
 
@@ -68,28 +69,6 @@
 
   </form>
 </div>
-	<footer>	<!-- footerin başladığı kısım --> 
-	<div class="hakkimizda">
-		<p> <b>Biz Kimiz? </b><br> Eskişehir Teknik Üniversitesi'nde Web Programlama Dersi proje ödevi için bir araya gelen 7 kişilik öğrenci grubuyuz.</p>
-	</div>
-		<div class="ulasim">
-			<a href="iletisim.html"> <span> Bize ulaşın</span></a>
-		</div>
-			<div class="sosyalmedya">
-				<ol>
-					<li><a href="https://github.com/porsukmyo-students/Es-tech" target="_blank"><img src="image/sosyalmedya/facebook.png" alt="face"></a></li>
-					<li><a href="https://github.com/porsukmyo-students/Es-tech" target="_blank"><img src="image/sosyalmedya/twitter.png" alt="twit"></a></li>
-					<li><a href="https://github.com/porsukmyo-students/Es-tech" target="_blank"><img src="image/sosyalmedya/instagram.png" alt="insta"></a></li>
-					<li><a href="https://github.com/porsukmyo-students/Es-tech" target="_blank"><img src="image/sosyalmedya/github.png" alt="github"></a></li>
-				</ol>
-			</div>
-				<div class="haklar">
-					<p>Es-tech © 2019 - Tüm hakları saklıdır. </p>
-					<div class="up">
-						<a ></a>
-						<a style="display:scroll;position:fixed; bottom:10px; right:5px;" href="#id1"> <img src="image/yukari-cik.png" alt="yukarı" width="40px" height="40px"/></a>
-					</div>
-				</div>					
-</footer>	<!-- footerin bittiği kısım --> 
+<jsp:include page="footer.jsp"/>
 </body>
 </html>
