@@ -1,6 +1,4 @@
-﻿<%@ page import="java.util.ArrayList" %>
-<%@ page import="Models.Product" %>
-<%@page pageEncoding="UTF-8" %>
+﻿<%@page pageEncoding="UTF-8" %>
 
 <html>
 <head> 
@@ -15,46 +13,79 @@
 </head>
 
 <body>
-<jsp:include page="header.jsp"/>
-
+<div id="id1"></div>
+    	<div class="header1"> <!-- headerin başladığı kısım --> 
+	<header class="sticky">
+		<div class="logo"> <a href="index.html"> <img src="image/logo.png" alt="logo" width="117px" height="40px"> </a> </div>
+			<ul class="menu">
+				<li><a href="uyekayit.html"><i class="fas fa-user-plus"></i><input type="submit" value="Kayıt ol" class="ustbar" style="vertical-align: middle"></a></li>
+				<li><a href="giris.html"><i class="fas fa-user-alt"></i><input type="submit" value="Üye girişi" class="ustbar" style="vertical-align: middle"></a></li>
+				<li><a href="sepet.html"><i class="fas fa-shopping-cart"></i><input type="submit" value="Sepet" class="ustbar" style="vertical-align: middle"></a></li>
+			</ul>
+	</header>
+</div>  <!-- headerin bittiği kısım --> 
+	<div class="nav1">	<!-- navbarın başladığı kısım --> 
+		<nav>
+			<ol class="menu2">
+				<li><a href="index.html"><input type="submit" value="Anasayfa" class="navbar" style="vertical-align: middle"></a></li>
+				<li class="acilirmenu">
+                <a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 1" class="navbar" style="vertical-align: middle"></a>
+					<div class="acilirmenu-icerik">
+					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
+					<a href="#"><input type="submit" value="Alt Kategori 2" class="navbar" style="vertical-align: middle"></a>
+					<a href="#"><input type="submit" value="Alt Kategori 3" class="navbar" style="vertical-align: middle"></a>
+					<a href="#"><input type="submit" value="Alt Kategori 4" class="navbar" style="vertical-align: middle"></a>
+					<a href="#"><input type="submit" value="Alt Kategori 5" class="navbar" style="vertical-align: middle"></a>
+					</div>
+				</li>
+				<li class="acilirmenu">
+                <a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 2" class="navbar" style="vertical-align: middle"></a>
+					<div class="acilirmenu-icerik">
+					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
+					<a href="#"><input type="submit" value="Alt Kategori 2" class="navbar" style="vertical-align: middle"></a>
+					<a href="#"><input type="submit" value="Alt Kategori 3" class="navbar" style="vertical-align: middle"></a>
+					<a href="#"><input type="submit" value="Alt Kategori 4" class="navbar" style="vertical-align: middle"></a>
+					</div>
+				</li>
+				<li class="acilirmenu">
+                <a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 3" class="navbar" style="vertical-align: middle"></a>
+					<div class="acilirmenu-icerik">
+					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
+					<a href="#"><input type="submit" value="Alt Kategori 2" class="navbar" style="vertical-align: middle"></a>
+					<a href="#"><input type="submit" value="Alt Kategori 3" class="navbar" style="vertical-align: middle"></a>
+					</div>
+				</li>
+				<li class="acilirmenu">
+                <a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 4" class="navbar" style="vertical-align: middle"></a>
+					<div class="acilirmenu-icerik">
+					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
+					<a href="#"><input type="submit" value="Alt Kategori 2" class="navbar" style="vertical-align: middle"></a>
+					</div>
+				</li>
+				<li class="acilirmenu">
+				<a href="javascript:void(0)" class="dropbtn"><input type="submit" value="Kategori 5" class="navbar" style="vertical-align: middle"></a>
+					<div class="acilirmenu-icerik">
+					<a href="#"><input type="submit" value="Alt Kategori 1" class="navbar" style="vertical-align: middle"></a>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>	<!-- navbarın bittiği kısım -->
 	<section id="sepet_urun">
 		<div class="bolmeler">
 			<div class="sepet_detay">
 				<table class="tablo">
-				<thead>
+					<thead>
 						<tr class="sepet_menu">
 							<td class="gorsel">Ürün</td>
 							<td class="aciklama">Açıklama</td>
-                                                        <td class="adet">Adet</td>
 							<td class="fiyat">Fiyat</td>
+                                                        <td class="adet">Adet</td>
 							<td class="toplam">Toplam Fiyat</td>
 							<td></td>
 						</tr>
 					</thead>
 					<tbody>
-
-
-
-						<%
-
-							ArrayList<Product> products = (ArrayList<Product>) request.getSession().getAttribute("shopping_cart");
-							if(products != null){
-
-								for(Product p : products){
-									out.println("<tr>");
-									out.println("<td class='sepet_urun'>");
-									out.println("<a");
-
-
-								}
-
-
-
-							}
-
-
-						%>
-
 						<tr>
 							<td class="sepet_urun">
 								<a href=""><img src="image/i9.jpg" width="110" height="110" alt=""></a>
@@ -74,7 +105,7 @@
 								<p class="sepet_toplam_fiyat">₺3.790,00</p>
 							</td>
 							<td class="sepet_sil">
-                                                            <a class="sepet_miktar_sil" href="">SİL</a>
+                                                            <a href=""><input type="submit" value="SİL" class="sepet_miktar_sil" style="vertical-align: middle"></a>
 							</td>
 						</tr>
 
@@ -83,7 +114,7 @@
 								<a href=""><img src="image/i9.jpg" width="110" height="110" alt=""></a>
 							</td>
 							<td class="sepet_aciklama">
-								<h4><a href="">Intel I9 İşlemci</a></h4>
+								<h4><a href="">Intel I9 İşlemci tdhfg  f f yry t ssjhrsh s t hs h sh dfagsd g sg fd ga fd</a></h4>
 								<p>ID: 1089772</p>
 							</td>
                                                         
@@ -97,7 +128,7 @@
 								<p class="sepet_toplam_fiyat">₺3.790,00</p>
 							</td>
 							<td class="sepet_sil">
-                                                            <a class="sepet_miktar_sil" href="">SİL</a>
+                                                            <a href=""><input type="submit" value="SİL" class="sepet_miktar_sil" style="vertical-align: middle"></a>
 							</td>
 						</tr>
 						<tr>
@@ -119,7 +150,7 @@
 								<p class="sepet_toplam_fiyat">₺3.790,00</p>
 							</td>
 							<td class="sepet_sil">
-								<a class="sepet_miktar_sil" href="">SİL</a>
+								<a href=""><input type="submit" value="SİL" class="sepet_miktar_sil" style="vertical-align: middle"></a>
 							</td>
 						</tr>
 					</tbody>
