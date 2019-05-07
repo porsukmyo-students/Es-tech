@@ -54,8 +54,8 @@
 						out.println("<p class='div7class'><span>"+product.getTitle()+"</span></p>");
 						out.println("</div>");
 						out.println("<div class='div8'>");
-						out.println("<form action='/mainpage' method='post'");
-						out.println("<input type='hidden' name='action' value='AddShoppinCart="+product.getProductNumber()+"'/>");
+						out.println("<form action='/estech_war_exploded/mainpage' method='post'>");
+						out.println("<input type='hidden' name='action' value='addShoppingCart="+product.getProductNumber()+"'/>");
 						out.println("<input type='submit' value='Sepete Ekle' class='sepetsub' style='vertical-align:middle'>");
 						out.println("</form>");
 						out.println("</div>");

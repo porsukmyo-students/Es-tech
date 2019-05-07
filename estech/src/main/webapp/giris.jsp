@@ -11,6 +11,8 @@
 <body>
 
 <jsp:include page="header.jsp"/>
+
+
 <div class="div1">
   <form action="/estech_war_exploded/user" method="post" class="form">
 

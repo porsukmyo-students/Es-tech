@@ -6,6 +6,7 @@
 #sepet_urun .sepet_detay {
     border: 1px solid #E6E4DF;
     margin-bottom: 50px;
+    margin-left: 10px;
 }
 
 #sepet_urun .sepet_detay .sepet_menu {
@@ -14,6 +15,7 @@
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
+
 }
 
 table {
@@ -90,6 +92,8 @@ thead, td {
     margin-bottom: 20px;
 }
 
+
+
 .sepet_miktar_sil{
     background: #fff;
     color: #696763;
@@ -97,7 +101,10 @@ thead, td {
     font-size: 16px;
     border: none;
 }
+.sepet_miktar_sil:hover{
+    background-color:#218DA6;
 
+}
 #tutar_kismi .odeme_alani {
     padding-bottom: 18px !important;
     width: 40%;
@@ -158,7 +165,7 @@ thead, td {
     margin-left: 20px
 }
 .adet_box{
-  width: 10%;
+  width: 22%;
   padding: 10px 10px;
   margin: 8px 0;
   display: inline-block;
