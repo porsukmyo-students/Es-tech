@@ -6,14 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb9d597a-784b-475e-ad93-d234ee62750d" name="Default Changelist" comment="Güncel jsp dosyaları tamamlandı.">
+    <list default="true" id="bb9d597a-784b-475e-ad93-d234ee62750d" name="Default Changelist" comment="Bağlantı karakter kodlamasına utf-8 eklendi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/MainPageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/MainPageServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/ConnectionDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/ConnectionDb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/hesabım.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/hesabım.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/sepet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/sepet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/giris.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/giris.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/sepet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sepet.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../procedures.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../procedures.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/siparislerim.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/siparislerim.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ürünlistesi.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ürünlistesi.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,67 +33,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/UserServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="141" column="8" selection-start-line="141" selection-start-column="8" selection-end-line="142" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Controller/MainPageServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Dao/ConnectionDb.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="22" column="86" selection-start-line="22" selection-start-column="86" selection-end-line="22" selection-end-column="86" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="292">
+              <caret line="105" column="47" lean-forward="true" selection-start-line="105" selection-start-column="47" selection-end-line="105" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/hesabım.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="656">
-              <caret line="41" column="89" selection-start-line="41" selection-start-column="89" selection-end-line="41" selection-end-column="89" />
+            <state relative-caret-position="-302">
+              <caret line="53" column="74" lean-forward="true" selection-start-line="53" selection-start-column="74" selection-end-line="53" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/siparislerim.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/sepet.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="944">
-              <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
+            <state relative-caret-position="208">
+              <caret line="112" column="92" selection-start-line="112" selection-start-column="92" selection-end-line="112" selection-end-column="92" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/ürünlistesi.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/sepet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="37" column="54" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="55" />
+            <state relative-caret-position="179">
+              <caret line="100" column="20" lean-forward="true" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/UserServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -120,6 +100,8 @@
       <find>method='get</find>
       <find>btn</find>
       <find>&lt;i class=&quot;</find>
+      <find>fiyat</find>
+      <find>adet</find>
     </findStrings>
     <replaceStrings>
       <replace>estech_war_exploded/user</replace>
@@ -207,24 +189,25 @@
         <option value="$PROJECT_DIR$/src/main/java/Dao/CustomerDAO.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/uyekayit.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/header.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/giris.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/header.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/hesabım.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/Dao/ConnectionDb.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/giris.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/UserServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/siparislerim.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/sepet.css" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/MainPageServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/ürünlistesi.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/sepet.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/Dao/ConnectionDb.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/UserServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/MainPageServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/hesabım.jsp" />
       </list>
     </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="false" />
-    <option name="FILTER_DEBUG" value="false" />
-    <option name="CUSTOM_FILTER" value="var" />
+    <option name="FILTER_WARNINGS" value="true" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" value="" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -267,7 +250,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -336,7 +319,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -635,7 +618,8 @@
       <workItem from="1557128909251" duration="2796000" />
       <workItem from="1557133737721" duration="1958000" />
       <workItem from="1557142746164" duration="6049000" />
-      <workItem from="1557154516635" duration="849000" />
+      <workItem from="1557154516635" duration="6376000" />
+      <workItem from="1557169995621" duration="12752000" />
     </task>
     <task id="LOCAL-00001" summary="Java servlet ve jsp için gerekli bağımlılıklar eklendi.">
       <created>1555877407390</created>
@@ -798,11 +782,32 @@
       <option name="project" value="LOCAL" />
       <updated>1557109886007</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Karakter kodlama sorunu giderildi">
+      <created>1557155469106</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1557155469106</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Kullanıcı güncelleme eklendi">
+      <created>1557155500841</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1557155500841</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Hesabım için gerekli düzenlemeler yapıldı">
+      <created>1557155610356</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1557155610356</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197461000" />
+    <option name="totallyTimeSpent" value="215740000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -814,10 +819,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1374" height="772" extended-state="6" />
+    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49375" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49375" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -827,7 +832,7 @@
       <window_info id="Web" order="7" sideWeight="0.5070994" side_tool="true" weight="0.27121213" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298193" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49772727" visible="true" weight="0.42319277" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49772727" visible="true" weight="0.41566265" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990964" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -837,7 +842,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5022727" side_tool="true" weight="0.4246988" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" sideWeight="0.49924242" weight="0.3298193" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49848485" weight="0.328125" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49848485" weight="0.32680723" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3298193" />
       <window_info anchor="bottom" id="Application Servers" order="14" weight="0.3298193" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -851,7 +856,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49375" visible="true" weight="0.225" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49375" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -861,7 +866,7 @@
       <window_info id="Web" order="7" sideWeight="0.5070994" side_tool="true" weight="0.27121213" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298193" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49772727" visible="true" weight="0.42319277" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49772727" weight="0.42319277" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990964" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -944,10 +949,13 @@
     <MESSAGE value="Yeni aksiyonlar eklendi" />
     <MESSAGE value="Kullanıcı kayıt etme eklendi" />
     <MESSAGE value="Hatalar giderildi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hatalar giderildi" />
+    <MESSAGE value="Karakter kodlama sorunu giderildi" />
+    <MESSAGE value="Kullanıcı güncelleme eklendi" />
+    <MESSAGE value="Bağlantı karakter kodlamasına utf-8 eklendi" />
+    <MESSAGE value="Hesabım için gerekli düzenlemeler yapıldı" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hesabım için gerekli düzenlemeler yapıldı" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/iletisim-bilgileri.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Models/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
@@ -1220,55 +1228,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sepet.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="63" column="32" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/giris.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="41" column="89" selection-start-line="41" selection-start-column="89" selection-end-line="41" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/siparislerim.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="944">
-          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ürünlistesi.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="37" column="54" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1712">
           <caret line="107" column="80" selection-start-line="107" selection-start-column="80" selection-end-line="107" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/ConnectionDb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="22" column="86" selection-start-line="22" selection-start-column="86" selection-end-line="22" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1282,24 +1245,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/hesabım.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/giris.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/ConnectionDb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/siparislerim.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-506">
+          <caret line="37" column="79" selection-start-line="37" selection-start-column="79" selection-end-line="37" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/sepet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="100" column="20" lean-forward="true" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Controller/UserServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="141" column="8" selection-start-line="141" selection-start-column="8" selection-end-line="142" selection-end-column="47" />
+        <state relative-caret-position="352">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Controller/MainPageServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
+        <state relative-caret-position="292">
+          <caret line="105" column="47" lean-forward="true" selection-start-line="105" selection-start-column="47" selection-end-line="105" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/hesabım.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ürünlistesi.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="438">
+          <caret line="60" column="46" lean-forward="true" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/sepet.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="112" column="92" selection-start-line="112" selection-start-column="92" selection-end-line="112" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-302">
+          <caret line="53" column="74" lean-forward="true" selection-start-line="53" selection-start-column="74" selection-end-line="53" selection-end-column="74" />
         </state>
       </provider>
     </entry>

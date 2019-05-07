@@ -82,23 +82,39 @@ public class MainPageServlet extends HttpServlet {
         }
 
 
-        else if(action.startsWith("addShoppinCart")){
-            ArrayList<Product> products = (ArrayList<Product>) request.getSession().getAttribute("shopping_cart");
+        else if(action.startsWith("addShoppingCart")){
+            ArrayList<Product> products = (ArrayList<Product>) request.getSession().getAttribute("shopping-cart");
             String product_number = action.split("=")[1];
 
-
-            if(products == null){
+            if(products == null){//sepete ürün eklenmemiş ise
                 products = new ArrayList<>();
             }
 
             products.add(findProduct(product_number,request));
 
+            request.getSession().setAttribute("shopping-cart",products);
+
+            log("add product"+product_number);
+
+
+            pageForward("/index.jsp",request,response);
+        }
+
+        else if(action.startsWith("removeShoppingCart")){
+            ArrayList<Product> products = (ArrayList<Product>) request.getSession().getAttribute("shopping-cart");
+            String product_number = action.split("=")[1];
+            Product product = findProduct(product_number,request);
+
+            products.remove(product);
+
+            request.getSession().setAttribute("shopping-cart",products);
+
+            pageForward("/sepet.jsp",request,response);
         }
 
 
 
     }
-
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -109,9 +125,6 @@ public class MainPageServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        req.setCharacterEncoding("UTF-8");
-        resp.setCharacterEncoding("UTF-8");
 
         process(req,resp);
     }
