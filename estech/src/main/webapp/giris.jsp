@@ -14,7 +14,7 @@
 
 
 <div class="div1">
-  <form action="/estech_war_exploded/user" method="post" class="form">
+  <form action="/estech/user" method="post" class="form">
 
 	  <table cellspacing="10px">
 		  <tr>

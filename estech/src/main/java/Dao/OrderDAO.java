@@ -15,6 +15,7 @@ public class OrderDAO implements DAO<Order> {
 
 	Connection connection;
 	PreparedStatement stmt;
+
 	public OrderDAO(){
 		try {
 			connection = ConnectionDb.getConnection();
@@ -34,15 +35,15 @@ public class OrderDAO implements DAO<Order> {
 	 * 
 	 * @param item
 	 */
-	public void addItem(Order item){
+	public void addItem(Order item){ // Gerekli veriler: CustomerID,ProductTitle,Quantity,Ip,AddressID
 
 		try {
 			stmt = connection.prepareCall("{CALL AddOrder(?,?,?,?,?)}");
-			stmt.setInt(1,Integer.parseInt(item.getCustomerId()));
-			stmt.setInt(2,Integer.parseInt(item.getProductNumber()));
+			stmt.setInt(1,item.getCustomerID());
+			stmt.setString(2,item.getProductTitle());
 			stmt.setInt(3,item.getQuantity());
-			stmt.setString(4,"ip");
-			stmt.setInt(5,Integer.parseInt(item.getAddressId()));
+			stmt.setString(4,item.getIp());
+			stmt.setInt(5,item.getAddresId());
 
 			stmt.execute();
 
@@ -93,13 +94,16 @@ public class OrderDAO implements DAO<Order> {
 
 			while(rs.next()){
 				order = new Order();
-				order.setCustomerId(String.valueOf(id));
+				order.setCustomerID(rs.getInt("CustomerId"));
+				order.setCustomerName(rs.getString("CustomerName"));
 				order.setOrderNumber(String.valueOf(rs.getInt("OrderNumber")));
-				order.setProductNumber(String.valueOf(rs.getInt("ProductNumber")));
+				order.setProductTitle(rs.getString("Title"));
 				order.setQuantity(rs.getInt("Quantity"));
-				order.setAddressId(String.valueOf(rs.getInt("AddressId")));
-				order.setDateTime(rs.getDate("DateTime").toString());
+				order.setAddress(rs.getString("Address"));
+				order.setDateTime(rs.getDate("Date").toString());
 				order.setStatus(rs.getString("Status"));
+				order.setAddress(rs.getString("Address"));
+				order.setIp(rs.getString("ClientIp"));
 
 				list.add(order);
 			}
@@ -152,4 +156,11 @@ public class OrderDAO implements DAO<Order> {
 		}
 		return true;
 	}
+
+
+	private void Close() throws SQLException{
+
+	}
+
+
 }//end OrderDAO

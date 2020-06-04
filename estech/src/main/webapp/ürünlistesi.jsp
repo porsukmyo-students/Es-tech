@@ -39,7 +39,7 @@
 						out.println("<div class='div3'>");//3.div 283x430
 						out.println("<div class='div4'>");
 						out.println("<div class='div5'>");
-						out.println("<form method='post' action='/estech_war_exploded/mainpage'>");
+						out.println("<form method='post' action='/mainpage'>");
 						out.println("<input type='hidden' name='action' value='getProductDetail="+product.getProductNumber()+"'>");
 						out.println("<button type='submit' style='border:none; cursor:pointer;'>");
 						out.println("<img src='data:image/jpg;base64,"+product.getPhoto()+"' width='230' height='200'>");

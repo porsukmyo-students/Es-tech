@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="estech:war">
+    <output-path>$PROJECT_DIR$/estech/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>estech</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="estech.war">
+      <element id="artifact" artifact-name="estech:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -20,7 +20,7 @@ public class ConnectionDb {
             Class.forName("org.mariadb.jdbc.Driver");
 
 
-            connection = DriverManager.getConnection("jdbc:mariadb://localhost/estech", "customer", "customer1234");
+            connection = DriverManager.getConnection("jdbc:mariadb://localhost:3307/estech", "customer", "customer1234");
         }
         return connection;
     }

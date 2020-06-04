@@ -8,12 +8,42 @@ package Models;
  */
 public class Order {
 
-	private String addressId;
-	private String customerId;
+	private int addresId;
+	private String address;
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	private String customerName;
 	private String dateTime;
 	private String orderNumber;
-	private String productNumber;
+	private String productTitle;
+	private String ip;
+
+	public String getIp() {
+		return ip;
+	}
+
+	public void setIp(String ip) {
+		this.ip = ip;
+	}
+
 	private int quantity;
+	private int customerID;
+
+	public int getCustomerID() {
+		return customerID;
+	}
+
+	public void setCustomerID(int customerID) {
+		this.customerID = customerID;
+	}
+
 	private String status;
 
 	public String getStatus() {
@@ -25,24 +55,27 @@ public class Order {
 	}
 
 
-	public String getAddressId(){
-		return addressId;
+	public int getAddresId(){
+		return addresId;
 	}
 
-	public String getCustomerId(){
-		return customerId;
+	public String getCustomerName(){
+		return customerName;
 	}
 
 	public String getDateTime(){
 		return dateTime;
 	}
 
+	public Order() {
+	}
+
 	public String getOrderNumber(){
 		return orderNumber;
 	}
 
-	public String getProductNumber(){
-		return productNumber;
+	public String getProductTitle(){
+		return productTitle;
 	}
 
 	public int getQuantity(){
@@ -53,16 +86,16 @@ public class Order {
 	 * 
 	 * @param newVal
 	 */
-	public void setAddressId(String newVal){
-		addressId = newVal;
+	public void setAddresId(int newVal){
+		addresId = newVal;
 	}
 
 	/**
 	 * 
 	 * @param newVal
 	 */
-	public void setCustomerId(String newVal){
-		customerId = newVal;
+	public void setCustomerName(String newVal){
+		customerName = newVal;
 	}
 
 	/**
@@ -85,8 +118,8 @@ public class Order {
 	 * 
 	 * @param newVal
 	 */
-	public void setProductNumber(String newVal){
-		productNumber = newVal;
+	public void setProductTitle(String newVal){
+		productTitle = newVal;
 	}
 
 	/**
@@ -95,5 +128,27 @@ public class Order {
 	 */
 	public void setQuantity(int newVal){
 		quantity = newVal;
+
+	}
+
+
+	@Override
+	public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+
+		sb.append(getOrderNumber()+"\t");
+		sb.append(getProductTitle()+"\t");
+		sb.append(getCustomerID()+"\t");
+		sb.append(getCustomerName()+"\t");
+		sb.append(getAddresId()+"\t");
+		sb.append(getAddress()+"\t");
+		sb.append(getQuantity()+"\t");
+		sb.append(getDateTime()+"\t");
+		sb.append(getIp()+"\t");
+
+
+
+		return super.toString();
 	}
 }//end Order

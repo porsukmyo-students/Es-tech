@@ -55,7 +55,7 @@ public class UserServlet extends HttpServlet {
             if(session != null)
                 session.invalidate();
             request.setAttribute("action","mainpage");
-            response.sendRedirect("/estech_war_exploded/mainpage");
+            response.sendRedirect("/estech/mainpage");
 
         }
 
@@ -78,7 +78,7 @@ public class UserServlet extends HttpServlet {
                 request.getSession().setAttribute("user",customer);
                 request.setAttribute("action","mainpage");
 
-                response.sendRedirect("/estech_war_exploded/mainpage");
+                response.sendRedirect("/estech/mainpage");
             }
 
         }
@@ -127,12 +127,7 @@ public class UserServlet extends HttpServlet {
 
         }
 
-
-
-
-
     }
-
 
 
 

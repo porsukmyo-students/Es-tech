@@ -35,7 +35,7 @@
         </thead>
 
         <%
-            ArrayList<Product> products = request.getSession().getAttribute("")
+
 
         %>
 

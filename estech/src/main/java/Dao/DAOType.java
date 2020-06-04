@@ -17,20 +17,23 @@ interface DAO<Type> {
 	 * 
 	 * @param item
 	 */
-	public void addItem(Type item);
+	 void addItem(Type item);
 
 	/**
 	 * 
 	 * @param id
 	 */
-	public Type getItem(int id) ;
+	 Type getItem(int id) ;
 
-	public ArrayList<Type> getItems();
+	 ArrayList<Type> getItems();
 
 	/**
 	 * 
 	 * @param item
 	 */
-	public Boolean updateItem(Type item);
+	 Boolean updateItem(Type item);
+
+
+
 
 }
